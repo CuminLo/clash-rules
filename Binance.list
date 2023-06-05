@@ -1,0 +1,38 @@
+# 加密货币，由于大陆灰色地带，虽然可以直连，但是建议代理
+
+# binance
+PROCESS-NAME,com.binance.dev
+PROCESS-NAME,Binance Helper
+DOMAIN-SUFFIX,appsflayer.com
+DOMAIN-SUFFIX,binance.com
+DOMAIN-SUFFIX,bnbzh.ac
+DOMAIN-SUFFIX,binance.me
+DOMAIN-SUFFIX,binance.cc
+DOMAIN-SUFFIX,binance.click
+DOMAIN-SUFFIX,binance.im
+DOMAIN-SUFFIX,binance.info
+DOMAIN-SUFFIX,binance.cloud
+DOMAIN-SUFFIX,binancezh.in
+DOMAIN-SUFFIX,binancezh.cz
+DOMAIN-SUFFIX,binancezh.top
+DOMAIN-SUFFIX,binancezh.cc
+DOMAIN-SUFFIX,binancezh.sh
+DOMAIN-SUFFIX,binancefuture.com
+DOMAIN-SUFFIX,bnappzh.co
+DOMAIN-SUFFIX,bnappzh.info
+DOMAIN-SUFFIX,bnappzh.link
+DOMAIN-SUFFIX,bnappzh.club
+DOMAIN-SUFFIX,bnappzh.mobi
+DOMAIN-SUFFIX,bnappzh.cloud
+DOMAIN-SUFFIX,bnappzh.net
+DOMAIN-SUFFIX,dashiyirui.net
+DOMAIN-SUFFIX,saasexch.com
+DOMAIN-SUFFIX,saasexch.cc
+DOMAIN-SUFFIX,bnbstatic.com
+DOMAIN-SUFFIX,bntrace.com
+DOMAIN-SUFFIX,mokexapp.cloud
+DOMAIN-SUFFIX,riskified.com
+DOMAIN-SUFFIX,file.myqcloud.com
+DOMAIN-SUFFIX,c.riskified.com
+DOMAIN-SUFFIX,launches.appsflyer.com
+DOMAIN-SUFFIX,jex.com

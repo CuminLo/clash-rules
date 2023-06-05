@@ -1,0 +1,14 @@
+# 自用
+# https://raw.githubusercontent.com/ExaAlice/Alice/main/Rule/OpenAi.list
+
+PROCESS-NAME,chatbox
+DOMAIN,cdn.auth0.com
+DOMAIN-SUFFIX,hcaptcha.com
+DOMAIN-SUFFIX,openaicom.imgix.net
+DOMAIN-SUFFIX,stripe.network
+DOMAIN-SUFFIX,sentry.io
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,ai.com
+DOMAIN,openaiapi-site.azureedge.net
+DOMAIN-SUFFIX,huggingface.co
+DOMAIN-SUFFIX,bard.google.com

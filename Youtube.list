@@ -1,0 +1,7 @@
+# Youtube
+
+DOMAIN-SUFFIX,www.youtube.com
+PROCESS-NAME,com.google.android.youtube
+PROCESS-NAME,com.google.android.youtube.tv
+PROCESS-NAME,com.google.android.apps.youtube.music
+PROCESS-NAME,com.google.android.youtube.tvmusic

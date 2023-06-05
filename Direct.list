@@ -1,0 +1,36 @@
+PROCESS-NAME,WeChat
+PROCESS-NAME,企业微信 Helper
+PROCESS-NAME,Feishu
+
+# Test
+IP-CIDR,45.89.107.53/32,no-resolve
+IP-CIDR,170.178.218.124/32,no-resolve
+
+# Multicast address
+IP-CIDR,224.0.0.0/4,no-resolve
+
+# 自用
+DOMAIN-SUFFIX,lohome.top
+DOMAIN-SUFFIX,synology.me
+DOMAIN-SUFFIX,synology.com
+DOMAIN-SUFFIX,tencentcdb.com
+DOMAIN-SUFFIX,test-ipv6.com
+DOMAIN-SUFFIX,pool.ntp.org
+DOMAIN-SUFFIX,ipw.cn
+DOMAIN-SUFFIX,asia.deribit.com
+
+# 来源TG https://t.me/TestFlightCN/13799?comment=2838360
+DOMAIN-SUFFIX,api.bilibili.com
+DOMAIN-SUFFIX,api.weibo.cn
+DOMAIN-SUFFIX,www.baidu.com
+DOMAIN-SUFFIX,toutiaoapi.com
+IP-CIDR,103.41.167.0/24,no-resolve
+
+# 待实验
+DOMAIN-SUFFIX,syncthing.net
+DOMAIN-SUFFIX,discovery.syncthing.net
+
+# DOMAIN-SUFFIX,tibired.com
+
+DOMAIN-SUFFIX,xn--ngstr-lra8j.com
+DOMAIN-SUFFIX,services.googleapis.cn
