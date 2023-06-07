@@ -3,7 +3,9 @@
 
 PROCESS-NAME,chatbox
 DOMAIN,cdn.auth0.com
+
 DOMAIN-SUFFIX,hcaptcha.com
+DOMAIN-SUFFIX,ai.fakeopen.com
 DOMAIN-SUFFIX,openaicom.imgix.net
 DOMAIN-SUFFIX,stripe.network
 DOMAIN-SUFFIX,sentry.io
