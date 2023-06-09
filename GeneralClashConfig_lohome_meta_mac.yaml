@@ -43,7 +43,7 @@ profile:
   store-fake-ip: true
 dns:
   enable: true
-  ipv6: true
+  ipv6: false
   prefer-h3: true
   listen: 0.0.0.0:53
   enhanced-mode: fake-ip
