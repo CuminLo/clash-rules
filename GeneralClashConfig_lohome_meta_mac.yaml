@@ -13,7 +13,7 @@ redir-port: 7892
 tproxy-port: 7895
 allow-lan: true
 bind-address: '*'
-ipv6: false
+ipv6: true
 find-process-mode: strict
 log-level: debug
 mode: rule
@@ -43,7 +43,7 @@ profile:
   store-fake-ip: true
 dns:
   enable: true
-  ipv6: false
+  ipv6: true
   prefer-h3: true
   listen: 0.0.0.0:53
   enhanced-mode: fake-ip
