@@ -181,3 +181,6 @@ dns:
     - shark007.net
     - ntp.ntsc.ac.cn
     - '*.mcdn.bilivideo.cn'
+    
+tunnels:
+  - tcp/udp,172.16.0.2:51820,162.159.193.10:2408,🔥 手动切换

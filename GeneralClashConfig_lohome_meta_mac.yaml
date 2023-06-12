@@ -182,4 +182,4 @@ dns:
     - '*.mcdn.bilivideo.cn'
 
 tunnels:
-  - tcp/udp,172.16.0.2:51820,engage.cloudflareclient.com:2408,🔥 手动切换
+  - tcp/udp,172.16.0.2:51820,162.159.193.10:2408,🔥 手动切换
