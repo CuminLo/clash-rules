@@ -34,6 +34,7 @@ tun:
     - any:53
     - tcp://any:53
     - 198.18.0.2:53
+    - 28.0.0.1.2:53
   auto-redir: true
   auto-route: true
   auto-detect-interface: true
