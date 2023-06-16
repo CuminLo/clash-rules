@@ -12,7 +12,7 @@ redir-port: 7892
 tproxy-port: 7895
 allow-lan: true
 bind-address: '*'
-ipv6: true
+ipv6: false
 find-process-mode: strict
 log-level: debug
 mode: rule
