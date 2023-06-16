@@ -20,7 +20,7 @@ external-controller: 0.0.0.0:9090
 experimental:
   sniff-tls-sni: true
 unified-delay: true
-tcp-concurrent: true
+tcp-concurrent: false
 global-client-fingerprint: chrome
 geodata-loader: standard
 geox-url:
@@ -29,11 +29,12 @@ geox-url:
   mmdb: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb"
 tun:
   enable: true
-  stack: system # or gvisor
+  stack: system # system or gvisor
   dns-hijack:
     - any:53
     - tcp://any:53
     - 198.18.0.2:53
+    - 28.0.0.1:53
   auto-redir: true
   auto-route: true
   auto-detect-interface: true
@@ -52,19 +53,52 @@ dns:
     - 223.5.5.5
     - 119.29.29.29
   nameserver-policy:
-    "services.googleapis.cn": 'https://doh.pub/dns-query'
+    "services.googleapis.cn": 'https://doh.opendns.com/dns-query'
     "geosite:cn,private": 
       - 119.29.29.29
       - 223.5.5.5
-    "geosite:cloudflare": 
-      - https://1.0.0.1/dns-query
-      - https://1.1.1.1/dns-query
-  nameserver:
-    - https://doh.opendns.com/dns-query
-    - https://1.0.0.1/dns-query
   proxy-server-nameserver:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
+  nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+  fallback:
+    - 127.0.0.1:5433
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+      - 0.0.0.0/8
+      - 0.0.0.0/32
+      - 100.64.0.0/10
+      - 127.0.0.0/8
+      - 169.254.0.0/16
+      - 172.16.0.0/12
+      - 192.0.0.0/24
+      - 192.0.2.0/24
+      - 192.88.99.0/24
+      - 192.168.0.0/16
+      - 198.18.0.0/15
+      - 198.51.100.0/24
+      - 203.0.113.0/24
+      - 224.0.0.0/4
+      - 240.0.0.0/4
+      - 255.255.255.255/32
+    domain:
+      - "+.google.com"
+      - "+.facebook.com"
+      - "+.youtube.com"
+      - "+.tiktok.com"
+      - "+.twitter.com"
+      - "+.githubusercontent.com"
+      - "+.github.com"
+      - "+.googlevideo.com"
+      - "+.xn--ngstr-lra8j.com"
+      - "+.msftconnecttest.com"
+      - "+.msftncsi.com"
+      - msftconnecttest.com
+      - msftncsi.com
   fake-ip-filter:
     - "WORKGROUP"
     - "apps.apple.com"
@@ -181,3 +215,6 @@ dns:
     - shark007.net
     - ntp.ntsc.ac.cn
     - '*.mcdn.bilivideo.cn'
+
+tunnels:
+  - tcp/udp,127.0.0.1:5433,https://1.0.0.1/dns-query,🔥 手动切换
