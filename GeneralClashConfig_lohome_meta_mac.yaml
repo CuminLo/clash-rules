@@ -17,6 +17,7 @@ find-process-mode: strict
 log-level: debug
 mode: rule
 external-controller: 0.0.0.0:9090
+external-ui: Yacd-meta
 experimental:
   sniff-tls-sni: true
 unified-delay: true
