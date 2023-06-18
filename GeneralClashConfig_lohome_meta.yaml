@@ -16,7 +16,7 @@ ipv6: true
 find-process-mode: off
 log-level: info
 mode: rule
-external-controller: 0.0.0.0:9090
+external-controller: 192.168.50.1:9090
 experimental:
   sniff-tls-sni: true
 unified-delay: true
