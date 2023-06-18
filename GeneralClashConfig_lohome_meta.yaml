@@ -182,7 +182,7 @@ dns:
 
 rule-providers:
 
-  🎯 全球直连:
+  ChinaDomain_domain:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt"
