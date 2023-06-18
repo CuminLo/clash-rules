@@ -179,3 +179,12 @@ dns:
     - shark007.net
     - ntp.ntsc.ac.cn
     - '*.mcdn.bilivideo.cn'
+
+rule-providers:
+
+  🎯 全球直连:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt"
+    path: ./ruleset/direct.yaml
+    interval: 86400
