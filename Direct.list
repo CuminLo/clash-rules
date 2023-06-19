@@ -18,6 +18,10 @@ DOMAIN-SUFFIX,pool.ntp.org
 DOMAIN-SUFFIX,ipw.cn
 DOMAIN-SUFFIX,asia.deribit.com
 
+DOMAIN-SUFFIX,newlink.com
+DOMAIN-SUFFIX,newlinks.com
+DOMAIN-SUFFIX,nlsaas.com
+
 # 来源TG https://t.me/TestFlightCN/13799?comment=2838360
 DOMAIN-SUFFIX,api.bilibili.com
 DOMAIN-SUFFIX,api.weibo.cn
