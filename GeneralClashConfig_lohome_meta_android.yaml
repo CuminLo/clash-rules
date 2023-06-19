@@ -25,7 +25,7 @@ tcp-concurrent: true
 global-client-fingerprint: chrome
 geodata-loader: standard
 geox-url:
-  geoip: "https://ghproxy.com/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/download/202306182208/geoip.dat"
+  geoip: "https://ghproxy.com/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat"
   geosite: "https://ghproxy.com/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat"
   mmdb: "https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb"
 tun:
