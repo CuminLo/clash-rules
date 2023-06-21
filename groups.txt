@@ -1,9 +1,9 @@
 
 🚀 节点选择`select`[]🖇 Relay`[]🔗 Relay`[]🫧 泡泡狗`[]🇸🇬 狮城节点`[]🇯🇵 日本节点`[]🇭🇰 香港节点`[]📮 EEVPN`[]🚲 性价比`[]♻️ 自动选择`[]🔥 手动切换`[]DIRECT
-🔥 手动切换`select`.*
+🔥 手动切换`select`(^(?!.*(0x)).*)
 🖇 Relay`relay`[]🔥 手动切换`[]🐔 落地鸡
 🔗 Relay`relay`[]🫧 泡泡狗`[]🐔 落地鸡
-♻️ 自动选择`url-test`(^(?!.*(高峰|流媒体|拥挤)).*)`http://www.gstatic.com/generate_204`300,,50
+♻️ 自动选择`url-test`(^(?!.*(高峰|流媒体|拥挤|0x)).*)`http://www.gstatic.com/generate_204`300,,50
 💰 Binance`select`!!GROUP=paopao
 💰 加密货币`select`[]🫧 泡泡狗`(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|[^-]日|JP|Japan|台|新北|彰化|TW|Taiwan|新加坡|坡|狮城|SG|Singapore|KR|Korea|KOR|首尔|韩|韓|港|HK|Hong Kong)(?!.*(高峰|拥挤))
 🤖 AI服务`select`[]🔗 Relay`[]🖇 Relay`(ChatGPT)
@@ -16,7 +16,7 @@
  苹果服务`select`[]DIRECT`[]🖇 Relay`[]🔗 Relay`[]🇺🇲 美国节点`[]🚀 节点选择`[]🔥 手动切换
 🎯 全球直连`select`[]DIRECT
 🆎 AdBlock`select`[]REJECT`[]DIRECT
-🐟 漏网之鱼`select`[]🚀 节点选择`[]🔥 手动切换`[]🇸🇬 狮城节点`[]🇯🇵 日本节点`[]🇭🇰 香港节点`[]DIRECT
+🐟 漏网之鱼`select`[]🚀 节点选择`[]🔥 手动切换`[]DIRECT
 🇭🇰 香港节点`url-test`(港|HK|Hong Kong)`http://www.gstatic.com/generate_204`300,,50
 🇯🇵 日本节点`url-test`(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|[^-]日|JP|Japan)`http://www.gstatic.com/generate_204`300,,50
 🇸🇬 狮城节点`url-test`(新加坡|坡|狮城|SG|Singapore)`http://www.gstatic.com/generate_204`300,,50
