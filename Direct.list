@@ -36,4 +36,5 @@ IP-CIDR,103.41.167.0/24,no-resolve
 DOMAIN-SUFFIX,syncthing.net
 DOMAIN-SUFFIX,discovery.syncthing.net
 
-# DOMAIN-SUFFIX,tibired.com
+DOMAIN-SUFFIX,xsus.me
+DOMAIN-SUFFIX,xsus.top
