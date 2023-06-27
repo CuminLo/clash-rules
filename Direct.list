@@ -3,7 +3,7 @@ PROCESS-NAME,企业微信 Helper
 PROCESS-NAME,Feishu
 
 # Test
-IP-CIDR,170.178.218.124/32,no-resolve
+# IP-CIDR,170.178.218.124/32,no-resolve
 
 # Multicast address
 IP-CIDR,224.0.0.0/4,no-resolve
