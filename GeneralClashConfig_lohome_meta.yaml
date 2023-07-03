@@ -77,6 +77,7 @@ dns:
     - "+.nlsaas.com"
     - "+.czb365.com"
     - "+.tencentcdb.com"
+    - "+.dnsapi.cn"
     - "+.10010.com"
     - "*.lan"
     - "*.localdomain"
