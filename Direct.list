@@ -14,6 +14,7 @@ DOMAIN-SUFFIX,test-ipv6.com
 DOMAIN-SUFFIX,pool.ntp.org
 DOMAIN-SUFFIX,ipw.cn
 DOMAIN-SUFFIX,asia.deribit.com
+DOMAIN-SUFFIX,hpeprint.com
 
 DOMAIN-SUFFIX,newlink.com
 DOMAIN-SUFFIX,newlinks.com
