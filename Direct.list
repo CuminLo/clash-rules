@@ -5,6 +5,10 @@ PROCESS-NAME,Feishu
 # Multicast address
 IP-CIDR,224.0.0.0/4,no-resolve
 
+# Print
+SRC-IP-CIDR,192.168.50.49/32,no-resolve
+SRC-IP-CIDR,192.168.50.208/32,no-resolve
+
 # 自用
 DOMAIN-SUFFIX,lohome.top
 DOMAIN-SUFFIX,synology.me
@@ -15,6 +19,7 @@ DOMAIN-SUFFIX,pool.ntp.org
 DOMAIN-SUFFIX,ipw.cn
 DOMAIN-SUFFIX,asia.deribit.com
 DOMAIN-SUFFIX,hpeprint.com
+DOMAIN-SUFFIX,epson.com
 
 DOMAIN-SUFFIX,newlink.com
 DOMAIN-SUFFIX,newlinks.com
