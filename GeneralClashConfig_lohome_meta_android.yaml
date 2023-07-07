@@ -30,7 +30,7 @@ geox-url:
   mmdb: "https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb"
 tun:
   enable: true
-  stack: gvisor # system or gvisor
+  stack: system # system or gvisor
   dns-hijack:
     - any:53
     - tcp://any:53
@@ -53,8 +53,8 @@ dns:
     - 119.29.29.29
   nameserver-policy:
     "geosite:cn,private": 
-      - 119.29.29.29
-      - 223.5.5.5
+      - https://doh.pub/dns-query
+      - https://dns.alidns.com/dns-query
     "services.googleapis.cn": 'https://doh.opendns.com/dns-query'
     "+.newlink.com, +.newlinks.com": 119.29.29.29
     "geosite:category-ads-all": rcode://success

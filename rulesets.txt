@@ -1,5 +1,7 @@
 🇬 Google,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Google.list
-🎯 全球直连,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Direct.list
+🎯 全球直连,https://raw.githubusercontent.com/CuminLo/clash-rules/master/DirectDomain.list
+🎯 全球直连,https://raw.githubusercontent.com/CuminLo/clash-rules/master/DirectIP.list
+🎯 全球直连,https://raw.githubusercontent.com/CuminLo/clash-rules/master/DirectProcess.list
 💰 Binance,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Binance.list
 💰 Binance,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Binance.list
 💰 加密货币,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Crypto.list

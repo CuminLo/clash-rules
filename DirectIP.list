@@ -1,0 +1,7 @@
+# Multicast address
+IP-CIDR,224.0.0.0/4,no-resolve
+
+# Printer
+SRC-IP-CIDR,192.168.50.49/32,no-resolve
+SRC-IP-CIDR,192.168.50.208/32,no-resolve
+IP-CIDR,103.41.167.0/24,no-resolve
