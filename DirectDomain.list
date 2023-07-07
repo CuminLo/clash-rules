@@ -29,3 +29,12 @@ DOMAIN-SUFFIX,api.bilibili.com
 DOMAIN-SUFFIX,api.weibo.cn
 DOMAIN-SUFFIX,toutiaoapi.com
 DOMAIN-SUFFIX,asia.deribit.com
+
+# talk915.com
+DOMAIN-SUFFIX,talk915.com
+
+# DNS
+DOMAIN-SUFFIX,144dns.com
+
+# APP
+DOMAIN-SUFFIX,goodnotescloud.com
