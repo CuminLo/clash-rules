@@ -82,6 +82,7 @@ dns:
     - "+.dnsapi.cn"
     - "+.10010.com"
     - "+.lan"
+    - "+.oray.net"
     - "+.localdomain"
     - "+.example"
     - "+.invalid"
