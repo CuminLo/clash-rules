@@ -55,5 +55,5 @@
 🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaIpV6.list
 🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
 🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list
-🎯 全球直连,[]GEOIP,CN
+🎯 全球直连,[]GEOIP,CN,no-resolve
 🐟 漏网之鱼,[]FINAL
