@@ -162,7 +162,7 @@ dns:
     - heartbeat.belkin.com
     - "*.linksys.com"
     - "*.linksyssmartwifi.com"
-    - "*.router.asus.com"
+    - "+.router.asus.com"
     - mesu.apple.com
     - swscan.apple.com
     - swquery.apple.com
@@ -183,3 +183,14 @@ dns:
     - shark007.net
     - ntp.ntsc.ac.cn
     - '*.mcdn.bilivideo.cn'
+    - "+.media.dssott.com"
+    - shark007.net
+    - ntp.ntsc.ac.cn
+    - '*.mcdn.bilivideo.cn'
+    - +.media.dssott.com
+    - shark007.net
+    - +.cmbchina.com
+    - +.cmbimg.com
+    - local.adguard.org
+    - +.sandai.net
+    - +.n0808.com

@@ -183,3 +183,10 @@ dns:
     - shark007.net
     - ntp.ntsc.ac.cn
     - '*.mcdn.bilivideo.cn'
+    - +.media.dssott.com
+    - shark007.net
+    - +.cmbchina.com
+    - +.cmbimg.com
+    - local.adguard.org
+    - +.sandai.net
+    - +.n0808.com
