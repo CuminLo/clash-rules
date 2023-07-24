@@ -26,9 +26,9 @@ tcp-concurrent: true
 global-client-fingerprint: chrome
 geodata-loader: standard
 geox-url:
-  geoip: "https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat"
-  geosite: "https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat"
-  mmdb: "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb"
+  geoip: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"
+  geosite: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"
+  mmdb: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.metadb"
 tun:
   enable: true
   stack: gvisor # system or gvisor
@@ -54,8 +54,8 @@ dns:
     - 119.29.29.29
   nameserver-policy:
     "geosite:cn,private": 
-      - 119.29.29.29
-      - 223.5.5.5
+      - https://doh.pub/dns-query
+      - https://dns.alidns.com/dns-query
     "services.googleapis.cn": 'https://doh.opendns.com/dns-query'
     "+.newlink.com, +.newlinks.com, +.nlktj.cn": 119.29.29.29
     "geosite:category-ads-all": rcode://success
