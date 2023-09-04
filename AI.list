@@ -12,6 +12,7 @@ DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,ai.com
 DOMAIN-SUFFIX,x.ai
+DOMAIN-SUFFIX,claude.ai
 DOMAIN,openaiapi-site.azureedge.net
 DOMAIN-SUFFIX,huggingface.co
 DOMAIN-SUFFIX,bard.google.com
