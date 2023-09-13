@@ -1,4 +1,5 @@
 🇬 Google,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Google.list
+🚀 节点选择,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Proxy.list
 🎯 全球直连,https://raw.githubusercontent.com/CuminLo/clash-rules/master/DirectDomain.list
 🎯 全球直连,https://raw.githubusercontent.com/CuminLo/clash-rules/master/DirectIP.list
 🎯 全球直连,https://raw.githubusercontent.com/CuminLo/clash-rules/master/DirectProcess.list
