@@ -52,11 +52,11 @@ ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.
 
 [[rulesets]]
 group = " 苹果服务"
-ruleset = "clash-domain:https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/apple.txt,86400"
+ruleset = "clash-domain:https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/apple.txt"
 
 [[rulesets]]
 group = " 苹果服务"
-ruleset = "clash-domain:https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/icloud.txt,86400"
+ruleset = "clash-domain:https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/icloud.txt"
 
 [[rulesets]]
 group = "🇬 Google"
@@ -128,11 +128,11 @@ ruleset = "https://raw.githubusercontent.com/ExaAlice/Alice/main/Rule/DIRECT.lis
 
 [[rulesets]]
 group = "🎯 全球直连"
-ruleset = "clash-domain:https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/direct.txt,86400"
+ruleset = "clash-domain:https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/direct.txt"
 
 [[rulesets]]
 group = "🎯 全球直连"
-ruleset = "clash-domain:https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/applications.txt,86400"
+ruleset = "clash-domain:https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/applications.txt"
 
 [[rulesets]]
 group = "📹 油管视频"
@@ -212,7 +212,7 @@ ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyG
 
 [[rulesets]]
 group = "🚀 节点选择"
-ruleset = "clash-domain:https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/tld-not-cn.txt,86400"
+ruleset = "clash-domain:https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/tld-not-cn.txt"
 
 [[rulesets]]
 group = "🎯 全球直连"
