@@ -235,6 +235,10 @@ group = "🎯 全球直连"
 ruleset = "[]GEOIP,CN"
 
 [[rulesets]]
+group = "💬 自由消息"
+ruleset = "[]GEOIP,twitter"
+
+[[rulesets]]
 group = "🐟 漏网之鱼"
 ruleset = "[]FINAL"
 
