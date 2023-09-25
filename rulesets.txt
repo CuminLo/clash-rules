@@ -32,7 +32,6 @@
 🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Steam.list
 🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Nintendo.list
 🎯 全球直连,https://raw.githubusercontent.com/ExaAlice/Alice/main/Rule/DIRECT.list
-🎯 全球直连,clash-domain:https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/direct.txt,86400
 🎯 全球直连,clash-domain:https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/applications.txt,86400
 📹 油管视频,[]GEOSITE,youtube
 📹 油管视频,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Youtube.list
