@@ -210,9 +210,9 @@ ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyM
 group = "🚀 节点选择"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list"
 
-[[rulesets]]
-group = "🚀 节点选择"
-ruleset = "clash-domain:https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/tld-not-cn.txt"
+;[[rulesets]]
+;group = "🚀 节点选择"
+;ruleset = "clash-domain:https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/tld-not-cn.txt"
 
 [[rulesets]]
 group = "🎯 全球直连"
@@ -229,10 +229,6 @@ ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaC
 [[rulesets]]
 group = "🎯 全球直连"
 ruleset = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list"
-
-[[rulesets]]
-group = "🎯 全球直连"
-ruleset = "[]GEOSITE,CN"
 
 [[rulesets]]
 group = "🎯 全球直连"
