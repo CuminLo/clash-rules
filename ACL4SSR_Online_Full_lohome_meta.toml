@@ -10,6 +10,6 @@ enable_rule_generator=true
 
 overwrite_original_rules=true
 
-clash_rule_base=https://raw.githubusercontent.com/CuminLo/clash-rules/main/GeneralClashConfig_lohome_meta.yaml
+clash_rule_base = "https://raw.githubusercontent.com/CuminLo/clash-rules/main/GeneralClashConfig_lohome_meta.yaml"
 
 ;luck
