@@ -13,7 +13,7 @@ mixed-port: 7893
 tproxy-port: 7895
 allow-lan: true
 bind-address: '*'
-ipv6: true
+ipv6: false
 find-process-mode: off
 log-level: info
 mode: rule
@@ -42,7 +42,7 @@ profile:
   store-fake-ip: true
 dns:
   enable: true
-  ipv6: true
+  ipv6: false
   prefer-h3: true
   listen: 0.0.0.0:53
   enhanced-mode: fake-ip
