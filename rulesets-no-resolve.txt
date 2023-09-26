@@ -10,10 +10,10 @@
 💰 加密货币,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Crypto.list
 🤖 AI服务,https://raw.githubusercontent.com/CuminLo/clash-rules/master/AI.list
 🤖 AI服务,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OpenAi.list
+ 苹果服务,[]GEOSITE,apple-cn
  苹果服务,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list
  苹果服务,clash-domain:https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/apple.txt,86400
  苹果服务,clash-domain:https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/icloud.txt,86400
-🇬 Google,[]GEOIP,google
 🇬 Google,[]GEOSITE,google
 🇬 Google,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleFCM.list
 🇬 Google,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleCNProxyIP.list
@@ -36,6 +36,7 @@
 📹 油管视频,[]GEOSITE,youtube
 📹 油管视频,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Youtube.list
 📹 油管视频,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list
+📺 巴哈姆特,[]GEOSITE,bahamut
 📺 巴哈姆特,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bahamut.list
 👨‍💻‍ Github,[]GEOSITE,github
 👨‍💻‍ Github,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Github.list
@@ -47,21 +48,23 @@
 💬 自由消息,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Telegram.list
 💬 自由消息,https://raw.githubusercontent.com/ExaAlice/Alice/main/Rule/TELEGRAM.list
 💬 自由消息,[]GEOSITE,twitter
-💬 自由消息,[]GEOIP,twitter
 💬 自由消息,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Twitter.list
 💬 自由消息,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Discord.list
 💬 自由消息,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/TikTok.list
+🆎 AdBlock,[]GEOSITE,category-ads-all
 🆎 AdBlock,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
 🆎 AdBlock,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
 🆎 AdBlock,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyList.list
 🆎 AdBlock,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyListChina.list
+🚀 节点选择,[]GEOSITE,category-scholar-!cn
+🚀 节点选择,[]GEOSITE,geolocation-!cn
 🚀 节点选择,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
 🚀 节点选择,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list
-🚀 节点选择,[]GEOSITE,geolocation-!cn
 🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaIp.list
 🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaIpV6.list
 🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
 🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list
+🎯 全球直连,[]GEOSITE,tracker
 🎯 全球直连,[]GEOSITE,CN
 🎯 全球直连,[]GEOIP,CN,no-resolve
 🐟 漏网之鱼,[]FINAL
