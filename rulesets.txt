@@ -50,7 +50,6 @@
 💬 自由消息,[]GEOSITE,telegram
 💬 自由消息,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list
 💬 自由消息,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Telegram.list
-💬 自由消息,https://raw.githubusercontent.com/ExaAlice/Alice/main/Rule/TELEGRAM.list
 💬 自由消息,[]GEOSITE,twitter
 💬 自由消息,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Twitter.list
 💬 自由消息,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Discord.list
