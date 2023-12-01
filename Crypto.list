@@ -26,11 +26,6 @@ DOMAIN-SUFFIX,mexc.com
 DOMAIN-SUFFIX,mexcsensors.com
 DOMAIN-SUFFIX,gdiii.xyz
 
-#bybit
-DOMAIN-SUFFIX,bybit.com
-DOMAIN-SUFFIX,bycsi.com
-DOMAIN-SUFFIX,bymj.io
-
 #zendesk
 DOMAIN-SUFFIX,zendesk.com
 
@@ -73,3 +68,5 @@ DOMAIN-SUFFIX,defidaonews.com
 
 #other
 DOMAIN-SUFFIX,xcoinsystem.com
+DOMAIN-SUFFIX,walletconnect.com
+DOMAIN-SUFFIX,bitverse.zone

@@ -1,0 +1,10 @@
+# 需要交易的加密货币平台，由于大陆灰色地带，虽然可以直连，但是建议代理
+
+#bybit
+DOMAIN-SUFFIX,bybit.com
+DOMAIN-SUFFIX,bycsi.com
+DOMAIN-SUFFIX,bybdc6.com
+DOMAIN-SUFFIX,byd3c3.com
+DOMAIN-SUFFIX,byapis.com
+DOMAIN-SUFFIX,bycbe.com
+DOMAIN-SUFFIX,bymj.io
