@@ -9,7 +9,8 @@
 🅱️ Crypto Trade,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Binance.list
 🅱️ Crypto Trade,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bybit.list
 💰 Crypto,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Crypto.list
-💰 Trade,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Trade.list
+💰 Direct Trade,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Trade.list
+💰 Proxy Trade,https://raw.githubusercontent.com/CuminLo/clash-rules/master/ctTrade.list
 🤖 AI服务,https://raw.githubusercontent.com/CuminLo/clash-rules/master/AI.list
 🤖 AI服务,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OpenAi.list
  苹果服务,[]GEOSITE,apple-cn
