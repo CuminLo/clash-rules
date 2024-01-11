@@ -1,4 +1,3 @@
-🇬 Google,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Google.list
 🚀 节点选择,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Proxy.list
 🎯 全球直连,https://raw.githubusercontent.com/CuminLo/clash-rules/master/DirectDomain.list
 🎯 全球直连,https://raw.githubusercontent.com/CuminLo/clash-rules/master/DirectIP.list
@@ -20,11 +19,12 @@
 📹 油管视频,[]GEOSITE,youtube
 📹 油管视频,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Youtube.list
 📹 油管视频,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list
-🇬 Google,[]GEOSITE,google
-🇬 Google,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleFCM.list
+📥 谷歌FCM,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleFCM.list
+🇬 Google,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Google.list
 🇬 Google,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleCNProxyIP.list
 🇬 Google,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleCN.list
 🇬 Google,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Google.list
+🇬 Google,[]GEOSITE,google
 🎯 全球直连,[]GEOSITE,steam@cn
 🎯 全球直连,[]GEOSITE,category-games@cn
 🎯 全球直连,[]GEOSITE,tracker
@@ -71,6 +71,5 @@
 🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list
 🚀 节点选择,[]GEOSITE,category-scholar-!cn
 🚀 节点选择,[]GEOSITE,geolocation-!cn
-🎯 全球直连,[]GEOSITE,CN
 🎯 全球直连,[]GEOIP,CN,no-resolve
 🐟 漏网之鱼,[]FINAL

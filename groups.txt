@@ -15,9 +15,10 @@
 📹 油管视频`select`[]☯️ 全部节点`[]🐔 落地鸡`[]🚀 节点选择`[]🖇 Relay`[]🫧 Relay`[]🚲 Relay`[]🇸🇬 狮城节点`[]🇭🇰 香港节点`[]🔥 手动切换
 📺 巴哈姆特`select`[]🇨🇳 台湾节点`[]🚀 节点选择`[]🖇 Relay`[]🫧 Relay`[]🚲 Relay`[]🇸🇬 狮城节点`[]🇭🇰 香港节点`[]🔥 手动切换
 💬 自由消息`select`[]☯️ 全部节点`[]🐔 落地鸡`[]🚀 节点选择`[]🖇 Relay`[]🫧 Relay`[]🚲 Relay`[]🇸🇬 狮城节点`[]🇭🇰 香港节点`[]🔥 手动切换
+📥 谷歌FCM`select`[]DIRECT`[]🚀 节点选择`[]☯️ 全部节点`[]🔥 手动切换`(0x)
 🇬 Google`select`[]☯️ 全部节点`[]🐔 落地鸡`[]🚀 节点选择`[]🖇 Relay`[]🫧 Relay`[]🚲 Relay`[]🇸🇬 狮城节点`[]🇭🇰 香港节点`[]🔥 手动切换
-Ⓜ️ 微软云盘`select`[]DIRECT`[]🚀 节点选择`[]🔥 手动切换`(0x)
-Ⓜ️ 微软服务`select`[]DIRECT`[]🖇 Relay`[]🫧 Relay`[]🚲 Relay`[]🚀 节点选择`[]🔥 手动切换`(0x)
+Ⓜ️ 微软云盘`select`[]DIRECT`[]🚀 节点选择`[]☯️ 全部节点`[]🔥 手动切换`(0x)
+Ⓜ️ 微软服务`select`[]DIRECT`[]🖇 Relay`[]🫧 Relay`[]🚲 Relay`[]🚀 节点选择`[]☯️ 全部节点`[]🔥 手动切换`(0x)
  苹果服务`select`[]DIRECT`[]🚀 节点选择`[]🔥 手动切换
 🎯 全球直连`select`[]DIRECT
 🆎 AdBlock`select`[]REJECT`[]DIRECT
