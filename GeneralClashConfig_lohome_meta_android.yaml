@@ -13,10 +13,14 @@ mixed-port: 7893
 tproxy-port: 7895
 allow-lan: false
 bind-address: '*'
+skip-auth-prefixes:
+  - 127.0.0.1/8
+  - ::1/128
 secret: xxooooxx
 authentication:
   - "admin:xxooooxx"
 ipv6: true
+keep-alive-interval: 15
 find-process-mode: strict
 log-level: debug
 mode: rule
@@ -26,7 +30,9 @@ experimental:
 unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
-geodata-loader: standard
+geodata-loader: memconservative
+geo-auto-update: true
+geo-update-interval: 24
 geox-url:
   geoip: "https://ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.dat"
   geosite: "https://ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
