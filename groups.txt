@@ -8,7 +8,7 @@
 ♻️ 自动选择`url-test`(^(?!.*(高峰|流媒体|拥挤|0x)).*)`http://www.gstatic.com/generate_204`300,,50
 🅱️ Crypto Trade`select`(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|[^-]日|JP|Japan|台|新北|彰化|TW|Taiwan|新加坡|坡|狮城|SG|Singapore)(?!.*(高峰|拥挤|0x))
 💰 Crypto`select`[]🚲 性价比`[]🐶 泡泡狗`(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|[^-]日|JP|Japan|台|新北|彰化|TW|Taiwan|新加坡|坡|狮城|SG|Singapore|港|HK|Hong Kong)(?!.*(高峰|拥挤|0x))
-💰 Direct Trade`select`[]DIRECT`[]🚲 性价比`[]🐶 泡泡狗`(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|[^-]日|JP|Japan|台|新北|彰化|TW|Taiwan|新加坡|坡|狮城|SG|Singapore|港|HK|Hong Kong)(?!.*(高峰|拥挤|0x))
+💰 Direct Trade`select`[]DIRECT`[]🇨🇳 台湾节点`[]🚲 性价比`[]🐶 泡泡狗`(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|[^-]日|JP|Japan|台|新北|彰化|TW|Taiwan|新加坡|坡|狮城|SG|Singapore|港|HK|Hong Kong)(?!.*(高峰|拥挤|0x))
 💰 Proxy Trade`select`[]🚲 性价比`[]🐶 泡泡狗`[]🐔 落地鸡`(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|[^-]日|JP|Japan|台|新北|彰化|TW|Taiwan|新加坡|坡|狮城|SG|Singapore|港|HK|Hong Kong)(?!.*(高峰|拥挤|0x))
 🤖 AI服务`select`[]🫧 Relay`[]🚲 Relay`[]🖇 Relay`(ChatGPT)`[]🔥 手动切换`[]☯️ 全部节点
 👨‍💻‍ Github`select`[]☯️ 全部节点`[]🐔 落地鸡`[]🚀 节点选择`[]🖇 Relay`[]🫧 Relay`[]🚲 Relay`[]🇸🇬 狮城节点`[]🇭🇰 香港节点`[]🔥 手动切换
