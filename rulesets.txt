@@ -4,9 +4,9 @@
 🎯 全球直连,https://raw.githubusercontent.com/CuminLo/clash-rules/master/DirectProcess.list
 🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
 🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
-🅱️ Crypto Trade,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Binance.list
-🅱️ Crypto Trade,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Binance.list
-🅱️ Crypto Trade,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bybit.list
+🅱️ Crypto Market,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Binance.list
+🅱️ Crypto Market,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Binance.list
+🅱️ Crypto Market,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bybit.list
 💰 Crypto,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Crypto.list
 💰 Direct Trade,https://raw.githubusercontent.com/CuminLo/clash-rules/master/DirectTrade.list
 💰 Proxy Trade,https://raw.githubusercontent.com/CuminLo/clash-rules/master/ctTrade.list
@@ -25,6 +25,8 @@
 🇬 Google,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleCN.list
 🇬 Google,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Google.list
 🇬 Google,[]GEOSITE,google
+🏪 Shoping,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Amazon.list
+🏪 Shoping,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AmazonIp.list
 🎯 全球直连,[]GEOSITE,steam@cn
 🎯 全球直连,[]GEOSITE,category-games@cn
 🎯 全球直连,[]GEOSITE,tracker
