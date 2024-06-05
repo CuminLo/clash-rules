@@ -10,8 +10,8 @@
 💰 Crypto,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Crypto.list
 💰 Direct Trade,https://raw.githubusercontent.com/CuminLo/clash-rules/master/DirectTrade.list
 💰 Proxy Trade,https://raw.githubusercontent.com/CuminLo/clash-rules/master/ctTrade.list
-🤖 AI服务,https://raw.githubusercontent.com/CuminLo/clash-rules/master/AI.list
-🤖 AI服务,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OpenAi.list
+🤖 Warp服务,https://raw.githubusercontent.com/CuminLo/clash-rules/master/AI.list
+🤖 Warp服务,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OpenAi.list
  苹果服务,[]GEOSITE,apple-cn
  苹果服务,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list
  苹果服务,clash-domain:https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/apple.txt,86400
@@ -27,6 +27,10 @@
 🇬 Google,[]GEOSITE,google
 🏪 Shoping,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Amazon.list
 🏪 Shoping,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AmazonIp.list
+🏪 Shoping,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Amazon/Amazon.list
+🏪 Shoping,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AmazonCN/AmazonCN.list
+🏪 Shoping,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AmazonIP/AmazonIP.list
+🏪 Shoping,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AmazonPrimeVideo/AmazonPrimeVideo.list
 🎯 全球直连,[]GEOSITE,steam@cn
 🎯 全球直连,[]GEOSITE,category-games@cn
 🎯 全球直连,[]GEOSITE,tracker
@@ -37,6 +41,7 @@
 🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list
 🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Wechat.list
 🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/NetEaseMusic.list
+🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/NetEase.list
 🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Epic.list
 🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Origin.list
 🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Sony.list
