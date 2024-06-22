@@ -39,14 +39,17 @@ geox-url:
   mmdb: "https://ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country.mmdb"
 tun:
   enable: true
-  stack: system # system or gvisor
+  stack: mixed
   dns-hijack:
     - any:53
     - tcp://any:53
   auto-redir: true
+  auto-redirect: true
   auto-route: true
   auto-detect-interface: true
   strict-route: true
+  route-exclude-address-set:
+    - cncidr
 profile:
   store-selected: true
   store-fake-ip: true
@@ -211,3 +214,11 @@ dns:
     - local.adguard.org
     - +.sandai.net
     - +.n0808.com
+
+rule-providers:
+  cncidr:
+    type: http
+    behavior: ipcidr
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt
+    path: ./ruleset/cncidr.yaml
+    interval: 86400
