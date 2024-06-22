@@ -22,8 +22,6 @@ find-process-mode: off
 log-level: info
 mode: rule
 external-controller: 192.168.50.1:9090
-experimental:
-  sniff-tls-sni: true
 unified-delay: true
 tcp-concurrent: false
 global-client-fingerprint: chrome
@@ -36,7 +34,7 @@ geox-url:
   mmdb: "https://ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country.mmdb"
 tun:
   enable: true
-  stack: system # system or gvisor
+  stack: mixed # system gvisor mixed
   dns-hijack:
     - any:53
     - tcp://any:53
@@ -48,6 +46,7 @@ profile:
   store-fake-ip: true
 dns:
   enable: true
+  use-system-hosts: true
   ipv6: false
   prefer-h3: true
   listen: 0.0.0.0:53
@@ -67,9 +66,6 @@ dns:
     "geosite:geolocation-!cn":
       - tls://8.8.4.4
       - https://1.0.0.1/dns-query
-    "+.newlink.com, +.newlinks.com, +.nlktj.cn":
-      - 223.5.5.5
-      - 119.29.29.29
     "geosite:category-ads-all": rcode://success
   proxy-server-nameserver:
     - https://doh.pub/dns-query

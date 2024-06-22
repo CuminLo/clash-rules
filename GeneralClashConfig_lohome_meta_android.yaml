@@ -25,8 +25,6 @@ find-process-mode: strict
 log-level: debug
 mode: rule
 external-controller: 0.0.0.0:9090
-experimental:
-  sniff-tls-sni: true
 unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
@@ -39,7 +37,7 @@ geox-url:
   mmdb: "https://ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country.mmdb"
 tun:
   enable: true
-  stack: mixed
+  stack: mixed # system gvisor mixed
   dns-hijack:
     - any:53
     - tcp://any:53
@@ -55,6 +53,7 @@ profile:
   store-fake-ip: true
 dns:
   enable: true
+  use-system-hosts: true
   ipv6: true
   prefer-h3: true
   listen: 0.0.0.0:53
@@ -74,15 +73,12 @@ dns:
     "geosite:geolocation-!cn":
       - tls://8.8.4.4
       - https://1.0.0.1/dns-query
-    "+.newlink.com, +.newlinks.com, +.nlktj.cn":
-      - 223.5.5.5
-      - 119.29.29.29
     "geosite:category-ads-all": rcode://success
   proxy-server-nameserver:
-    - https://doh.pub/dns-query
+    - https://doh.apad.pro/dns-query
     - https://dns.alidns.com/dns-query
   nameserver:
-    - https://dns.alidns.com/dns-query
+    - https://doh.apad.pro/dns-query
     - https://doh.pub/dns-query
   fake-ip-filter:
     - "WORKGROUP"
@@ -214,6 +210,19 @@ dns:
     - local.adguard.org
     - +.sandai.net
     - +.n0808.com
+
+ntp:
+  enable: true
+  write-to-system: false
+  server: ntp.tencent.com
+  port: 123
+  interval: 30
+
+sniffer:
+  enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+  override-destination: false
 
 rule-providers:
   cncidr:
