@@ -7,4 +7,4 @@ SRC-IP-CIDR,192.168.50.208/32,no-resolve
 IP-CIDR,103.41.167.0/24,no-resolve
 
 # Machine
-IP-CIDR,74.48.160.148/32,no-resolve
+#IP-CIDR,74.48.160.148/32,no-resolve
