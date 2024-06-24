@@ -43,7 +43,7 @@ tun:
   auto-redirect: false
   auto-route: true
   auto-detect-interface: true
-  strict-route: false
+  strict-route: true
   device: utunMeta
   route-exclude-address-set:
     - cncidr
