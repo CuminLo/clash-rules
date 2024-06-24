@@ -20,7 +20,6 @@ secret: xxooooxx
 authentication:
   - "admin:xxooooxx"
 ipv6: true
-keep-alive-interval: 15
 find-process-mode: strict
 log-level: debug
 mode: rule
@@ -31,6 +30,7 @@ global-client-fingerprint: chrome
 geodata-loader: memconservative
 geo-auto-update: true
 geo-update-interval: 24
+keep-alive-interval: 60
 geox-url:
   geoip: "https://ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.dat"
   geosite: "https://ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
@@ -46,6 +46,7 @@ tun:
   auto-route: true
   auto-detect-interface: true
   strict-route: true
+  device: Meta
   route-exclude-address-set:
     - cncidr
 profile:

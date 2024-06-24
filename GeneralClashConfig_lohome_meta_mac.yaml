@@ -17,7 +17,6 @@ skip-auth-prefixes:
   - 127.0.0.1/8
   - ::1/128
 ipv6: false
-keep-alive-interval: 30
 find-process-mode: strict
 log-level: debug
 mode: rule
@@ -29,6 +28,7 @@ global-client-fingerprint: chrome
 geodata-loader: standard
 geo-auto-update: true
 geo-update-interval: 24
+keep-alive-interval: 15
 geox-url:
   geoip: "https://ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.dat"
   geosite: "https://ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
@@ -40,10 +40,11 @@ tun:
     - any:53
     - tcp://any:53
   auto-redir: true
-  auto-redirect: true
+  auto-redirect: false
   auto-route: true
   auto-detect-interface: true
   strict-route: true
+  device: utunMeta
   route-exclude-address-set:
     - cncidr
 profile:
