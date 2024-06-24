@@ -47,6 +47,7 @@ tun:
   device: utunMeta
   route-exclude-address-set:
     - cncidr
+    - customcidr
 profile:
   store-selected: true
   store-fake-ip: true
