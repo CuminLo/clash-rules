@@ -100,3 +100,9 @@ rule-providers:
     url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt
     path: ./ruleset/cncidr.yaml
     interval: 86400
+  customcidr:
+    type: http
+    behavior: ipcidr
+    url: https://raw.githubusercontent.com/CuminLo/clash-rules/master/CustomCidr.txt
+    path: ./ruleset/customcidr.yaml
+    interval: 86400
