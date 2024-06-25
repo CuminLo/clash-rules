@@ -66,5 +66,5 @@ DOMAIN-SUFFIX,quyixian.com
 DOMAIN-KEYWORD,qdreaderpic
 DOMAIN-KEYWORD,readx
 
-DOMAIN-SUFFIX,time.is
+#DOMAIN-SUFFIX,time.is
 DOMAIN-SUFFIX,vdo.ninja
