@@ -44,10 +44,6 @@ tun:
   auto-route: true
   auto-detect-interface: true
   strict-route: true
-  device: utunMeta
-  route-exclude-address-set:
-    - cncidr
-    - customcidr
 profile:
   store-selected: true
   store-fake-ip: true
@@ -93,17 +89,3 @@ sniffer:
   force-dns-mapping: true
   parse-pure-ip: true
   override-destination: false
-
-rule-providers:
-  cncidr:
-    type: http
-    behavior: ipcidr
-    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt
-    path: ./ruleset/cncidr.yaml
-    interval: 86400
-  customcidr:
-    type: http
-    behavior: ipcidr
-    url: https://raw.githubusercontent.com/CuminLo/clash-rules/master/CustomCidr.txt
-    path: ./ruleset/customcidr.yaml
-    interval: 86400
