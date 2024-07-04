@@ -76,16 +76,3 @@ dns:
   nameserver:
     - https://doh.apad.pro/dns-query
     - https://doh.pub/dns-query
-
-ntp:
-  enable: true
-  write-to-system: false
-  server: ntp.tencent.com
-  port: 123
-  interval: 30
-
-sniffer:
-  enable: true
-  force-dns-mapping: true
-  parse-pure-ip: true
-  override-destination: false
