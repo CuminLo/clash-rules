@@ -9,7 +9,7 @@
 💰 Crypto`select`[]🚲 性价比`[]🐶 泡泡狗`(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|[^-]日|JP|Japan|台|新北|彰化|TW|Taiwan|新加坡|坡|狮城|SG|Singapore|港|HK|Hong Kong)
 💰 Direct Trade`select`[]DIRECT`[]🇨🇳 台湾节点`[]🚲 性价比`[]🐶 泡泡狗`(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|[^-]日|JP|Japan|台|新北|彰化|TW|Taiwan|新加坡|坡|狮城|SG|Singapore|港|HK|Hong Kong)
 💰 Proxy Trade`select`[]🚲 性价比`[]🐶 泡泡狗`[]🐔 落地鸡`(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|[^-]日|JP|Japan|台|新北|彰化|TW|Taiwan|新加坡|坡|狮城|SG|Singapore|港|HK|Hong Kong)(?!.*(高峰|拥挤|0x))
-🤖 Warp服务`select`(ChatGPT|CDN|VLESS|VMES|静态)`[]🔥 手动切换
+🤖 Warp服务`select`(ChatGPT|CDN|VLESS|VMES|静态)`[]🏬 Relay`[]🔥 手动切换
 👨‍💻‍ Github`select`[]🚀 节点选择`[]🐔 落地鸡`[]🫧 Relay`[]🚲 Relay`[]🇸🇬 狮城节点`[]🇭🇰 香港节点`[]🔥 手动切换
 📹 油管视频`select`[]🚀 节点选择`[]🐔 落地鸡`[]🫧 Relay`[]🚲 Relay`[]🇸🇬 狮城节点`[]🇭🇰 香港节点`[]🔥 手动切换
 📺 巴哈姆特`select`[]🇨🇳 台湾节点`[]🚀 节点选择`[]🫧 Relay`[]🚲 Relay`[]🇸🇬 狮城节点`[]🇭🇰 香港节点`[]🔥 手动切换
