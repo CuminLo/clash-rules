@@ -26,7 +26,7 @@
 🇭🇰 香港节点`url-test`(港|HK|Hong Kong)`http://www.gstatic.com/generate_204`300,,50
 🇸🇬 狮城节点`url-test`(新加坡|坡|狮城|SG|Singapore)`http://www.gstatic.com/generate_204`300,,50
 🇨🇳 台湾节点`url-test`(台|新北|彰化|TW|Taiwan)`http://www.gstatic.com/generate_204`300,,50
-🏪 落地店`url-test`(StaticShop)`http://www.gstatic.com/generate_204`300,,50
+🏪 落地店`url-test`(Static|静态)`http://www.gstatic.com/generate_204`300,,50
 🐔 落地鸡`select`!!GROUP=myfq
 🚲 性价比`url-test`!!GROUP=zhilian`http://www.gstatic.com/generate_204`300,,50
 🐶 泡泡狗`url-test`!!GROUP=paopao`http://www.gstatic.com/generate_204`300,,50
