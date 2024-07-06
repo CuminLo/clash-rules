@@ -34,7 +34,7 @@ geox-url:
   mmdb: "https://ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country.mmdb"
 tun:
   enable: true
-  stack: mixed # system gvisor mixed
+  stack: system # system gvisor mixed
   dns-hijack:
     - any:53
     - tcp://any:53
@@ -59,18 +59,18 @@ dns:
     - 119.29.29.29
   nameserver-policy:
     "geosite:cn,private":
+      - https://doh.apad.pro/dns-query
       - https://doh.pub/dns-query
-      - https://dns.alidns.com/dns-query
     "geosite:google":
       - tls://8.8.4.4
-      - tls://8.8.8.8
+      - https://doh.apad.pro/dns-query
     "geosite:geolocation-!cn":
       - tls://8.8.4.4
-      - https://1.0.0.1/dns-query
+      - https://doh.apad.pro/dns-query
     "geosite:category-ads-all": rcode://success
   proxy-server-nameserver:
-    - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
   nameserver:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
