@@ -46,7 +46,7 @@ tun:
   strict-route: true
 profile:
   store-selected: true
-  store-fake-ip: true
+  store-fake-ip: false
 dns:
   enable: true
   use-system-hosts: true
