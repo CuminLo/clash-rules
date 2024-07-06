@@ -1,9 +1,9 @@
 
 🚀 节点选择`select`[]🔥 手动切换`[]🫧 Relay`[]🇸🇬 狮城节点`[]🇨🇳 台湾节点`[]🇭🇰 香港节点`[]🐔 落地鸡`[]♻️ 自动选择`[]DIRECT
 🔥 手动切换`select`.*
-🫧 Relay`relay`[]♻️ 自动选择`(^(?!.*(CDN|VLESS|VMES))0xWeb|gRPC)
+🫧 Relay`relay`[]♻️ 自动选择`(^(?!.*(CDN|VLESS|VMES|gRPC))0xWeb)
 💭 Chat专用`relay`[]♻️ 自动选择`(静态01)
-🗽 美店专用`relay`[]♻️ 自动选择`(^(?!.*(CDN|VLESS|VMES))0xWeb|gRPC)
+🗽 美店专用`relay`[]♻️ 自动选择`(^(?!.*(CDN|VLESS|VMES|gRPC))0xWeb)
 ♻️ 自动选择`url-test`(^(?!.*(高峰|流媒体|拥挤|限速)).*)`http://www.gstatic.com/generate_204`300,,100
 🅱️ Crypto Market`select`[]🇨🇳 台湾节点`(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|[^-]日|JP|Japan|台|新北|彰化|TW|Taiwan|新加坡|坡|狮城|SG|Singapore)
 💰 Crypto`select`[]🚲 性价比`[]🐶 泡泡狗`(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|[^-]日|JP|Japan|台|新北|彰化|TW|Taiwan|新加坡|坡|狮城|SG|Singapore|港|HK|Hong Kong)
