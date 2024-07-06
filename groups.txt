@@ -1,24 +1,23 @@
 
-🚀 节点选择`select`[]🔥 手动切换`[]🫧 Relay`[]🚲 Relay`[]🇸🇬 狮城节点`[]🇨🇳 台湾节点`[]🇭🇰 香港节点`[]🐔 落地鸡`[]♻️ 自动选择`[]DIRECT
+🚀 节点选择`select`[]🔥 手动切换`[]🫧 Relay`[]🇸🇬 狮城节点`[]🇨🇳 台湾节点`[]🇭🇰 香港节点`[]🐔 落地鸡`[]♻️ 自动选择`[]DIRECT
 🔥 手动切换`select`.*
-🏬 Relay`relay`[]🇸🇬 狮城节点`[]🏪 落地店
-🫧 Relay`relay`[]🐶 泡泡狗`[]🐔 落地鸡
-🚲 Relay`relay`[]🚲 性价比`[]🐔 落地鸡
+💭 Chat专用`relay`[]♻️ 自动选择`(静态01)
+🫧 Relay`relay`[]♻️ 自动选择`(0xWeb-Relay)
 ♻️ 自动选择`url-test`(^(?!.*(高峰|流媒体|拥挤|限速)).*)`http://www.gstatic.com/generate_204`300,,50
 🅱️ Crypto Market`select`[]🇨🇳 台湾节点`(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|[^-]日|JP|Japan|台|新北|彰化|TW|Taiwan|新加坡|坡|狮城|SG|Singapore)
 💰 Crypto`select`[]🚲 性价比`[]🐶 泡泡狗`(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|[^-]日|JP|Japan|台|新北|彰化|TW|Taiwan|新加坡|坡|狮城|SG|Singapore|港|HK|Hong Kong)
 💰 Direct Trade`select`[]DIRECT`[]🇨🇳 台湾节点`[]🚲 性价比`[]🐶 泡泡狗`(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|[^-]日|JP|Japan|台|新北|彰化|TW|Taiwan|新加坡|坡|狮城|SG|Singapore|港|HK|Hong Kong)
 💰 Proxy Trade`select`[]🚲 性价比`[]🐶 泡泡狗`[]🐔 落地鸡`(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|[^-]日|JP|Japan|台|新北|彰化|TW|Taiwan|新加坡|坡|狮城|SG|Singapore|港|HK|Hong Kong)(?!.*(高峰|拥挤|0x))
-🤖 Warp服务`select`(ChatGPT|CDN|VLESS|VMES|静态)`[]🏬 Relay`[]🔥 手动切换
-👨‍💻‍ Github`select`[]🚀 节点选择`[]🐔 落地鸡`[]🫧 Relay`[]🚲 Relay`[]🇸🇬 狮城节点`[]🇭🇰 香港节点`[]🔥 手动切换
-📹 油管视频`select`[]🚀 节点选择`[]🐔 落地鸡`[]🫧 Relay`[]🚲 Relay`[]🇸🇬 狮城节点`[]🇭🇰 香港节点`[]🔥 手动切换
-📺 巴哈姆特`select`[]🇨🇳 台湾节点`[]🚀 节点选择`[]🫧 Relay`[]🚲 Relay`[]🇸🇬 狮城节点`[]🇭🇰 香港节点`[]🔥 手动切换
-💬 自由消息`select`[]🚀 节点选择`[]🐔 落地鸡`[]🫧 Relay`[]🚲 Relay`[]🇸🇬 狮城节点`[]🇭🇰 香港节点`[]🔥 手动切换
-🏪 Shoping`select`[]REJECT`[]🏬 Relay
+🤖 Warp服务`select`(ChatGPT|CDN|VLESS|VMES|静态|Static)`[]💭 Chat专用`[]🔥 手动切换
+👨‍💻‍ Github`select`[]🚀 节点选择`[]🐔 落地鸡`[]🫧 Relay`[]🇸🇬 狮城节点`[]🇭🇰 香港节点`[]🔥 手动切换
+📹 油管视频`select`[]🚀 节点选择`[]🐔 落地鸡`[]🫧 Relay`[]🇸🇬 狮城节点`[]🇭🇰 香港节点`[]🔥 手动切换
+📺 巴哈姆特`select`[]🇨🇳 台湾节点`[]🚀 节点选择`[]🫧 Relay`[]🇸🇬 狮城节点`[]🇭🇰 香港节点`[]🔥 手动切换
+💬 自由消息`select`[]🚀 节点选择`[]🐔 落地鸡`[]🫧 Relay`[]🇸🇬 狮城节点`[]🇭🇰 香港节点`[]🔥 手动切换
+🏪 Shoping`select`[]REJECT`[]🚀 节点选择
 📥 谷歌FCM`select`[]DIRECT`[]🚀 节点选择`[]🔥 手动切换`(0x)
-🇬 Google`select`[]🚀 节点选择`[]🐔 落地鸡`[]🫧 Relay`[]🚲 Relay`[]🇸🇬 狮城节点`[]🇭🇰 香港节点`[]🔥 手动切换
+🇬 Google`select`[]🚀 节点选择`[]🐔 落地鸡`[]🫧 Relay`[]🇸🇬 狮城节点`[]🇭🇰 香港节点`[]🔥 手动切换
 Ⓜ️ 微软云盘`select`[]DIRECT`[]🚀 节点选择`[]🔥 手动切换`(0x)
-Ⓜ️ 微软服务`select`[]DIRECT`[]🫧 Relay`[]🚲 Relay`[]🚀 节点选择`[]🔥 手动切换`(0x)
+Ⓜ️ 微软服务`select`[]DIRECT`[]🫧 Relay`[]🚀 节点选择`[]🔥 手动切换`(0x)
  苹果服务`select`[]DIRECT`[]🚀 节点选择`[]🔥 手动切换
 🎯 全球直连`select`[]DIRECT
 🆎 AdBlock`select`[]REJECT`[]DIRECT
