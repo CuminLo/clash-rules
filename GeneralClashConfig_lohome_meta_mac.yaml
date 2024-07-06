@@ -76,3 +76,9 @@ dns:
   nameserver:
     - https://doh.apad.pro/dns-query
     - https://doh.pub/dns-query
+
+sniffer:
+  enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+  override-destination: false
