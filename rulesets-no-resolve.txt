@@ -7,7 +7,7 @@
 🅱️ Crypto Market,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Binance.list
 🅱️ Crypto Market,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Binance.list
 🅱️ Crypto Market,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bybit.list
-🅱️ Crypto,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Crypto.list
+🅱️ Crypto Market,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Crypto.list
 🤖 Warp服务,https://raw.githubusercontent.com/CuminLo/clash-rules/master/AI.list
 🤖 Warp服务,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OpenAi.list
  苹果服务,[]GEOSITE,apple-cn
@@ -25,7 +25,7 @@
 🇬 Google,[]GEOSITE,google
 🏪 Shoping,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/TikTok.list
 🏪 Shoping,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Amazon.list
-🏪 Shoping,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Amazon/Amazon.list
+,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Amazon/Amazon.list
 🏪 Shoping,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AmazonCN/AmazonCN.list
 🏪 Shoping,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AmazonPrimeVideo/AmazonPrimeVideo.list
 🎯 全球直连,[]GEOSITE,steam@cn
