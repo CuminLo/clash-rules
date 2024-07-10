@@ -35,15 +35,14 @@ geox-url:
   mmdb: "https://ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country.mmdb"
 tun:
   enable: true
-  stack: mixed # system gvisor mixed
+  stack: gvisor # system gvisor mixed
   dns-hijack:
     - any:53
     - tcp://any:53
-  auto-redir: true
-  auto-redirect: false
+  auto-redirect: true
   auto-route: true
   auto-detect-interface: true
-  strict-route: true
+  strict-route: false
 profile:
   store-selected: true
   store-fake-ip: false

@@ -41,7 +41,6 @@ tun:
   dns-hijack:
     - any:53
     - tcp://any:53
-  auto-redir: true
   auto-redirect: true
   auto-route: true
   auto-detect-interface: true
