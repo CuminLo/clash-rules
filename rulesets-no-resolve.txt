@@ -4,12 +4,12 @@
 🎯 全球直连,https://raw.githubusercontent.com/CuminLo/clash-rules/master/DirectProcess.list
 🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
 🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
-🅱️ Crypto Market,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Binance.list
-🅱️ Crypto Market,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Binance.list
-🅱️ Crypto Market,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bybit.list
-🅱️ Crypto Market,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Crypto.list
-🤖 Warp服务,https://raw.githubusercontent.com/CuminLo/clash-rules/master/AI.list
-🤖 Warp服务,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OpenAi.list
+🅱️ Crypto,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Binance.list
+🅱️ Crypto,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Binance.list
+🅱️ Crypto,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bybit.list
+🅱️ Crypto,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Crypto.list
+🤖 Chat服务,https://raw.githubusercontent.com/CuminLo/clash-rules/master/AI.list
+🤖 Chat服务,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OpenAi.list
  苹果服务,[]GEOSITE,apple-cn
  苹果服务,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list
  苹果服务,clash-domain:https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/apple.txt,86400
@@ -23,6 +23,8 @@
 🇬 Google,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleCN.list
 🇬 Google,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Google.list
 🇬 Google,[]GEOSITE,google
+🏪 Shoping,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Payment.list
+🏪 Shoping,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PayPal/PayPal.yaml
 🏪 Shoping,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/TikTok.list
 🏪 Shoping,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Amazon.list
 🏪 Shoping,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Amazon/Amazon.list
