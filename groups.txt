@@ -1,7 +1,7 @@
 🚀 节点选择`select`[]🔥 手动切换`[]💼 Work专用`[]🇸🇬 狮城节点`[]🇨🇳 台湾节点`[]🇭🇰 香港节点`[]🐔 落地鸡`[]♻️ 自动选择`[]DIRECT
 🔥 手动切换`select`.*
 💼 Work专用`relay`[]♻️ 自动选择`(Home专用)
-🏠 Home专用`relay`[]🇸🇬 狮城节点`(静态01)
+🏠 Home专用`relay`[]🇯🇵 日本节点`(Home专用)
 ♻️ 自动选择`url-test`(^(?!.*(高峰|流媒体|拥挤|限速|0x)).*)`http://www.gstatic.com/generate_204`300,,50
 🅱️ Crypto`select`[]🇨🇳 台湾节点`(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|[^-]日|JP|Japan|台|新北|彰化|TW|Taiwan|新加坡|坡|狮城|SG|Singapore)
 🤖 Chat服务`select`[]🏠 Home专用`[]💼 Work专用`(ChatGPT|CDN|VLESS|VMES|静态|Static)
