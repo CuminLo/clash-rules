@@ -45,7 +45,6 @@ tun:
   auto-route: true
   auto-detect-interface: true
   strict-route: true
-  device: Meta
 profile:
   store-selected: true
   store-fake-ip: true
@@ -80,6 +79,8 @@ dns:
     - "+.shylwlkj.com"
     - "+.nlsaas.com"
     - "+.nlktj.cn"
+    - "+.lingnengsaas.com"
+    - "+.unicornenergy.cn"
     - "+.czb365.com"
     - "+.tencentcdb.com"
     - "+.dnsapi.cn"
