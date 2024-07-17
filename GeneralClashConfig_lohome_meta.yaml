@@ -10,7 +10,7 @@ port: 7890
 socks-port: 7891
 redir-port: 7892
 mixed-port: 7893
-tproxy-port: 7895
+tproxy-port: 7894
 allow-lan: true
 bind-address: '*'
 skip-auth-prefixes:
@@ -22,7 +22,7 @@ log-level: info
 mode: rule
 external-controller: 192.168.50.1:9090
 unified-delay: true
-tcp-concurrent: false
+tcp-concurrent: true
 global-client-fingerprint: chrome
 geodata-loader: standard
 geo-auto-update: true
