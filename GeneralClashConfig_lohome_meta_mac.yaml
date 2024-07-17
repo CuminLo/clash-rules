@@ -59,7 +59,7 @@ dns:
     - 223.5.5.5
     - 119.29.29.29
   nameserver-policy:
-    "geosite:cn,private": [https://doh.apad.pro/dns-query,https://dns.alidns.com/dns-query, https://doh.pub/dns-query]
+    "geosite:cn,apple,private,microsoft,onedrive": [https://doh.apad.pro/dns-query,https://dns.alidns.com/dns-query, https://doh.pub/dns-query]
     "geosite:google": [tls://8.8.4.4, https://1.0.0.1/dns-query]
     "geosite:geolocation-!cn": [tls://8.8.4.4, https://1.0.0.1/dns-query]
     "geosite:category-ads-all": rcode://success
