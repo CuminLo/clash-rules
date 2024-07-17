@@ -1,6 +1,6 @@
 🚀 节点选择`select`[]🔥 手动切换`[]💼 Work专用`[]🐔 落地鸡`[]♻️ 自动选择`[]DIRECT
 🔥 手动切换`select`.*
-💼 Work专用`relay`[]⛓️ Relay负载`(静态01)
+💼 Work专用`relay`[]⛓️ Relay负载`(ShadownsocksVPS)
 ♻️ 自动选择`url-test`(^(?!.*(高峰|流媒体|拥挤|限速|0x)).*)`http://www.gstatic.com/generate_204`60,,50
 🅱️ Crypto`select`[]🇨🇳 台湾节点`(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|[^-]日|JP|Japan|台|新北|彰化|TW|Taiwan|新加坡|坡|狮城|SG|Singapore)
 🤖 Chat服务`select`[]💼 Work专用`[]🪙 亿元
@@ -17,7 +17,7 @@
 🎯 全球直连`select`[]DIRECT
 🆎 AdBlock`select`[]REJECT`[]DIRECT
 🐟 漏网之鱼`select`[]🚀 节点选择`[]♻️ 自动选择`[]🔥 手动切换`[]DIRECT
-⛓️ Relay负载`load-balance`(^(?!.*(高峰|流媒体|拥挤|限速|0x)).*)`http://www.gstatic.com/generate_204`60,,150
+⛓️ Relay负载`load-balance`(^(?!.*(高峰|流媒体|拥挤|限速|0x))VMess|VLESS|trojan|SS|tuic)`http://www.gstatic.com/generate_204`60,,150
 🇭🇰 香港节点`load-balance`(港|HK|Hong Kong)`http://www.gstatic.com/generate_204`60,,50
 🇸🇬 狮城节点`load-balance`(新加坡|坡|狮城|SG|Singapore)`http://www.gstatic.com/generate_204`60,,80
 🇨🇳 台湾节点`load-balance`(台|新北|彰化|TW|Taiwan)`http://www.gstatic.com/generate_204`60,,80

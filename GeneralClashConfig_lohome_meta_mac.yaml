@@ -42,7 +42,7 @@ tun:
   auto-redirect: true
   auto-route: true
   auto-detect-interface: true
-  strict-route: false
+  strict-route: true
 profile:
   store-selected: true
   store-fake-ip: false
