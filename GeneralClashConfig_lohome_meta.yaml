@@ -22,7 +22,7 @@ log-level: info
 mode: rule
 external-controller: 192.168.50.1:9090
 unified-delay: true
-tcp-concurrent: true
+tcp-concurrent: false
 global-client-fingerprint: chrome
 geodata-loader: standard
 geo-auto-update: true
