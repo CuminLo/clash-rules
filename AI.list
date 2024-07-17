@@ -2,8 +2,8 @@
 # https://raw.githubusercontent.com/ExaAlice/Alice/main/Rule/OpenAi.list
 
 PROCESS-NAME,chatbox
-DOMAIN,cdn.auth0.com
 
+DOMAIN,cdn.auth0.com
 DOMAIN-SUFFIX,hcaptcha.com
 DOMAIN-SUFFIX,ai.fakeopen.com
 DOMAIN-SUFFIX,openaicom.imgix.net
@@ -15,5 +15,4 @@ DOMAIN-SUFFIX,ai.com
 DOMAIN-SUFFIX,x.ai
 DOMAIN-SUFFIX,claude.ai
 DOMAIN,openaiapi-site.azureedge.net
-DOMAIN-SUFFIX,huggingface.co
 DOMAIN-SUFFIX,perplexity.ai
