@@ -1,7 +1,8 @@
-🚀 节点选择`select`[]🔥 手动切换`[]💼 Work专用`[]👨‍💼 Work专用`[]🐔 落地鸡`[]♻️ 自动选择`[]DIRECT
+🚀 节点选择`select`[]🔥 手动切换`[]💼 Work专用`[]👨‍💼 Work专用`[]🦹‍♂️ 故障专用`[]🐔 落地鸡`[]♻️ 自动选择`[]DIRECT
 🔥 手动切换`select`.*
 💼 Work专用`relay`[]⛓️ Relay负载`(ShadownsocksVPS)
 👨‍💼 Work专用`relay`[]🔗 Relay自动`(ShadownsocksVPS)
+🦹‍♂️ 故障专用`relay`[]🔗 Relay自动`(VLESS\-直连)
 ♻️ 自动选择`url-test`(^(?!.*(?:高峰|流媒体|拥挤|限速|联通|0x|IPv6|ipv6)).*)`http://www.gstatic.com/generate_204`60,,50
 🅱️ Crypto`select`[]🇨🇳 台湾节点`(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|[^-]日|JP|Japan|新加坡|坡|狮城|SG|Singapore)
 🤖 Chat服务`select`[]💼 Work专用`[]👨‍💼 Work专用`[]🪙 亿元
