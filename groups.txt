@@ -17,12 +17,12 @@
 🎯 全球直连`select`[]DIRECT
 🆎 AdBlock`select`[]REJECT`[]DIRECT
 🐟 漏网之鱼`select`[]🚀 节点选择`[]♻️ 自动选择`[]🔥 手动切换`[]DIRECT
-⛓️ Relay负载`load-balance`(^(?!.*(高峰|流媒体|拥挤|限速|0x|Hysteria2|SOCKS5)).*)`http://www.gstatic.com/generate_204`60,,150
-🇭🇰 香港节点`load-balance`(^(?!.*(?:高峰|流媒体|拥挤|限速|0x)).*?(港|HK|Hong Kong).*)`http://www.gstatic.com/generate_204`60,,50
+⛓️ Relay负载`load-balance`((?!.*(高峰|流媒体|拥挤|限速|0x|Hysteria2|SOCKS5)).*)`http://www.gstatic.com/generate_204`60,,150
+🇭🇰 香港节点`load-balance`((?!.*(?:高峰|流媒体|拥挤|限速|0x)).*?(港|HK|Hong Kong).*)`http://www.gstatic.com/generate_204`60,,50
 🇸🇬 狮城节点`load-balance`(新加坡|坡|狮城|SG|Singapore)`http://www.gstatic.com/generate_204`60,,80
 🇨🇳 台湾节点`load-balance`(台|新北|彰化|TW|Taiwan)`http://www.gstatic.com/generate_204`60,,80
 🇯🇵 日本节点`load-balance`(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|[^-]日|JP|Japan)`http://www.gstatic.com/generate_204`60,,100
-🇺🇲 美国节点`load-balance`(^(?!.*(高峰|流媒体|拥挤|限速|0x|ipv6))(美国|蒙大拿).*)`http://www.gstatic.com/generate_204`60,,150
+🇺🇲 美国节点`load-balance`((?!.*(高峰|流媒体|拥挤|限速|0x|ipv6))(美国|蒙大拿).*)`http://www.gstatic.com/generate_204`60,,150
 🐔 落地鸡`select`!!GROUP=myfq
 🚲 性价比`url-test`!!GROUP=zhilian`http://www.gstatic.com/generate_204`60,,100
 🐶 泡泡狗`url-test`!!GROUP=paopao`http://www.gstatic.com/generate_204`60,,100
