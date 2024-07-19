@@ -9,13 +9,11 @@ DOMAIN-SUFFIX,hpeprint.com
 DOMAIN-SUFFIX,epson.com
 DOMAIN-SUFFIX,tunnelmole.com
 DOMAIN-SUFFIX,syncthing.net
-DOMAIN-SUFFIX,discovery.syncthing.net
 DOMAIN-SUFFIX,xsus.me
 DOMAIN-SUFFIX,xsus.io
 DOMAIN-SUFFIX,xsus.link
 DOMAIN-SUFFIX,xsus.top
 DOMAIN-SUFFIX,xsus.wiki
-
 DOMAIN-SUFFIX,leoao-inc.com
 DOMAIN-SUFFIX,leoao.com
 DOMAIN-SUFFIX,netease.im
@@ -48,7 +46,6 @@ DOMAIN-SUFFIX,asia.deribit.com
 DOMAIN-SUFFIX,g4weixin.com
 DOMAIN-SUFFIX,g4weixin.com
 DOMAIN-SUFFIX,webao99.com
-
 DOMAIN-KEYWORD,shenzhen
 
 # talk915.com

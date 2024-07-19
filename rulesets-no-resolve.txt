@@ -1,7 +1,7 @@
 🚀 节点选择,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Proxy.list
+🎯 全球直连,https://raw.githubusercontent.com/CuminLo/clash-rules/master/DirectProcess.list
 🎯 全球直连,https://raw.githubusercontent.com/CuminLo/clash-rules/master/DirectDomain.list
 🎯 全球直连,https://raw.githubusercontent.com/CuminLo/clash-rules/master/DirectIP.list
-🎯 全球直连,https://raw.githubusercontent.com/CuminLo/clash-rules/master/DirectProcess.list
 🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
 🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
 🅱️ Crypto,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Binance.list
@@ -57,8 +57,8 @@
 Ⓜ️ 微软云盘,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/OneDrive.list
 Ⓜ️ 微软服务,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list
 💬 自由消息,[]GEOSITE,telegram
-💬 自由消息,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list
 💬 自由消息,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Telegram.list
+💬 自由消息,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list
 💬 自由消息,[]GEOSITE,twitter
 💬 自由消息,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Twitter.list
 💬 自由消息,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Discord.list

@@ -7,3 +7,4 @@ DOMAIN-SUFFIX,bequge.info
 DOMAIN-SUFFIX,ipify.org
 DOMAIN-SUFFIX,followme.com
 PROCESS-NAME,Dropbox
+PROCESS-NAME,DropboxFileProvider

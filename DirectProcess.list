@@ -1,5 +1,7 @@
 PROCESS-NAME,WeChat
 PROCESS-NAME,企业微信 Helper
+PROCESS-NAME,企业微信
 PROCESS-NAME,Feishu
+PROCESS-NAME,Lark Helper
 PROCESS-NAME,syncthing
 PROCESS-NAME,zerotier-one

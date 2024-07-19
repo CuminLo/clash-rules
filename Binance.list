@@ -3,6 +3,7 @@
 # binance
 PROCESS-NAME,com.binance.dev
 PROCESS-NAME,Binance Helper
+PROCESS-NAME,Binance
 DOMAIN-SUFFIX,appsflayer.com
 DOMAIN-SUFFIX,bnbzh.ac
 DOMAIN-SUFFIX,binance.cc
@@ -64,3 +65,4 @@ DOMAIN-SUFFIX,jex.com
 DOMAIN-SUFFIX,mokexweb.me
 DOMAIN-SUFFIX,mokexapp.net
 DOMAIN-SUFFIX,starknet.io
+DOMAIN-SUFFIX,domain-config-1306379396.file.myqcloud.com
