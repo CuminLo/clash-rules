@@ -65,7 +65,7 @@ dns:
   proxy-server-nameserver: [tls://8.8.4.4, https://1.0.0.1/dns-query]
   nameserver: [https://doh.apad.pro/dns-query, tls://8.8.4.4, https://1.0.0.1/dns-query]
   fake-ip-filter:
-    - "*"
+    - "+"
 
 sniffer:
   enable: true
