@@ -7,7 +7,6 @@
 🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
 🅱️ Crypto,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Binance.list
 🅱️ Crypto,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Binance.list
-🅱️ Crypto,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bybit.list
 🅱️ Crypto,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Crypto.list
 🤖 Chat服务,https://raw.githubusercontent.com/CuminLo/clash-rules/master/AI.list
 🤖 Chat服务,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OpenAi.list
