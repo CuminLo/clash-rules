@@ -11,7 +11,6 @@
 📹 油管视频`select`[]🔥 手动切换`[]🚀 节点选择`[]🇸🇬 狮城节点`[]🇭🇰 香港节点`[]🐔 落地鸡`[]🇺🇲 美国节点
 📺 巴哈姆特`select`[]🇨🇳 台湾节点`[]🚀 节点选择`[]🇸🇬 狮城节点`[]🇭🇰 香港节点
 💬 自由消息`select`[]🚀 节点选择`[]🇸🇬 狮城节点`[]🇭🇰 香港节点`[]🐔 落地鸡`[]🇺🇲 美国节点
-📥 谷歌FCM`select`[]DIRECT`[]💼 静态IP模式-负载`[]👨‍💼 静态IP模式-自动`[]🐔 落地鸡`[]🇺🇲 美国节点
 🇬 Google`select`[]🚀 节点选择`[]💼 静态IP模式-负载`[]👨‍💼 静态IP模式-自动`[]🐔 落地鸡`[]🇺🇲 美国节点
 Ⓜ️ 微软云盘`select`[]DIRECT`[]🚀 节点选择`[]💼 静态IP模式-负载`[]👨‍💼 静态IP模式-自动`[]🐔 落地鸡
 Ⓜ️ 微软服务`select`[]DIRECT`[]🚀 节点选择`[]💼 静态IP模式-负载`[]👨‍💼 静态IP模式-自动`[]🐔 落地鸡
@@ -19,7 +18,7 @@
 🎯 全球直连`select`[]DIRECT
 🆎 AdBlock`select`[]REJECT`[]DIRECT
 🐟 漏网之鱼`select`[]🚀 节点选择`[]♻️ 自动选择`[]🔥 手动切换`[]DIRECT
-⛓️ Relay负载`load-balance`(^(?!.*(?:高峰|流媒体|拥挤|限速|联通|0x|IPv6|ipv6|Hysteria2|SOCKS5)).*)`http://www.gstatic.com/generate_204`60,,150
+⛓️ Relay负载`load-balance`(^(?!.*(?:高峰|流媒体|拥挤|限速|联通|0x|IPv6|ipv6|Hysteria2|SOCKS5)).*)`http://www.gstatic.com/generate_204`60,,100
 🔗 Relay自动`url-test`(^(?!.*(?:高峰|流媒体|拥挤|限速|联通|0x|IPv6|ipv6|Hysteria2|SOCKS5)).*)`http://www.gstatic.com/generate_204`60,,50
 🇭🇰 香港节点`load-balance`(^(?!.*(?:高峰|流媒体|拥挤|限速|联通|0x|IPv6|ipv6)).*?(港|HK|Hong Kong))`http://www.gstatic.com/generate_204`60,,50
 🇸🇬 狮城节点`load-balance`(新加坡|坡|狮城|SG|Singapore)`http://www.gstatic.com/generate_204`60,,80
