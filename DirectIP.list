@@ -4,6 +4,16 @@ IP-CIDR,224.0.0.0/4,no-resolve
 # Printer
 SRC-IP-CIDR,192.168.50.49/32,no-resolve
 SRC-IP-CIDR,192.168.50.208/32,no-resolve
+
+# MiAiSoundbox
+SRC-IP-CIDR,192.168.50.126/32,no-resolve
+
+# Redmi-Note-11
+SRC-IP-CIDR,192.168.50.172/32,no-resolve
+
+# Xiaomi-12X
+SRC-IP-CIDR,192.168.50.120/32,no-resolve
+
 IP-CIDR,103.41.167.0/24,no-resolve
 
 # Machine
