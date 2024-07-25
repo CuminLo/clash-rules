@@ -9,6 +9,7 @@
 🅱️ Crypto,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Binance.list
 🅱️ Crypto,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Binance.list
 🅱️ Crypto,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Crypto.list
+🅱️ Crypto,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Crypto/Crypto.list
 🤖 Chat服务,https://raw.githubusercontent.com/CuminLo/clash-rules/master/AI.list
 🤖 Chat服务,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OpenAi.list
  苹果服务,[]GEOSITE,apple-cn
@@ -25,7 +26,6 @@
 🇬 Google,[]GEOSITE,google
 🏪 Shoping,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Payment.list
 🏪 Shoping,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PayPal/PayPal.list
-🏪 Shoping,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/TikTok.list
 🏪 Shoping,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Amazon.list
 🏪 Shoping,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Amazon/Amazon.list
 🏪 Shoping,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AmazonCN/AmazonCN.list
@@ -59,6 +59,7 @@
 Ⓜ️ 微软云盘,[]GEOSITE,onedrive
 Ⓜ️ 微软云盘,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/OneDrive.list
 Ⓜ️ 微软服务,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list
+💬 自由消息,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/TikTok.list
 💬 自由消息,[]GEOSITE,telegram
 💬 自由消息,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Telegram.list
 💬 自由消息,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list
