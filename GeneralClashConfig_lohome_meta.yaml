@@ -59,7 +59,7 @@ dns:
   nameserver-policy:
     "+.lohome.top": [223.5.5.5, 119.29.29.29]
     "geosite:tracker,private": [223.5.5.5, 119.29.29.29]
-    "geosite:cn,china-lis,category-games@cn,apple,microsoft@cn,onedrive": [https://doh.apad.pro/dns-query, https://dns.alidns.com/dns-query, https://doh.pub/dns-query]
+    "geosite:cn,china-lis,category-games@cn,apple,microsoft@cn,onedrive": [https://doh.apad.pro/dns-query, https://223.5.5.5/dns-query, https://doh.pub/dns-query]
     "geosite:google,geolocation-!cn": [tls://8.8.4.4, https://1.0.0.1/dns-query]
     "geosite:category-ads-all": rcode://success
   proxy-server-nameserver: [tls://8.8.4.4, https://1.0.0.1/dns-query]
@@ -197,6 +197,15 @@ dns:
 
 sniffer:
   enable: true
-  force-dns-mapping: true
-  parse-pure-ip: true
-  override-destination: false
+  sniff:
+    HTTP:
+      ports: [80, 8080-8880]
+      override-destination: true
+    TLS:
+      ports: [443, 8443]
+    QUIC:
+      ports: [443, 8443]
+  skip-domain:
+    - "Mijia Cloud"
+    - "dlg.io.mi.com"
+    - "+.apple.com"
