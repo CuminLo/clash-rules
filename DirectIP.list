@@ -21,5 +21,8 @@ IP-CIDR,74.48.160.148/32,no-resolve
 IP-CIDR,54.179.239.197/32,no-resolve
 
 # zerotier
-IP-CIDR,103.195.103.66/32,no-resolve
 DOMAIN-SUFFIX,zerotier.com
+DST-PORT,9993
+IP-CIDR,84.17.53.155/32,no-resolve
+IP-CIDR,103.195.103.66/32,no-resolve
+IP-CIDR,104.194.8.134/32,no-resolve
