@@ -1,7 +1,7 @@
 🚀 节点选择,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Proxy.list
-🇬 Google,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Google.list
 🎯 全球直连,https://raw.githubusercontent.com/CuminLo/clash-rules/master/DirectProcess.list
 🎯 全球直连,https://raw.githubusercontent.com/CuminLo/clash-rules/master/DirectDomain.list
+🇬 Google,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Google.list
 🎯 全球直连,https://raw.githubusercontent.com/CuminLo/clash-rules/master/DirectIP.list
 🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
 🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
