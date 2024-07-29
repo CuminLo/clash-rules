@@ -55,7 +55,7 @@ dns:
   enhanced-mode: fake-ip # fake-ip or redir-host
   fake-ip-range: 28.0.0.1/8
   use-hosts: true
-  default-nameserver: [223.5.5.5, 119.29.29.29]
+  default-nameserver: [223.5.5.5, 119.29.29.29, 114.114.114.114]
   nameserver-policy:
     "+.lohome.top": [223.5.5.5, 119.29.29.29]
     "geosite:tracker,private": [223.5.5.5, 119.29.29.29]
