@@ -9,7 +9,7 @@ SRC-IP-CIDR,192.168.50.208/32,no-resolve
 SRC-IP-CIDR,192.168.50.126/32,no-resolve
 
 # Redmi-Note-11
-SRC-IP-CIDR,192.168.50.172/32,no-resolve
+SRC-IP-CIDR,192.168.50.170/32,no-resolve
 
 # Xiaomi-12X
 SRC-IP-CIDR,192.168.50.120/32,no-resolve
