@@ -2,7 +2,7 @@
 PROCESS-NAME,android.uid.system
 PROCESS-NAME,com.google.uid.shared
 PROCESS-NAME,com.android.vending
-#DOMAIN-SUFFIX,xn--ngstr-lra8j.com
+DOMAIN-SUFFIX,xn--ngstr-lra8j.com
 DOMAIN-SUFFIX,android.googleapis.com
 DOMAIN-SUFFIX,android.clients.google.com
 DOMAIN-SUFFIX,play.googleapis.com
