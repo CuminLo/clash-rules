@@ -29,9 +29,9 @@ geo-auto-update: true
 geo-update-interval: 24
 keep-alive-interval: 30
 geox-url:
-  geoip: "https://ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.dat"
-  geosite: "https://ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
-  mmdb: "https://ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country.mmdb"
+  geoip: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.dat"
+  geosite: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
+  mmdb: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country.mmdb"
 tun:
   enable: true
   stack: system # system gvisor mixed
@@ -42,7 +42,7 @@ tun:
   auto-route: true
   strict-route: true
   auto-detect-interface: true
-  device: Meta
+  route-exclude-address: [223.5.5.5/16, 119.29.29.29/16, 114.114.114.114/16, 1.12.12.12/16, 192.168.0.0/16, fc00::/7]
 profile:
   store-selected: true
   store-fake-ip: true

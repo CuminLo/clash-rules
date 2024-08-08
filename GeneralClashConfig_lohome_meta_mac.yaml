@@ -16,7 +16,7 @@ bind-address: '*'
 skip-auth-prefixes:
   - 127.0.0.1/8
   - ::1/128
-ipv6: true
+ipv6: false
 find-process-mode: strict
 log-level: debug
 mode: rule
@@ -30,9 +30,9 @@ geo-auto-update: true
 geo-update-interval: 24
 keep-alive-interval: 15
 geox-url:
-  geoip: "https://ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.dat"
-  geosite: "https://ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
-  mmdb: "https://ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country.mmdb"
+  geoip: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.dat"
+  geosite: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
+  mmdb: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country.mmdb"
 tun:
   enable: true
   stack: gvisor # system gvisor mixed
@@ -43,17 +43,18 @@ tun:
   auto-route: true
   auto-detect-interface: true
   strict-route: true
+  route-exclude-address: [223.5.5.5/16, 119.29.29.29/16, 114.114.114.114/16, 1.12.12.12/16, 192.168.0.0/16, fc00::/7]
 profile:
   store-selected: true
   store-fake-ip: false
 dns:
   enable: true
   use-system-hosts: true
-  ipv6: true
+  ipv6: false
   prefer-h3: true
   listen: 0.0.0.0:53
-  enhanced-mode: redir-host # fake-ip or redir-host
-  # fake-ip-range: 28.0.0.1/8
+  enhanced-mode: fake-ip # fake-ip or redir-host
+  #fake-ip-range: 28.0.0.1/8
   use-hosts: true
   default-nameserver: [223.5.5.5, 119.29.29.29, 114.114.114.114]
   nameserver-policy:
@@ -64,8 +65,8 @@ dns:
     "geosite:category-ads-all": rcode://success
   proxy-server-nameserver: [https://8.8.4.4/dns-query, https://9.9.9.11/dns-query]
   nameserver: [https://8.8.4.4/dns-query, https://9.9.9.11/dns-query]
-  # fake-ip-filter:
-  #  - "+"
+  fake-ip-filter:
+    - "+"
 
 sniffer:
   enable: true
