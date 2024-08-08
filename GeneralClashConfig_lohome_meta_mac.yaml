@@ -43,7 +43,7 @@ tun:
   auto-route: true
   auto-detect-interface: true
   strict-route: true
-  route-exclude-address: [223.5.5.5/16, 119.29.29.29/16, 114.114.114.114/16, 1.12.12.12/16, 192.168.0.0/16, fc00::/7]
+  route-exclude-address: [223.5.5.5/16, 119.29.29.29/16, 114.114.114.114/16, 1.12.12.12/16, 74.48.160.148/16, 192.168.0.0/16, fc00::/7]
 profile:
   store-selected: true
   store-fake-ip: false
@@ -58,8 +58,7 @@ dns:
   use-hosts: true
   default-nameserver: [223.5.5.5, 119.29.29.29, 114.114.114.114]
   nameserver-policy:
-    "+.lohome.top": [223.5.5.5, 119.29.29.29]
-    "+.syncthing.net": [https://223.5.5.5/dns-query, https://1.12.12.12/dns-query]
+    "+.lohome.top, +.syncthing.net": [https://223.5.5.5/dns-query, https://1.12.12.12/dns-query]
     "geosite:tracker,private": [223.5.5.5, 119.29.29.29]
     "geosite:cn,china-lis,category-games@cn,apple,microsoft@cn,onedrive": [https://223.5.5.5/dns-query, https://1.12.12.12/dns-query]
     "geosite:google,geolocation-!cn": [https://8.8.4.4/dns-query, https://9.9.9.11/dns-query]
@@ -67,7 +66,7 @@ dns:
   proxy-server-nameserver: [https://8.8.4.4/dns-query, https://9.9.9.11/dns-query]
   nameserver: [https://8.8.4.4/dns-query, https://9.9.9.11/dns-query]
   fake-ip-filter:
-    - "+"
+    - "+.*"
 
 sniffer:
   enable: true

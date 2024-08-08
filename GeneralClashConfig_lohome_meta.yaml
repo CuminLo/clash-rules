@@ -42,7 +42,7 @@ tun:
   auto-route: true
   strict-route: true
   auto-detect-interface: true
-  route-exclude-address: [223.5.5.5/16, 119.29.29.29/16, 114.114.114.114/16, 1.12.12.12/16, 192.168.0.0/16, fc00::/7]
+  route-exclude-address: [223.5.5.5/16, 119.29.29.29/16, 114.114.114.114/16, 1.12.12.12/16, 74.48.160.148/16, 192.168.0.0/16, fc00::/7]
 profile:
   store-selected: true
   store-fake-ip: true
@@ -57,8 +57,7 @@ dns:
   use-hosts: true
   default-nameserver: [223.5.5.5, 119.29.29.29, 114.114.114.114]
   nameserver-policy:
-    "+.lohome.top": [223.5.5.5, 119.29.29.29]
-    "+.syncthing.net": [https://223.5.5.5/dns-query, https://1.12.12.12/dns-query]
+    "+.lohome.top, +.syncthing.net": [https://223.5.5.5/dns-query, https://1.12.12.12/dns-query]
     "geosite:tracker,private": [223.5.5.5, 119.29.29.29]
     "geosite:cn,china-lis,category-games@cn,apple,microsoft@cn,onedrive": [https://223.5.5.5/dns-query, https://1.12.12.12/dns-query]
     "geosite:google,geolocation-!cn": [https://8.8.4.4/dns-query, https://9.9.9.11/dns-query]
@@ -67,7 +66,7 @@ dns:
   nameserver: [https://8.8.4.4/dns-query, https://9.9.9.11/dns-query]
   fake-ip-filter:
     - "WORKGROUP"
-    - "apps.apple.com"
+    - "+.apple.com"
     - "+.synology.me"
     - "+.synology.com"
     - "+.lohome.top"
@@ -166,15 +165,7 @@ dns:
     - "*.linksys.com"
     - "*.linksyssmartwifi.com"
     - "+.router.asus.com"
-    - mesu.apple.com
-    - swscan.apple.com
-    - swquery.apple.com
-    - swdownload.apple.com
-    - swcdn.apple.com
-    - swdist.apple.com
-    - lens.l.google.com
-    - stun.l.google.com
-    - dl.google.com
+    - "+.google.com"
     - "+.nflxvideo.net"
     - "*.square-enix.com"
     - "*.finalfantasyxiv.com"
