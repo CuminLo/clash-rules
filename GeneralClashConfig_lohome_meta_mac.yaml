@@ -21,7 +21,7 @@ find-process-mode: strict
 log-level: debug
 mode: rule
 external-controller: 0.0.0.0:9090
-external-ui: Yacd
+external-ui: yacd
 external-ui-url: "https://mirror.ghproxy.com/https://github.com/haishanh/yacd/archive/gh-pages.zipp"
 unified-delay: true
 tcp-concurrent: true
