@@ -44,8 +44,30 @@ tun:
   auto-route: true
   auto-detect-interface: true
   strict-route: true
-  route-exclude-address-set: [lancidr, cncidr]
-  route-exclude-address: [223.5.5.5/32, 119.29.29.29/32, 114.114.114.114/32, 1.12.12.12/32, 74.48.160.148/32]
+  route-exclude-address-set: [cncidr]
+  route-exclude-address:
+    - 74.48.160.148/32
+    - 223.5.5.5/32
+    - 119.29.29.29/32
+    - 114.114.114.114/32
+    - 1.12.12.12/32
+    - 0.0.0.0/8
+    - 10.0.0.0/8
+    - 100.64.0.0/10
+    - 127.0.0.0/8
+    - 169.254.0.0/16
+    - 172.16.0.0/12
+    - 192.0.0.0/24
+    - 192.0.2.0/24
+    - 192.88.99.0/24
+    - 192.168.0.0/16
+    - 198.18.0.0/15
+    - 198.51.100.0/24
+    - 203.0.113.0/24
+    - ::/127
+    - fc00::/7
+    - fe80::/10
+    - ff00::/8
 profile:
   store-selected: true
   store-fake-ip: false
@@ -91,11 +113,4 @@ rule-providers:
     behavior: ipcidr
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt"
     path: ./ruleset/cncidr.yaml
-    interval: 86400
-
-  lancidr:
-    type: http
-    behavior: ipcidr
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt"
-    path: ./ruleset/lancidr.yaml
     interval: 86400
