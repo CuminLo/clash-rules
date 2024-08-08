@@ -45,6 +45,7 @@ tun:
   auto-route: true
   auto-detect-interface: true
   strict-route: true
+  route-exclude-address-set: [lancidr, cncidr]
   route-exclude-address: [223.5.5.5/16, 119.29.29.29/16, 114.114.114.114/16, 1.12.12.12/16, 74.48.160.148/16, 192.168.0.0/16, fc00::/7]
   exclude-package: [
     "cmb.pb",
@@ -263,3 +264,18 @@ sniffer:
     - "Mijia Cloud"
     - "dlg.io.mi.com"
     - "+.apple.com"
+
+rule-providers:
+  cncidr:
+    type: http
+    behavior: ipcidr
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt"
+    path: ./ruleset/cncidr.yaml
+    interval: 86400
+
+  lancidr:
+    type: http
+    behavior: ipcidr
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt"
+    path: ./ruleset/lancidr.yaml
+    interval: 86400
