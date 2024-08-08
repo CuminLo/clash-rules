@@ -45,7 +45,7 @@ tun:
   auto-detect-interface: true
   strict-route: true
   route-exclude-address-set: [lancidr, cncidr]
-  route-exclude-address: [223.5.5.5/16, 119.29.29.29/16, 114.114.114.114/16, 1.12.12.12/16, 74.48.160.148/16, 192.168.0.0/16, fc00::/7]
+  route-exclude-address: [223.5.5.5/32, 119.29.29.29/32, 114.114.114.114/32, 1.12.12.12/32, 74.48.160.148/32]
 profile:
   store-selected: true
   store-fake-ip: false
@@ -56,7 +56,7 @@ dns:
   prefer-h3: true
   listen: 0.0.0.0:53
   enhanced-mode: fake-ip # fake-ip or redir-host
-  #fake-ip-range: 28.0.0.1/8
+  fake-ip-range: 28.0.0.1/8
   use-hosts: true
   default-nameserver: [223.5.5.5, 119.29.29.29, 114.114.114.114]
   nameserver-policy:
