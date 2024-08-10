@@ -45,7 +45,7 @@ tun:
   route-exclude-address: [223.5.5.5/32, 119.29.29.29/32, 114.114.114.114/32, 1.12.12.12/32, 74.48.160.148/32]
 profile:
   store-selected: true
-  store-fake-ip: true
+  store-fake-ip: false
 dns:
   enable: true
   use-system-hosts: true
