@@ -6,7 +6,7 @@
 🎯 全球直连,https://raw.githubusercontent.com/CuminLo/clash-rules/master/DirectProcess.list
 🎯 全球直连,https://raw.githubusercontent.com/CuminLo/clash-rules/master/DirectDomain.list
 🇬 Google,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Google.list
-🎯 全球直连,clash-classic,https://raw.githubusercontent.com/CuminLo/clash-rules/master/DirectIP.list
+🎯 全球直连,https://raw.githubusercontent.com/CuminLo/clash-rules/master/DirectIP.list
 🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
 🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
 🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list
@@ -70,8 +70,6 @@
 🚀 节点选择,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
 🎯 全球直连,[]GEOSITE,CN
 🎯 全球直连,[]GEOIP,CN,no-resolve
-🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaIp.list
-🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
 🚀 节点选择,[]GEOSITE,category-scholar-!cn
 🚀 节点选择,[]GEOSITE,geolocation-!cn
 🐟 漏网之鱼,[]FINAL
