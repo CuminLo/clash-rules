@@ -6,7 +6,7 @@
 🎯 全球直连,https://raw.githubusercontent.com/CuminLo/clash-rules/master/DirectProcess.list
 🎯 全球直连,https://raw.githubusercontent.com/CuminLo/clash-rules/master/DirectDomain.list
 🇬 Google,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Google.list
-🎯 全球直连,https://raw.githubusercontent.com/CuminLo/clash-rules/master/DirectIP.list
+🎯 全球直连,clash-classic,https://raw.githubusercontent.com/CuminLo/clash-rules/master/DirectIP.list
 🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
 🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
 🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list
@@ -48,7 +48,7 @@
 🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Sony.list
 🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Steam.list
 🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Nintendo.list
-🎯 全球直连,clash-domain:https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/applications.txt,86400
+🎯 全球直连,clash-classic:https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/applications.txt,86400
 📺 巴哈姆特,[]GEOSITE,bahamut
 📺 巴哈姆特,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bahamut.list
 👨‍💻‍ Github,[]GEOSITE,github
