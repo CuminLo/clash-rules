@@ -10,7 +10,6 @@ port: 7890
 socks-port: 7891
 redir-port: 7892
 mixed-port: 7893
-tproxy-port: 7894
 allow-lan: true
 bind-address: '*'
 skip-auth-prefixes:
@@ -48,6 +47,7 @@ tun:
   route-exclude-address:
     - 74.48.160.148/32
     - 223.5.5.5/32
+    - 223.6.6.6/32
     - 119.29.29.29/32
     - 114.114.114.114/32
     - 1.12.12.12/32
@@ -83,14 +83,31 @@ dns:
   use-hosts: true
   default-nameserver: [223.5.5.5, 119.29.29.29, 114.114.114.114]
   nameserver-policy:
-    "+.lohome.top, +.syncthing.net": [https://223.5.5.5/dns-query#h3=true, https://1.12.12.12/dns-query]
-    "rule-set:direct": [https://223.5.5.5/dns-query#h3=true, https://1.12.12.12/dns-query]
-    "geosite:tracker,private": [https://223.5.5.5/dns-query#h3=true, https://1.12.12.12/dns-query]
-    "geosite:cn,tld-cn,china-lis,category-games@cn,apple-cn,apple,microsoft@cn,onedrive": [https://223.5.5.5/dns-query#h3=true, https://1.12.12.12/dns-query]
-    "rule-set:google,gfw,proxy": [https://dns.google/dns-query#h3=true, https://dns12.quad9.net/dns-query, https://doh.apad.pro/dns-query]
-    "geosite:github,facebook,twitter,tiktok,openai": [https://dns.google/dns-query#h3=true, https://dns12.quad9.net/dns-query, https://doh.apad.pro/dns-query]
+    "+.lohome.top, +.syncthing.net":
+      - https://223.5.5.5/dns-query#h3=true
+      - https://1.12.12.12/dns-query
+    "rule-set:direct": 
+      - https://223.5.5.5/dns-query#h3=true
+      - https://1.12.12.12/dns-query
+    "geosite:tracker,private":
+      - https://223.5.5.5/dns-query#h3=true
+      - https://1.12.12.12/dns-query
+    "geosite:cn,tld-cn,china-lis,category-games@cn,apple-cn,apple,microsoft@cn,onedrive": 
+      - https://223.5.5.5/dns-query#h3=true
+      - https://1.12.12.12/dns-query
+    "rule-set:google,gfw,proxy":
+      - https://dns.google/dns-query#h3=true
+      - https://dns12.quad9.net/dns-query
+      - https://doh.apad.pro/dns-query
+    "geosite:github,facebook,twitter,tiktok,openai":
+      - https://dns.google/dns-query#h3=true
+      - https://dns12.quad9.net/dns-query
+      - https://doh.apad.pro/dns-query
     "geosite:category-ads-all": rcode://success
-  proxy-server-nameserver: [https://dns.google/dns-query#h3=true, https://dns12.quad9.net/dns-query, https://doh.apad.pro/dns-query]
+  proxy-server-nameserver: 
+      - https://dns.google/dns-query#h3=true
+      - https://dns12.quad9.net/dns-query
+      - https://doh.apad.pro/dns-query
   nameserver: [https://223.5.5.5/dns-query#h3=true, https://1.12.12.12/dns-query]
   fake-ip-filter:
     - "+.*"
