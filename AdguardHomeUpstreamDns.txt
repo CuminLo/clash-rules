@@ -5,6 +5,7 @@
 [/qq.com/]h3://223.5.5.5/dns-query
 [/wxlivecdn.com/]h3://223.5.5.5/dns-query
 [/jd.com/]h3://223.5.5.5/dns-query
+[/heytapmobi.com/heytapdownload.com/]h3://223.5.5.5/dns-query
 [/baidu.com/]h3://223.5.5.5/dns-query
 [/eebbk.net/]h3://223.5.5.5/dns-query
 [/pinduoduo.com/]h3://223.5.5.5/dns-query
@@ -15,6 +16,7 @@
 [/mi.com/xiaomi.net/xiaomi.com/miwifi.com/miui.com/]h3://223.5.5.5/dns-query
 [/mi-img.com/mi-fds.com/]h3://223.5.5.5/dns-query
 [/youku.com/cctv.com/]h3://223.5.5.5/dns-query
+[/cibntv.net/]h3://223.5.5.5/dns-query
 [/bilibili.com/bilivideo.com/]h3://223.5.5.5/dns-query
 [/kuaishou.com/]h3://223.5.5.5/dns-query
 [/51tyty.com/]h3://223.5.5.5/dns-query
@@ -40,6 +42,9 @@
 [/douyinvideo.net/]h3://223.5.5.5/dns-query
 [/douyinvod.click/]h3://223.5.5.5/dns-query
 [/douyinvod.com/]h3://223.5.5.5/dns-query
+[/tcloudscdn.com/]h3://223.5.5.5/dns-query
+[/qcloud.com/]h3://223.5.5.5/dns-query
+[/txyscdn/]h3://223.5.5.5/dns-query
 [/tencent-cloud.com/]h3://223.5.5.5/dns-query
 [/tencent.com/tencent.com.hk/]h3://223.5.5.5/dns-query
 [/tencent-blackboard.com/]h3://223.5.5.5/dns-query
