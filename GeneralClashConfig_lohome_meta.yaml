@@ -113,6 +113,7 @@ dns:
     - "+.synology.me"
     - "+.synology.com"
     - "+.lohome.top"
+    - "+.myaddr.tools"
     - "+.ddnsfree.com"
     - "+.newlink.com"
     - "+.newlinks.com"
