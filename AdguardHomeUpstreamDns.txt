@@ -5,6 +5,10 @@
 [/100tal.com/]h3://223.5.5.5/dns-query
 [/talk915.com/]h3://223.5.5.5/dns-query
 [/gensee.com/]h3://223.5.5.5/dns-query
+[/cdnmg.com/]h3://223.5.5.5/dns-query
+[/tl88.net/]h3://223.5.5.5/dns-query
+[/epsonconnect.com/epson.com/]h3://223.5.5.5/dns-query
+[/dingtalkapps.com/dingtalk.com/]h3://223.5.5.5/dns-query
 [/aliyuncs.com/aliyun.com/taobao.com/tmallcom/alicdn.com/alidns.com/alipay.com/1688.com/alibabacloud.com/]h3://223.5.5.5/dns-query
 [/amap.com/]h3://223.5.5.5/dns-query
 [/qq.com/]h3://223.5.5.5/dns-query
@@ -50,7 +54,6 @@
 [/tcloudscdn.com/]h3://223.5.5.5/dns-query
 [/qcloud.com/]h3://223.5.5.5/dns-query
 [/txyscdn/]h3://223.5.5.5/dns-query
-[/tencent-cloud.com/]h3://223.5.5.5/dns-query
 [/tencent.com/tencent.com.hk/]h3://223.5.5.5/dns-query
 [/tencent-blackboard.com/]h3://223.5.5.5/dns-query
 [/tencent-cloud.com/]h3://223.5.5.5/dns-query
