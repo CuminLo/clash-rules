@@ -10,8 +10,10 @@
 [/epsonconnect.com/epson.com/]h3://223.5.5.5/dns-query
 [/dingtalkapps.com/dingtalk.com/]h3://223.5.5.5/dns-query
 [/aliyuncs.com/aliyun.com/taobao.com/tmallcom/alicdn.com/alidns.com/alipay.com/1688.com/alibabacloud.com/]h3://223.5.5.5/dns-query
+[/alikunlun.com/]h3://223.5.5.5/dns-query
 [/amap.com/]h3://223.5.5.5/dns-query
 [/qq.com/]h3://223.5.5.5/dns-query
+[/weixinbridge.com/]h3://223.5.5.5/dns-query
 [/wxlivecdn.com/]h3://223.5.5.5/dns-query
 [/jd.com/]h3://223.5.5.5/dns-query
 [/heytapmobi.com/heytapdownload.com/]h3://223.5.5.5/dns-query
