@@ -70,6 +70,7 @@
 🎯 全球直连,[]GEOSITE,CN
 🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaIp.list
 🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
+🎯 全球直连,[]GEOIP,LAN,no-resolve
 🎯 全球直连,[]GEOIP,CN
 🚀 节点选择,[]GEOSITE,category-scholar-!cn
 🚀 节点选择,[]GEOSITE,geolocation-!cn
