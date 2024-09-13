@@ -36,6 +36,8 @@ ipset destroy lan_ac_black_ips
 ipset create lan_ac_black_ips hash:net
 # print
 ipset add lan_ac_black_ips 192.168.50.49/32
+# Q2
+ipset add lan_ac_black_ips 192.168.50.100/32
 ipset add lan_ac_black_ips 192.168.50.120/32
 # MiAiSoundbox
 ipset add lan_ac_black_ips 192.168.50.126/32
@@ -46,7 +48,7 @@ ipset add lan_ac_black_ips 192.168.50.139/32
 ipset add lan_ac_black_ips 192.168.50.170/32
 # Epson-L3250
 ipset add lan_ac_black_ips 192.168.50.208/32
-# Desktop-Little	
+# Desktop-Little
 ipset add lan_ac_black_ips 192.168.50.223/32
 ipset add lan_ac_black_ips 192.168.50.230/32
 
@@ -121,11 +123,11 @@ ipset add custom_ip_route 218.16.0.0/13
 ipset add custom_ip_route 192.168.0.0/16
 LOG_OUT "ipset add ip to custom_ip_route done"
 
-LOG_OUT "ipset add Syncthing custom_ip_route"
-awk '{print $1}' /etc/LoHomeDDNS/syncting_peer.txt | while read ip; do
-    ipset add custom_ip_route "$ip/32"
-done
-LOG_OUT "ipset add Syncthing custom_ip_route done"
+# LOG_OUT "ipset add Syncthing custom_ip_route"
+# awk '{print $1}' /etc/LoHomeDDNS/syncting_peer.txt | while read ip; do
+#     ipset add custom_ip_route "$ip/32"
+# done
+# LOG_OUT "ipset add Syncthing custom_ip_route done"
 
 # 清理规则
 LOG_OUT "clean iptable rules..."
@@ -159,11 +161,17 @@ iptables -t mangle -D openclash_output -m set --match-set localnetwork src -m se
 iptables -t mangle -D PREROUTING -p udp --dport 9993 -j NO_CLASH_PROXY 2>/dev/null
 iptables -t mangle -D PREROUTING -p udp --dport 123 -j NO_CLASH_PROXY 2>/dev/null
 iptables -t mangle -D PREROUTING -p udp --dport 37638 -j NO_CLASH_PROXY 2>/dev/null
+iptables -t mangle -D PREROUTING -p udp --dport 22000 -j NO_CLASH_PROXY 2>/dev/null
+iptables -t mangle -D PREROUTING -p udp --dport 22002 -j NO_CLASH_PROXY 2>/dev/null
+iptables -t mangle -D PREROUTING -p udp --dport 22067 -j NO_CLASH_PROXY 2>/dev/null
 iptables -t mangle -F NO_CLASH_PROXY 2>/dev/null
 iptables -t mangle -X NO_CLASH_PROXY 2>/dev/null
 ip6tables -t mangle -D PREROUTING -p udp --dport 9993 -j NO_CLASH_PROXY 2>/dev/null
 ip6tables -t mangle -D PREROUTING -p udp --dport 123 -j NO_CLASH_PROXY 2>/dev/null
 ip6tables -t mangle -D PREROUTING -p udp --dport 37638 -j NO_CLASH_PROXY 2>/dev/null
+ip6tables -t mangle -D PREROUTING -p udp --dport 22000 -j NO_CLASH_PROXY 2>/dev/null
+ip6tables -t mangle -D PREROUTING -p udp --dport 22002 -j NO_CLASH_PROXY 2>/dev/null
+ip6tables -t mangle -D PREROUTING -p udp --dport 22067 -j NO_CLASH_PROXY 2>/dev/null
 ip6tables -t mangle -F NO_CLASH_PROXY 2>/dev/null
 ip6tables -t mangle -X NO_CLASH_PROXY 2>/dev/null
 
@@ -180,18 +188,30 @@ for chain in openclash openclash_output; do
     iptables -t nat -D $chain -p udp --dport 9993 -j RETURN 2>/dev/null
     iptables -t nat -D $chain -p udp --dport 123 -j RETURN 2>/dev/null
     iptables -t nat -D $chain -p udp --dport 37638 -j RETURN 2>/dev/null
+    iptables -t nat -D $chain -p udp --dport 22000 -j RETURN 2>/dev/null
+    iptables -t nat -D $chain -p udp --dport 22002 -j RETURN 2>/dev/null
+    iptables -t nat -D $chain -p udp --dport 22067 -j RETURN 2>/dev/null
     
     iptables -t mangle -D $chain -p udp --dport 9993 -j RETURN 2>/dev/null
     iptables -t mangle -D $chain -p udp --dport 123 -j RETURN 2>/dev/null
     iptables -t mangle -D $chain -p udp --dport 37638 -j RETURN 2>/dev/null
+    iptables -t mangle -D $chain -p udp --dport 22000 -j RETURN 2>/dev/null
+    iptables -t mangle -D $chain -p udp --dport 22002 -j RETURN 2>/dev/null
+    iptables -t mangle -D $chain -p udp --dport 22067 -j RETURN 2>/dev/null
 
     ip6tables -t nat -D $chain -p udp --dport 9993 -j RETURN 2>/dev/null
     ip6tables -t nat -D $chain -p udp --dport 123 -j RETURN 2>/dev/null
     ip6tables -t nat -D $chain -p udp --dport 37638 -j RETURN 2>/dev/null
+    ip6tables -t nat -D $chain -p udp --dport 22000 -j RETURN 2>/dev/null
+    ip6tables -t nat -D $chain -p udp --dport 22002 -j RETURN 2>/dev/null
+    ip6tables -t nat -D $chain -p udp --dport 22067 -j RETURN 2>/dev/null
     
     ip6tables -t mangle -D $chain -p udp --dport 9993 -j RETURN 2>/dev/null
     ip6tables -t mangle -D $chain -p udp --dport 123 -j RETURN 2>/dev/null
     ip6tables -t mangle -D $chain -p udp --dport 37638 -j RETURN 2>/dev/null
+    ip6tables -t mangle -D $chain -p udp --dport 22000 -j RETURN 2>/dev/null
+    ip6tables -t mangle -D $chain -p udp --dport 22002 -j RETURN 2>/dev/null
+    ip6tables -t mangle -D $chain -p udp --dport 22067 -j RETURN 2>/dev/null
 done
 
 LOG_OUT "clean iptable rules done"
@@ -201,12 +221,18 @@ iptables -t mangle -N NO_CLASH_PROXY
 iptables -t mangle -I PREROUTING -p udp --dport 9993 -j NO_CLASH_PROXY
 iptables -t mangle -I PREROUTING -p udp --dport 123 -j NO_CLASH_PROXY
 iptables -t mangle -I PREROUTING -p udp --dport 37638 -j NO_CLASH_PROXY
+iptables -t mangle -I PREROUTING -p udp --dport 22000 -j NO_CLASH_PROXY
+iptables -t mangle -I PREROUTING -p udp --dport 22002 -j NO_CLASH_PROXY
+iptables -t mangle -I PREROUTING -p udp --dport 22067 -j NO_CLASH_PROXY
 iptables -t mangle -A NO_CLASH_PROXY -j RETURN
 
 ip6tables -t mangle -N NO_CLASH_PROXY
 ip6tables -t mangle -I PREROUTING -p udp --dport 9993 -j NO_CLASH_PROXY
 ip6tables -t mangle -I PREROUTING -p udp --dport 123 -j NO_CLASH_PROXY
 ip6tables -t mangle -I PREROUTING -p udp --dport 37638 -j NO_CLASH_PROXY
+ip6tables -t mangle -I PREROUTING -p udp --dport 22000 -j NO_CLASH_PROXY
+ip6tables -t mangle -I PREROUTING -p udp --dport 22002 -j NO_CLASH_PROXY
+ip6tables -t mangle -I PREROUTING -p udp --dport 22067 -j NO_CLASH_PROXY
 ip6tables -t mangle -A NO_CLASH_PROXY -j RETURN
 
 for chain in openclash openclash_output; do
