@@ -26,9 +26,14 @@ DST-PORT,9993
 PROCESS-NAME,zerotier-one
 PROCESS-NAME,com.zerotier.one
 
-# STUN
+# STUN default port
 DST-PORT,3478
 DST-PORT,19302
 
-# NTP
+# Syncthing default port
+DST-PORT,22000
+DST-PORT,22002
+DST-PORT,22067
+
+# NTP default port
 DST-PORT,123
