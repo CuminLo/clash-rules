@@ -7,9 +7,6 @@
 🎯 全球直连,https://raw.githubusercontent.com/CuminLo/clash-rules/master/DirectDomain.list
 🇬 Google,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Google.list
 🎯 全球直连,https://raw.githubusercontent.com/CuminLo/clash-rules/master/DirectIP.list
-🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
-🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
-🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list
 🤖 Chat服务,https://raw.githubusercontent.com/CuminLo/clash-rules/master/AI.list
 🤖 Chat服务,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OpenAi.list
 🎯 全球直连,[]RULE-SET,applications
