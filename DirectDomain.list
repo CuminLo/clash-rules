@@ -10,12 +10,9 @@ DOMAIN-SUFFIX,hpeprint.com
 DOMAIN-SUFFIX,epson.com
 DOMAIN-SUFFIX,epsonconnect.com
 DOMAIN-SUFFIX,tunnelmole.com
-DOMAIN-SUFFIX,syncthing.net
-DOMAIN-SUFFIX,xsus.me
-DOMAIN-SUFFIX,xsus.io
-DOMAIN-SUFFIX,xsus.link
-DOMAIN-SUFFIX,xsus.top
-DOMAIN-SUFFIX,xsus.wiki
+DOMAIN-SUFFIX,discovery-v4.syncthing.net
+DOMAIN-SUFFIX,discovery-v6.syncthing.net
+DOMAIN-SUFFIX,discovery.syncthing.net
 DOMAIN-SUFFIX,leoao-inc.com
 DOMAIN-SUFFIX,leoao.com
 DOMAIN-SUFFIX,netease.im

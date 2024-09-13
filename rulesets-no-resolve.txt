@@ -67,6 +67,7 @@
 🚀 节点选择,[]GEOSITE,gfw
 🚀 节点选择,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list
 🚀 节点选择,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
+🎯 全球直连,[]RULE-SET,cncidr,no-resolve
 🎯 全球直连,[]GEOSITE,CN
 🎯 全球直连,[]GEOIP,LAN,no-resolve
 🎯 全球直连,[]GEOIP,CN,no-resolve

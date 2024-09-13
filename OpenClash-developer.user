@@ -1,0 +1,259 @@
+#!/bin/sh
+. /usr/share/openclash/log.sh
+. /lib/functions.sh
+
+# This script is called by /etc/init.d/openclash
+# Add your custom firewall rules here, they will be added after the end of the OpenClash iptables rules
+LOG_OUT "Tip: Start Add Custom Firewall Rules..."
+
+en_mode=$(uci -q get openclash.config.en_mode)
+proxy_port=$(uci -q get openclash.config.proxy_port)
+enable_redirect_dns=$(uci -q get openclash.config.enable_redirect_dns)
+lan_ac_black_ips=$(uci -q get openclash.config.lan_ac_black_ips)
+LOG_OUT "opencla run prot: $proxy_port, en_mode: $en_mode, enable_redirect_dns: $enable_redirect_dns"
+LOG_OUT "opencla lan_ac_black_ips: $lan_ac_black_ips"
+
+# 清除 DNS 劫持规则
+iptables -t nat -D PREROUTING -p udp --dport 53 -j REDIRECT --to-ports "5553" -m comment --comment "DNS V4 Hijack"
+iptables -t nat -D PREROUTING -p tcp --dport 53 -j REDIRECT --to-ports "5553" -m comment --comment "DNS V4 Hijack"
+ip6tables -t nat -D PREROUTING -p udp --dport 53 -j REDIRECT --to-ports "5553" -m comment --comment "DNS V6 Hijack"
+ip6tables -t nat -D PREROUTING -p tcp --dport 53 -j REDIRECT --to-ports "5553" -m comment --comment "DNS V6 Hijack"
+
+# DNS hijack
+iptables -t nat -I PREROUTING -p udp --dport 53 -j REDIRECT --to-ports "5553" -m comment --comment "DNS V4 Hijack"
+iptables -t nat -I PREROUTING -p tcp --dport 53 -j REDIRECT --to-ports "5553" -m comment --comment "DNS V4 Hijack"
+ip6tables -t nat -I PREROUTING -p udp --dport 53 -j REDIRECT --to-ports "5553" -m comment --comment "DNS V6 Hijack"
+ip6tables -t nat -I PREROUTING -p tcp --dport 53 -j REDIRECT --to-ports "5553" -m comment --comment "DNS V6 Hijack"
+
+# 清除 lan_ac_black_ips 规则
+iptables -t nat -D openclash -m set --match-set lan_ac_black_ips src -j RETURN
+iptables -t nat -D openclash_output -m set --match-set lan_ac_black_ips src -j RETURN
+iptables -t mangle -D openclash -m set --match-set lan_ac_black_ips src -j RETURN
+iptables -t mangle -D openclash_output -m set --match-set lan_ac_black_ips src -j RETURN
+
+LOG_OUT "ipset destroy lan_ac_black_ips & create"
+ipset destroy lan_ac_black_ips
+ipset create lan_ac_black_ips hash:net
+# print
+ipset add lan_ac_black_ips 192.168.50.49/32
+ipset add lan_ac_black_ips 192.168.50.120/32
+# MiAiSoundbox
+ipset add lan_ac_black_ips 192.168.50.126/32
+# TCL
+ipset add lan_ac_black_ips 192.168.50.132/32
+# HISENSE
+ipset add lan_ac_black_ips 192.168.50.139/32
+ipset add lan_ac_black_ips 192.168.50.170/32
+# Epson-L3250
+ipset add lan_ac_black_ips 192.168.50.208/32
+# Desktop-Little	
+ipset add lan_ac_black_ips 192.168.50.223/32
+ipset add lan_ac_black_ips 192.168.50.230/32
+
+iptables -t nat -I openclash -m set --match-set lan_ac_black_ips src -j RETURN
+iptables -t mangle -I openclash -m set --match-set lan_ac_black_ips src -j RETURN
+iptables -t nat -I openclash_output -m set --match-set lan_ac_black_ips src -j RETURN
+iptables -t mangle -I openclash_output -m set --match-set lan_ac_black_ips src -j RETURN
+
+LOG_OUT "ipset destroy custom_ip_route"
+ipset destroy custom_ip_route
+
+LOG_OUT "ipset create custom_ip_route"
+ipset create custom_ip_route hash:net
+
+# 初始域名列表
+domain_list="discovery.syncthing.net discovery-v4.syncthing.net discovery-v6.syncthing.net"
+
+# 处理域名列表
+while [ -n "$domain_list" ]; do
+  # 获取当前域名
+  domain=$(echo "$domain_list" | awk '{print $1}')
+  LOG_OUT "Processing $domain..."
+  
+  # 使用dig命令获取域名的记录
+  dig_output=$(dig +short $domain)
+  
+  # 检查dig命令是否成功
+  if [ -z "$dig_output" ]; then
+    LOG_OUT "Error: No records found for $domain."
+    domain_list=$(echo "$domain_list" | sed "s/$domain//")
+    continue
+  fi
+  
+  # 处理CNAME记录
+  cname=$(echo "$dig_output" | grep -E '^[^;].*\.$')
+  if [ -n "$cname" ]; then
+    cname_domain=$(echo "$cname" | awk '{print $1}')
+    LOG_OUT "Found CNAME: $cname_domain"
+    domain_list="$domain_list $cname_domain"
+  fi
+  
+  # 处理A记录
+  a_records=$(echo "$dig_output" | grep -E '^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$')
+  if [ -n "$a_records" ]; then
+    echo "$a_records" | awk '{print $1"/32"}' | while read ip; do
+      ipset add custom_ip_route $ip
+      LOG_OUT "Added $ip to custom_ip_route"
+    done
+  fi
+  
+  # 移除已处理的域名
+  domain_list=$(echo "$domain_list" | sed "s/$domain//")
+done
+
+LOG_OUT "ipset add ip to custom_ip_route"
+ipset add custom_ip_route 74.48.160.148/32
+ipset add custom_ip_route 119.96.0.0/13
+ipset add custom_ip_route 101.124.0.0/15
+ipset add custom_ip_route 111.160.0.0/13
+ipset add custom_ip_route 113.64.0.0/10
+ipset add custom_ip_route 113.240.0.0/13
+ipset add custom_ip_route 116.16.0.0/12
+ipset add custom_ip_route 116.4.0.0/14
+ipset add custom_ip_route 119.144.0.0/14
+ipset add custom_ip_route 180.96.0.0/11
+ipset add custom_ip_route 183.128.0.0/11
+ipset add custom_ip_route 183.0.0.0/10
+ipset add custom_ip_route 120.192.0.0/10
+ipset add custom_ip_route 140.143.0.0/16
+ipset add custom_ip_route 163.125.0.0/16
+ipset add custom_ip_route 218.16.0.0/13
+ipset add custom_ip_route 192.168.0.0/16
+LOG_OUT "ipset add ip to custom_ip_route done"
+
+LOG_OUT "ipset add Syncthing custom_ip_route"
+awk '{print $1}' /etc/LoHomeDDNS/syncting_peer.txt | while read ip; do
+    ipset add custom_ip_route "$ip/32"
+done
+LOG_OUT "ipset add Syncthing custom_ip_route done"
+
+# 清理规则
+LOG_OUT "clean iptable rules..."
+
+iptables -t nat -D openclash -m set --match-set custom_ip_route dst -j RETURN
+iptables -t nat -D openclash_output -m set --match-set custom_ip_route dst -j RETURN
+iptables -t mangle -D openclash -m set --match-set custom_ip_route dst -j RETURN
+iptables -t mangle -D openclash_output -m set --match-set custom_ip_route dst -j RETURN
+
+iptables -t nat -D openclash -m set --match-set china_ip_route dst -j RETURN
+iptables -t nat -D openclash_output -m set --match-set china_ip_route dst -j RETURN
+iptables -t mangle -D openclash -m set --match-set china_ip_route dst -j RETURN
+iptables -t mangle -D openclash_output -m set --match-set china_ip_route dst -j RETURN
+
+iptables -t nat -D openclash -m set --match-set localnetwork dst -j RETURN
+iptables -t nat -D openclash_output -m set --match-set localnetwork dst -j RETURN
+iptables -t mangle -D openclash -m set --match-set localnetwork dst -j RETURN
+iptables -t mangle -D openclash_output -m set --match-set localnetwork dst -j RETURN
+
+iptables -t nat -D openclash -m set --match-set lan_ac_black_ports dst -j RETURN
+iptables -t mangle -D openclash -m set --match-set lan_ac_black_ports dst -j RETURN
+iptables -t nat -D openclash_output -m set --match-set lan_ac_black_ports dst -j RETURN
+iptables -t mangle -D openclash_output -m set --match-set lan_ac_black_ports dst -j RETURN
+
+iptables -t nat -D openclash -m set --match-set localnetwork src -m set --match-set lan_ac_black_ports src -j RETURN
+iptables -t nat -D openclash_output -m set --match-set localnetwork src -m set --match-set lan_ac_black_ports src -j RETURN
+iptables -t mangle -D openclash -m set --match-set localnetwork src -m set --match-set lan_ac_black_ports src -j RETURN
+iptables -t mangle -D openclash_output -m set --match-set localnetwork src -m set --match-set lan_ac_black_ports src -j RETURN
+
+# 清理端口规则
+iptables -t mangle -D PREROUTING -p udp --dport 9993 -j NO_CLASH_PROXY 2>/dev/null
+iptables -t mangle -D PREROUTING -p udp --dport 123 -j NO_CLASH_PROXY 2>/dev/null
+iptables -t mangle -D PREROUTING -p udp --dport 37638 -j NO_CLASH_PROXY 2>/dev/null
+iptables -t mangle -F NO_CLASH_PROXY 2>/dev/null
+iptables -t mangle -X NO_CLASH_PROXY 2>/dev/null
+ip6tables -t mangle -D PREROUTING -p udp --dport 9993 -j NO_CLASH_PROXY 2>/dev/null
+ip6tables -t mangle -D PREROUTING -p udp --dport 123 -j NO_CLASH_PROXY 2>/dev/null
+ip6tables -t mangle -D PREROUTING -p udp --dport 37638 -j NO_CLASH_PROXY 2>/dev/null
+ip6tables -t mangle -F NO_CLASH_PROXY 2>/dev/null
+ip6tables -t mangle -X NO_CLASH_PROXY 2>/dev/null
+
+# 清除 OUTPUT 链中的规则
+iptables -t mangle -D OUTPUT -p udp --dport 9993 -j RETURN 2>/dev/null
+ip6tables -t mangle -D OUTPUT -p udp --dport 9993 -j RETURN 2>/dev/null
+iptables -t mangle -D OUTPUT -p udp --dport 123 -j RETURN 2>/dev/null
+ip6tables -t mangle -D OUTPUT -p udp --dport 123 -j RETURN 2>/dev/null
+iptables -t mangle -D OUTPUT -p udp --dport 37638 -j RETURN 2>/dev/null
+ip6tables -t mangle -D OUTPUT -p udp --dport 37638 -j RETURN 2>/dev/null
+
+# 清除端口规则
+for chain in openclash openclash_output; do
+    iptables -t nat -D $chain -p udp --dport 9993 -j RETURN 2>/dev/null
+    iptables -t nat -D $chain -p udp --dport 123 -j RETURN 2>/dev/null
+    iptables -t nat -D $chain -p udp --dport 37638 -j RETURN 2>/dev/null
+    
+    iptables -t mangle -D $chain -p udp --dport 9993 -j RETURN 2>/dev/null
+    iptables -t mangle -D $chain -p udp --dport 123 -j RETURN 2>/dev/null
+    iptables -t mangle -D $chain -p udp --dport 37638 -j RETURN 2>/dev/null
+
+    ip6tables -t nat -D $chain -p udp --dport 9993 -j RETURN 2>/dev/null
+    ip6tables -t nat -D $chain -p udp --dport 123 -j RETURN 2>/dev/null
+    ip6tables -t nat -D $chain -p udp --dport 37638 -j RETURN 2>/dev/null
+    
+    ip6tables -t mangle -D $chain -p udp --dport 9993 -j RETURN 2>/dev/null
+    ip6tables -t mangle -D $chain -p udp --dport 123 -j RETURN 2>/dev/null
+    ip6tables -t mangle -D $chain -p udp --dport 37638 -j RETURN 2>/dev/null
+done
+
+LOG_OUT "clean iptable rules done"
+
+# 将不需要代理的端口流量跳转到这个新链
+iptables -t mangle -N NO_CLASH_PROXY
+iptables -t mangle -I PREROUTING -p udp --dport 9993 -j NO_CLASH_PROXY
+iptables -t mangle -I PREROUTING -p udp --dport 123 -j NO_CLASH_PROXY
+iptables -t mangle -I PREROUTING -p udp --dport 37638 -j NO_CLASH_PROXY
+iptables -t mangle -A NO_CLASH_PROXY -j RETURN
+
+ip6tables -t mangle -N NO_CLASH_PROXY
+ip6tables -t mangle -I PREROUTING -p udp --dport 9993 -j NO_CLASH_PROXY
+ip6tables -t mangle -I PREROUTING -p udp --dport 123 -j NO_CLASH_PROXY
+ip6tables -t mangle -I PREROUTING -p udp --dport 37638 -j NO_CLASH_PROXY
+ip6tables -t mangle -A NO_CLASH_PROXY -j RETURN
+
+for chain in openclash openclash_output; do
+    for table in nat mangle; do
+        #china_ip_route
+        iptables -t $table -I $chain -m set --match-set custom_ip_route dst -j RETURN
+        iptables -t $table -I $chain -m set --match-set china_ip_route dst -j RETURN
+
+        #localnetwork
+        iptables -t $table -I $chain -m set --match-set localnetwork dst -j RETURN
+        iptables -t $table -I $chain -m set --match-set lan_ac_black_ports dst -j RETURN
+        iptables -t $table -I chain -m set --match-set localnetwork src -m set --match-set lan_ac_black_ports src -j RETURN
+
+        # 端口
+        iptables -t $table -I $chain 1 -p udp --dport 9993 -j RETURN
+        iptables -t $table -I $chain 1 -p udp --dport 123 -j RETURN
+        iptables -t $table -I $chain 1 -p udp --dport 37638 -j RETURN
+        iptables -t $table -I $chain 1 -p udp --dport 22000 -j RETURN
+        iptables -t $table -I $chain 1 -p udp --dport 22002 -j RETURN
+        iptables -t $table -I $chain 1 -p udp --dport 22067 -j RETURN
+        ip6tables -t $table -I $chain 1 -p udp --dport 9993 -j RETURN
+        ip6tables -t $table -I $chain 1 -p udp --dport 123 -j RETURN
+        ip6tables -t $table -I $chain 1 -p udp --dport 37638 -j RETURN
+        ip6tables -t $table -I $chain 1 -p udp --dport 22000 -j RETURN
+        ip6tables -t $table -I $chain 1 -p udp --dport 22002 -j RETURN
+        ip6tables -t $table -I $chain 1 -p udp --dport 22067 -j RETURN
+    done
+done
+
+# 处理路由器自身的流量（OUTPUT 链）
+for table in mangle; do
+    iptables -t $table -I OUTPUT 1 -p udp --dport 9993 -j RETURN
+    iptables -t $table -I OUTPUT 1 -p udp --dport 123 -j RETURN
+    iptables -t $table -I OUTPUT 1 -p udp --dport 37638 -j RETURN
+    iptables -t $table -I OUTPUT 1 -p udp --dport 22000 -j RETURN
+    iptables -t $table -I OUTPUT 1 -p udp --dport 22002 -j RETURN
+    iptables -t $table -I OUTPUT 1 -p udp --dport 22067 -j RETURN
+    ip6tables -t $table -I OUTPUT 1 -p udp --dport 9993 -j RETURN
+    ip6tables -t $table -I OUTPUT 1 -p udp --dport 123 -j RETURN
+    ip6tables -t $table -I OUTPUT 1 -p udp --dport 37638 -j RETURN
+    ip6tables -t $table -I OUTPUT 1 -p udp --dport 22000 -j RETURN
+    ip6tables -t $table -I OUTPUT 1 -p udp --dport 22002 -j RETURN
+    ip6tables -t $table -I OUTPUT 1 -p udp --dport 22067 -j RETURN
+done
+
+LOG_OUT "AdGuardHome restarting"
+/etc/init.d/AdGuardHome restart
+LOG_OUT "AdGuardHome restarted"
+
+exit 0
