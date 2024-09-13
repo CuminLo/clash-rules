@@ -46,7 +46,7 @@
 💬 自由消息,[]RULE-SET,twitter
 💬 自由消息,[]RULE-SET,discord
 💬 自由消息,[]RULE-SET,tiktok
-💬 自由消息,[]GEOSITE,telegramss
+💬 自由消息,[]GEOSITE,telegram
 💬 自由消息,[]GEOSITE,twitter
 🚀 节点选择,[]RULE-SET,gfw
 🚀 节点选择,[]RULE-SET,proxy
