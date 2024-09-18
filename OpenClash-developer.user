@@ -60,8 +60,7 @@ ipset add lan_ac_black_ips 192.168.50.139/32
 ipset add lan_ac_black_ips 192.168.50.170/32
 # Epson-L3250
 ipset add lan_ac_black_ips 192.168.50.208/32
-# Desktop-Little
-ipset add lan_ac_black_ips 192.168.50.223/32
+
 ipset add lan_ac_black_ips 192.168.50.230/32
 
 iptables -t nat -I openclash -m set --match-set lan_ac_black_ips src -j RETURN
