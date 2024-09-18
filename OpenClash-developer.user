@@ -275,20 +275,20 @@ for chain in openclash openclash_output; do
 done
 
 # 处理路由器自身的流量（OUTPUT 链）
-# for table in mangle; do
-#     iptables -t $table -I OUTPUT 1 -p udp --dport 9993 -j RETURN
-#     iptables -t $table -I OUTPUT 1 -p udp --dport 123 -j RETURN
-#     iptables -t $table -I OUTPUT 1 -p udp --dport 37638 -j RETURN
-#     iptables -t $table -I OUTPUT 1 -p udp --dport 22000 -j RETURN
-#     iptables -t $table -I OUTPUT 1 -p udp --dport 22002 -j RETURN
-#     iptables -t $table -I OUTPUT 1 -p udp --dport 22067 -j RETURN
-#     ip6tables -t $table -I OUTPUT 1 -p udp --dport 9993 -j RETURN
-#     ip6tables -t $table -I OUTPUT 1 -p udp --dport 123 -j RETURN
-#     ip6tables -t $table -I OUTPUT 1 -p udp --dport 37638 -j RETURN
-#     ip6tables -t $table -I OUTPUT 1 -p udp --dport 22000 -j RETURN
-#     ip6tables -t $table -I OUTPUT 1 -p udp --dport 22002 -j RETURN
-#     ip6tables -t $table -I OUTPUT 1 -p udp --dport 22067 -j RETURN
-# done
+for table in mangle; do
+    iptables -t $table -I OUTPUT 1 -p udp --dport 9993 -j RETURN
+    iptables -t $table -I OUTPUT 1 -p udp --dport 123 -j RETURN
+    iptables -t $table -I OUTPUT 1 -p udp --dport 37638 -j RETURN
+    iptables -t $table -I OUTPUT 1 -p udp --dport 22000 -j RETURN
+    iptables -t $table -I OUTPUT 1 -p udp --dport 22002 -j RETURN
+    iptables -t $table -I OUTPUT 1 -p udp --dport 22067 -j RETURN
+    ip6tables -t $table -I OUTPUT 1 -p udp --dport 9993 -j RETURN
+    ip6tables -t $table -I OUTPUT 1 -p udp --dport 123 -j RETURN
+    ip6tables -t $table -I OUTPUT 1 -p udp --dport 37638 -j RETURN
+    ip6tables -t $table -I OUTPUT 1 -p udp --dport 22000 -j RETURN
+    ip6tables -t $table -I OUTPUT 1 -p udp --dport 22002 -j RETURN
+    ip6tables -t $table -I OUTPUT 1 -p udp --dport 22067 -j RETURN
+done
 
 LOG_OUT "AdGuardHome restarting"
 /etc/init.d/AdGuardHome restart
