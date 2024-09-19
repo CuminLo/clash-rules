@@ -57,6 +57,7 @@ ipset add lan_ac_black_ips 192.168.50.126/32
 ipset add lan_ac_black_ips 192.168.50.132/32
 # HISENSE
 ipset add lan_ac_black_ips 192.168.50.139/32
+# Redmi-Note-11R
 ipset add lan_ac_black_ips 192.168.50.170/32
 # Epson-L3250
 ipset add lan_ac_black_ips 192.168.50.208/32
