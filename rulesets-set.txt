@@ -15,6 +15,7 @@
 🎯 全球直连,[]RULE-SET,private
  苹果服务,[]RULE-SET,icloud
  苹果服务,[]RULE-SET,apple
+ 苹果服务,[]RULE-SET,appleall
  苹果服务,[]GEOSITE,apple-cn
 📹 油管视频,[]RULE-SET,youtube
 📹 油管视频,[]RULE-SET,netflix
@@ -48,11 +49,15 @@
 💬 自由消息,[]GEOIP,twitter
 🚀 节点选择,[]RULE-SET,gfw
 🚀 节点选择,[]RULE-SET,proxy
+🚀 节点选择,[]RULE-SET,global
+🚀 节点选择,[]RULE-SET,proxyclassical
 🎯 全球直连,[]RULE-SET,china
-🎯 全球直连,[]RULE-SET,china1
+🎯 全球直连,[]RULE-SET,chinax
+🎯 全球直连,[]RULE-SET,chinatest
 🎯 全球直连,[]RULE-SET,direct
 🎯 全球直连,[]RULE-SET,lancidr,no-resolve
 🎯 全球直连,[]RULE-SET,cncidr,no-resolve
+🎯 全球直连,[]RULE-SET,chinaips,no-resolve
 🎯 全球直连,[]GEOIP,LAN,no-resolve
 🎯 全球直连,[]GEOIP,CN,no-resolve
 🎯 全球直连,[]FINAL
