@@ -1,11 +1,12 @@
-# 自用
-DOMAIN-SUFFIX,69shu.com
-DOMAIN-SUFFIX,69shuba.com
-DOMAIN-SUFFIX,69xinshu.com
-DOMAIN-SUFFIX,69shu.pro
-DOMAIN-SUFFIX,bequge.info
-DOMAIN-SUFFIX,ipify.org
-DOMAIN-SUFFIX,followme.com
-DOMAIN-SUFFIX,steamcommunity.com
-PROCESS-NAME,Dropbox
-PROCESS-NAME,DropboxFileProvider
+payload:
+  - DOMAIN-SUFFIX,69shu.com
+  - DOMAIN-SUFFIX,69shuba.com
+  - DOMAIN-SUFFIX,69xinshu.com
+  - DOMAIN-SUFFIX,69shu.pro
+  - DOMAIN-SUFFIX,bequge.info
+  - DOMAIN-SUFFIX,ipify.org
+  - DOMAIN-SUFFIX,followme.com
+  - DOMAIN-SUFFIX,steamcommunity.com
+  - DOMAIN-SUFFIX,metacubex.one
+  - PROCESS-NAME,Dropbox
+  - PROCESS-NAME,DropboxFileProvider

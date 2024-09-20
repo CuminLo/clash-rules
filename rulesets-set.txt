@@ -1,4 +1,4 @@
-🚀 节点选择,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Proxy.list
+🚀 节点选择,[]RULE-SET,myproxy
 🅱️ Crypto,[]RULE-SET,crypto
 🅱️ Crypto,[]RULE-SET,binance
 🅱️ Crypto,https://raw.githubusercontent.com/CuminLo/clash-rules/master/Binance.list
