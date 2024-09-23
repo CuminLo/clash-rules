@@ -32,6 +32,7 @@
 [/smarthao.com/]h3://223.5.5.5/dns-query
 [/iiiview.net/]h3://223.5.5.5/dns-query
 [/talk915.com/]h3://223.5.5.5/dns-query
+[/tiantiantiaosheng.com/]h3://223.5.5.5/dns-query
 [/dpfile.com/dianping.com/]h3://223.5.5.5/dns-query
 [/didistatic.com/xiaojukeji.com/udache.com/chengxinyouxuan.com/]h3://223.5.5.5/dns-query
 [/hangzyuyuan.com/]h3://223.5.5.5/dns-query
