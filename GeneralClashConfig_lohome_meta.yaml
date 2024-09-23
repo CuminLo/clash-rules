@@ -93,6 +93,7 @@ dns:
     - "geosite:cn"
     - "geosite:tld-cn"
     - "geosite:tracker"
+    - "+.cn"
     - "+.apple.com"
     - "+.synology.me"
     - "+.synology.com"
@@ -208,10 +209,8 @@ dns:
     - "*.mcdn.bilivideo.cn"
     - "+.media.dssott.com"
     - shark007.net
-    - ntp.ntsc.ac.cn
     - '*.mcdn.bilivideo.cn'
     - "+.media.dssott.com"
-    - ntp.ntsc.ac.cn
     - '*.mcdn.bilivideo.cn'
     - +.media.dssott.com
     - +.cmbchina.com
