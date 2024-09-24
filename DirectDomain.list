@@ -1,116 +1,99 @@
-# 自用
-DOMAIN-SUFFIX,lohome.top
-DOMAIN-SUFFIX,synology.me
-DOMAIN-SUFFIX,synology.com
-DOMAIN-SUFFIX,dyndns.com
-DOMAIN-SUFFIX,ddnsfree.com
-DOMAIN-SUFFIX,myaddr.tools
-DOMAIN-SUFFIX,oray.net
-DOMAIN-SUFFIX,hpeprint.com
-DOMAIN-SUFFIX,epson.com
-DOMAIN-SUFFIX,epsonconnect.com
-DOMAIN-SUFFIX,tunnelmole.com
-DOMAIN-SUFFIX,discovery-v4.syncthing.net
-DOMAIN-SUFFIX,discovery-v6.syncthing.net
-DOMAIN-SUFFIX,discovery.syncthing.net
-DOMAIN-SUFFIX,leoao-inc.com
-DOMAIN-SUFFIX,leoao.com
-DOMAIN-SUFFIX,netease.im
-DOMAIN-SUFFIX,cn-fp.apitd.net
-DOMAIN-SUFFIX,jone.work
-DOMAIN-SUFFIX,proginn.com
-DOMAIN-SUFFIX,ulikecam.com
-
-#小绿人
-DOMAIN-SUFFIX,xlvren.com
-
-#微邮付
-DOMAIN-SUFFIX,gdwxyf.com
-
-# Company
-DOMAIN-SUFFIX,tencentcdb.com
-DOMAIN-SUFFIX,file.myqcloud.com
-DOMAIN-SUFFIX,newlink.com
-DOMAIN-SUFFIX,newlinks.com
-DOMAIN-SUFFIX,nlsaas.com
-DOMAIN-SUFFIX,shylwlkj.com
-DOMAIN-SUFFIX,czb365.com
-DOMAIN-SUFFIX,nlktj.cn
-DOMAIN-SUFFIX,unicornenergy.cn
-DOMAIN-SUFFIX,lingnengsaas.com
-DOMAIN-SUFFIX,tencentcdb.com
-DOMAIN-SUFFIX,pool.ntp.org
-DOMAIN-SUFFIX,ipw.cn
-DOMAIN-SUFFIX,api.bilibili.com
-DOMAIN-SUFFIX,api.weibo.cn
-DOMAIN-SUFFIX,toutiaoapi.com
-DOMAIN-SUFFIX,asia.deribit.com
-DOMAIN-SUFFIX,g4weixin.com
-DOMAIN-SUFFIX,g4weixin.com
-DOMAIN-SUFFIX,webao99.com
-DOMAIN-SUFFIX,hhdd.com
-DOMAIN-SUFFIX,xuedianyun.com
-DOMAIN-SUFFIX,yzjtech.com
-DOMAIN-SUFFIX,akamaized.net
-DOMAIN-SUFFIX,tiantiantiaosheng.com
-DOMAIN-SUFFIX,yufanai.com
-DOMAIN-SUFFIX,dingtalkcloud.com
-DOMAIN-SUFFIX,parallels.com
-DOMAIN-SUFFIX,gfe.nvidia.com
-DOMAIN-SUFFIX,digicert.cn
-DOMAIN-SUFFIX,zerotier.com
-DOMAIN-SUFFIX,xueersi.com
-DOMAIN-SUFFIX,xesv5.com
-DOMAIN-SUFFIX,kunlungr.com
-DOMAIN-SUFFIX,xiaomixiaoai.com
-DOMAIN-SUFFIX,cdnmg.com
-DOMAIN-SUFFIX,alikunlun.com
-DOMAIN-SUFFIX,elemecdn.com
-DOMAIN-SUFFIX,zhuanstatic.com
-DOMAIN-SUFFIX,pddpic.com
-DOMAIN-SUFFIX,pinduoduo.net
-DOMAIN-SUFFIX,smarthao.com
-DOMAIN-SUFFIX,fqnovel.com
-DOMAIN-SUFFIX,tiancaixing.com
-DOMAIN-SUFFIX,okii.com
-DOMAIN-SUFFIX,didistatic.com
-DOMAIN-SUFFIX,chengxinyouxuan.com
-DOMAIN-SUFFIX,hangzyuyuan.com
-DOMAIN-SUFFIX,95516.com
-DOMAIN-SUFFIX,finzfin.com
-DOMAIN-SUFFIX,0kkkkkt.com
-DOMAIN-SUFFIX,wtzw.com
-DOMAIN-SUFFIX,weilayun.com
-DOMAIN-SUFFIX,volces.com
-DOMAIN-SUFFIX,vegslb.com
-DOMAIN-SUFFIX,xunyou.mobi
-DOMAIN-SUFFIX,xdrun.com
-DOMAIN-SUFFIX,qm989.com
-DOMAIN-SUFFIX,dutils.com
-DOMAIN-SUFFIX,etoote.com
-DOMAIN-SUFFIX,tanx.com
-DOMAIN-SUFFIX,qishui.com
-DOMAIN-SUFFIX,chinanetcenter.com
-DOMAIN-SUFFIX,ndcpp.com
-DOMAIN-SUFFIX,api.xhofe.top
-
-DOMAIN-KEYWORD,shenzhen
-
-# talk915.com
-DOMAIN-SUFFIX,talk915.com
-DOMAIN-SUFFIX,qcloudclass.com
-
-# DNS
-DOMAIN-SUFFIX,144dns.com
-
-# APP
-DOMAIN-SUFFIX,goodnotescloud.com
-
-DOMAIN-SUFFIX,quyixian.com
-
-# 起点
-DOMAIN-KEYWORD,qdreaderpic
-DOMAIN-KEYWORD,readx
-
-#DOMAIN-SUFFIX,time.is
-DOMAIN-SUFFIX,vdo.ninja
+payload:
+  - DOMAIN-SUFFIX,lohome.top
+  - DOMAIN-SUFFIX,synology.me
+  - DOMAIN-SUFFIX,synology.com
+  - DOMAIN-SUFFIX,fnos.net
+  - DOMAIN-SUFFIX,fnnas.com
+  - DOMAIN-SUFFIX,dyndns.com
+  - DOMAIN-SUFFIX,ddnsfree.com
+  - DOMAIN-SUFFIX,myaddr.tools
+  - DOMAIN-SUFFIX,oray.net
+  - DOMAIN-SUFFIX,hpeprint.com
+  - DOMAIN-SUFFIX,epson.com
+  - DOMAIN-SUFFIX,epsonconnect.com
+  - DOMAIN-SUFFIX,tunnelmole.com
+  - DOMAIN-SUFFIX,discovery-v4.syncthing.net
+  - DOMAIN-SUFFIX,discovery-v6.syncthing.net
+  - DOMAIN-SUFFIX,discovery.syncthing.net
+  - DOMAIN-SUFFIX,leoao-inc.com
+  - DOMAIN-SUFFIX,leoao.com
+  - DOMAIN-SUFFIX,netease.im
+  - DOMAIN-SUFFIX,cn-fp.apitd.net
+  - DOMAIN-SUFFIX,jone.work
+  - DOMAIN-SUFFIX,proginn.com
+  - DOMAIN-SUFFIX,ulikecam.com
+  - DOMAIN-SUFFIX,xlvren.com
+  - DOMAIN-SUFFIX,gdwxyf.com
+  - DOMAIN-SUFFIX,tencentcdb.com
+  - DOMAIN-SUFFIX,file.myqcloud.com
+  - DOMAIN-SUFFIX,newlink.com
+  - DOMAIN-SUFFIX,newlinks.com
+  - DOMAIN-SUFFIX,nlsaas.com
+  - DOMAIN-SUFFIX,shylwlkj.com
+  - DOMAIN-SUFFIX,czb365.com
+  - DOMAIN-SUFFIX,nlktj.cn
+  - DOMAIN-SUFFIX,unicornenergy.cn
+  - DOMAIN-SUFFIX,lingnengsaas.com
+  - DOMAIN-SUFFIX,tencentcdb.com
+  - DOMAIN-SUFFIX,pool.ntp.org
+  - DOMAIN-SUFFIX,ipw.cn
+  - DOMAIN-SUFFIX,api.bilibili.com
+  - DOMAIN-SUFFIX,api.weibo.cn
+  - DOMAIN-SUFFIX,toutiaoapi.com
+  - DOMAIN-SUFFIX,asia.deribit.com
+  - DOMAIN-SUFFIX,g4weixin.com
+  - DOMAIN-SUFFIX,g4weixin.com
+  - DOMAIN-SUFFIX,webao99.com
+  - DOMAIN-SUFFIX,hhdd.com
+  - DOMAIN-SUFFIX,xuedianyun.com
+  - DOMAIN-SUFFIX,yzjtech.com
+  - DOMAIN-SUFFIX,akamaized.net
+  - DOMAIN-SUFFIX,tiantiantiaosheng.com
+  - DOMAIN-SUFFIX,yufanai.com
+  - DOMAIN-SUFFIX,dingtalkcloud.com
+  - DOMAIN-SUFFIX,parallels.com
+  - DOMAIN-SUFFIX,gfe.nvidia.com
+  - DOMAIN-SUFFIX,digicert.cn
+  - DOMAIN-SUFFIX,xueersi.com
+  - DOMAIN-SUFFIX,xesv5.com
+  - DOMAIN-SUFFIX,kunlungr.com
+  - DOMAIN-SUFFIX,xiaomixiaoai.com
+  - DOMAIN-SUFFIX,cdnmg.com
+  - DOMAIN-SUFFIX,alikunlun.com
+  - DOMAIN-SUFFIX,elemecdn.com
+  - DOMAIN-SUFFIX,zhuanstatic.com
+  - DOMAIN-SUFFIX,pddpic.com
+  - DOMAIN-SUFFIX,pinduoduo.net
+  - DOMAIN-SUFFIX,smarthao.com
+  - DOMAIN-SUFFIX,fqnovel.com
+  - DOMAIN-SUFFIX,tiancaixing.com
+  - DOMAIN-SUFFIX,okii.com
+  - DOMAIN-SUFFIX,didistatic.com
+  - DOMAIN-SUFFIX,chengxinyouxuan.com
+  - DOMAIN-SUFFIX,hangzyuyuan.com
+  - DOMAIN-SUFFIX,95516.com
+  - DOMAIN-SUFFIX,finzfin.com
+  - DOMAIN-SUFFIX,0kkkkkt.com
+  - DOMAIN-SUFFIX,wtzw.com
+  - DOMAIN-SUFFIX,weilayun.com
+  - DOMAIN-SUFFIX,volces.com
+  - DOMAIN-SUFFIX,vegslb.com
+  - DOMAIN-SUFFIX,xunyou.mobi
+  - DOMAIN-SUFFIX,xdrun.com
+  - DOMAIN-SUFFIX,qm989.com
+  - DOMAIN-SUFFIX,dutils.com
+  - DOMAIN-SUFFIX,etoote.com
+  - DOMAIN-SUFFIX,tanx.com
+  - DOMAIN-SUFFIX,qishui.com
+  - DOMAIN-SUFFIX,chinanetcenter.com
+  - DOMAIN-SUFFIX,ndcpp.com
+  - DOMAIN-SUFFIX,api.xhofe.top
+  - DOMAIN-KEYWORD,shenzhen
+  - DOMAIN-SUFFIX,talk915.com
+  - DOMAIN-SUFFIX,qcloudclass.com
+  - DOMAIN-SUFFIX,144dns.com
+  - DOMAIN-SUFFIX,goodnotescloud.com
+  - DOMAIN-SUFFIX,quyixian.com
+  - DOMAIN-KEYWORD,qdreaderpic
+  - DOMAIN-KEYWORD,readx
+  - DOMAIN-SUFFIX,vdo.ninja

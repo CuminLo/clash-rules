@@ -8,5 +8,6 @@ payload:
   - DOMAIN-SUFFIX,followme.com
   - DOMAIN-SUFFIX,steamcommunity.com
   - DOMAIN-SUFFIX,metacubex.one
+  - DOMAIN-SUFFIX,api.nn.ci
   - PROCESS-NAME,Dropbox
   - PROCESS-NAME,DropboxFileProvider

@@ -19,6 +19,8 @@
 [/360buyimg.com/]h3://223.5.5.5/dns-query
 [/dutils.com/]h3://223.5.5.5/dns-query
 [/etoote.com/]h3://223.5.5.5/dns-query
+[/fnos.net/fnnas.com/]h3://223.5.5.5/dns-query
+[/goodnotescloud.com/]h3://223.5.5.5/dns-query
 [/xunyou.mobi/]h3://223.5.5.5/dns-query
 [/volces.com/]h3://223.5.5.5/dns-query
 [/ulikecam.com/]h3://223.5.5.5/dns-query
@@ -41,6 +43,7 @@
 [/tiancaixing.com/]h3://223.5.5.5/dns-query
 [/okii.com/]h3://223.5.5.5/dns-query
 [/qbox.me/hiecheimaetu.com/]h3://223.5.5.5/dns-query
+[/quyixian.com/]h3://223.5.5.5/dns-query
 [/gensee.com/]h3://223.5.5.5/dns-query
 [/cdnmg.com/]h3://223.5.5.5/dns-query
 [/tl88.net/]h3://223.5.5.5/dns-query
