@@ -6,7 +6,6 @@ PROCESS-NAME,Lark Helper
 PROCESS-NAME,syncthing
 
 # Printer
-SRC-IP-CIDR,192.168.50.49/32,no-resolve
 SRC-IP-CIDR,192.168.50.208/32,no-resolve
 
 # MiAiSoundbox

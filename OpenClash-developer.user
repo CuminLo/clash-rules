@@ -46,8 +46,6 @@ iptables -t mangle -D openclash_output -m set --match-set lan_ac_black_ips src -
 LOG_OUT "ipset destroy lan_ac_black_ips & create"
 ipset destroy lan_ac_black_ips
 ipset create lan_ac_black_ips hash:net
-# print
-ipset add lan_ac_black_ips 192.168.50.49/32
 # Q2
 ipset add lan_ac_black_ips 192.168.50.100/32
 ipset add lan_ac_black_ips 192.168.50.120/32
