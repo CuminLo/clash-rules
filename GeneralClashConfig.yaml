@@ -342,27 +342,53 @@ FilterUS: &FilterUS '^(?=.*((?i)🇺🇸|美国|波特兰|达拉斯|俄勒冈|�
 FilterTW: &FilterTW '^(?=.*((?i)台湾|(\b(TW|Taiwan)\b)))^(?!.*(网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点)).*$'
 FilterVPS: &FilterVPS '^(?=.*((?i)0x)).*$'
 
-Select: &Select {type: select, url: 'http://connectivitycheck.platform.hicloud.com/generate_204', disable-udp: false, hidden: false, include-all: true}
+UrlTest: &UrlTest 
+  type: url-test
+  url: 'http://connectivitycheck.platform.hicloud.com/generate_204'
+  disable-udp: false
+  hidden: false
+  include-all: true
+  tolerance: 50
+  lazy: true
+  interval: 300
+  timeout: 600
+
+SelectAll: &SelectAll 
+  type: select
+  disable-udp: false
+  hidden: false
+  include-all: true
+  lazy: true
+  interval: 300
+  timeout: 600
+
+Select: &Select 
+  type: select
+  disable-udp: false
+  hidden: false
+  lazy: true
+  interval: 300
+  timeout: 600
 
 proxy-groups: 
-  - {name: 🚀 节点选择, type: select, proxies: [🔥 手动切换, ♻️ 自动选择, DIRECT]}
-  - {name: 🔥 手动切换, type: select, include-all: true}
-  - {name: ♻️ 自动选择, type: url-test, include-all: true, tolerance: 10}
-  - {name: 🅱️ Crypto, <<: *Select, filter: *FilterCrypto}
+  - {name: 🚀 节点选择, <<: *Select, proxies: [🔥 手动切换, ♻️ 自动选择, DIRECT]}
+  - {name: 🔥 手动切换, <<: *SelectAll}
+  - {name: ♻️ 自动选择, <<: *UrlTest}
+  - {name: 🅱️ Crypto, <<: *SelectAll, filter: *FilterCrypto}
   - {name: 🎯 全球直连, type: select, proxies: [DIRECT]}
   - {name: 🆎 AdBlock, type: select, proxies: [REJECT, DIRECT]}
-  - {name: 🇬 Google, type: select, proxies: [🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
-  - {name: 🤖 Chat服务, type: select, proxies: [🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
-  - {name:  苹果服务, type: select, proxies: [DIRECT, 🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
-  - {name: 📹 油管视频, type: select, proxies: [🔥 手动切换, 🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
-  - {name: 👨‍💻‍ Github, type: select, proxies: [🔥 手动切换, 🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
-  - {name: 📺 巴哈姆特, type: select, proxies: [🇨🇳 台湾节点, 🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
-  - {name: Ⓜ️ 微软云盘, type: select, proxies: [DIRECT, 🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
-  - {name: Ⓜ️ 微软服务, type: select, proxies: [DIRECT, 🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
-  - {name: 💬 自由消息, type: select, proxies: [🔥 手动切换, 🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
-  - {name: 🐔 落地鸡, <<: *Select, filter: *FilterVPS}
-  - {name: 🇺🇲 美国节点, <<: *Select, filter: *FilterUS}
-  - {name: 🇨🇳 台湾节点, <<: *Select, filter: *FilterTW}
+  - {name: 🇬 Google, <<: *Select, proxies: [🔥 手动切换, 🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
+  - {name: 🤖 Chat服务, <<: *Select, proxies: [🔥 手动切换, 🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
+  - {name:  苹果服务, <<: *Select, proxies: [DIRECT, 🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
+  - {name: 📹 油管视频, <<: *Select, proxies: [🔥 手动切换, 🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
+  - {name: 👨‍💻‍ Github, <<: *Select, proxies: [🔥 手动切换, 🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
+  - {name: 📺 巴哈姆特, <<: *Select, proxies: [🇨🇳 台湾节点, 🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
+  - {name: Ⓜ️ 微软云盘, <<: *Select, proxies: [DIRECT, 🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
+  - {name: Ⓜ️ 微软服务, <<: *Select, proxies: [DIRECT, 🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
+  - {name: 💬 自由消息, <<: *Select, proxies: [🔥 手动切换, 🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
+  - {name: 🐔 落地鸡, <<: *SelectAll, filter: *FilterVPS}
+  - {name: 🇺🇲 美国节点, <<: *UrlTest, filter: *FilterUS}
+  - {name: 🇨🇳 台湾节点, <<: *UrlTest, filter: *FilterTW}
 
 rules:
   - RULE-SET,myproxy,🚀 节点选择
