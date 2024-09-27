@@ -1,4 +1,3 @@
-
 port: 7890
 socks-port: 7891
 mixed-port: 7893
@@ -83,9 +82,11 @@ tun:
     - fc00::/7
     - fe80::/10
     - ff00::/8
+
 profile:
   store-selected: true
-  store-fake-ip: false
+  store-fake-ip: true
+  
 dns:
   enable: true
   use-system-hosts: true
@@ -146,10 +147,14 @@ sniffer:
 NodeParam: &NodeParam {type: http, interval: 86400, health-check: {enable: true, url: 'http://www.google.com/generate_204', interval: 60}}
 
 proxy-providers: 
-  converter:
-    url: '订阅地址'
+  sub0:
+    url: 'https://sub.lohome.top/sub?target=clash&new_name=true&url=tag:myfq,hy2%3A%2F%2F2AfyDiY9Bemc4v%4074.48.160.148%3A4433%2F%3Finsecure%3D1%26up%3D60%26down%3D800%26sni%3Dweb3.lohome.top%23%F0%9F%87%BA%F0%9F%87%B8%20US-0xHy2%7Ctag:myfq,ss%3A%2F%2FMjAyMi1ibGFrZTMtYWVzLTI1Ni1nY206czJId0NVN2oxYXNZQ0J4dExDRUs4WjhYc1dhQytITWhCaFJ5bXhLVXFGRT1ANzQuNDguMTYwLjE0ODo1MTYzMg%3D%3D%23US-0xShadownsocksVPS%7Ctag:myfq,vless%3A%2F%2F98283750-b295-4171-b3a2-2f5ac3570c2c%40web4-cdn.lohome.top%3A443%2F%3Ftype%3Dws%26encryption%3Dnone%26path%3D%252Fquery%26security%3Dtls%26allowInsecure%3D1%23US-0xWeb4-VLESS-CDN%7Ctag:myfq,vless%3A%2F%2F98283750-b295-4171-b3a2-2f5ac3570c2c%40web4.lohome.top%3A443%2F%3Ftype%3Dws%26encryption%3Dnone%26path%3D%252Fquery%26security%3Dtls%26allowInsecure%3D0%23US-0xWeb4-VLESS-%E7%9B%B4%E8%BF%9E%7Ctag:myfq,vmess%3A%2F%2FeyJhZGQiOiJ3ZWIzLmxvaG9tZS50b3AiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6IiIsImlkIjoiOTgyODM3NTAtYjI5NS00MTcxLWIzYTItMmY1YWMzNTcwYzJjIiwibmV0Ijoid3MiLCJwYXRoIjoiL3F1ZXJ5IiwicG9ydCI6IjQ0MyIsInBzIjoiVVMtMHhXZWIzLVZNRVNTLeebtOi%2FniIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoiIiwidiI6IjIifQ%3D%3D%7Ctag:myfq,vmess%3A%2F%2FeyJhZGQiOiJ3ZWIzLWNkbi5sb2hvbWUudG9wIiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiIiLCJpZCI6Ijk4MjgzNzUwLWIyOTUtNDE3MS1iM2EyLTJmNWFjMzU3MGMyYyIsIm5ldCI6IndzIiwicGF0aCI6Ii9xdWVyeSIsInBvcnQiOiI0NDMiLCJwcyI6IlVTLTB4V2ViMy1DRE4iLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoidGxzIiwidHlwZSI6IiIsInYiOiIyIn0%3D%7Ctag:myfq,vmess%3A%2F%2FeyJ2IjoiMiIsInBzIjoiVVMtMHhXZWIxLWdSUEMiLCJhZGQiOiIweHdlYjEubG9ob21lLnRvcCIsInBvcnQiOjQ0MywiaWQiOiJmYzU4Zjk4Mi1iYTNhLTQ5ZWMtOGQ3Mi05MWZhY2E0YWNhNWMiLCJhaWQiOjAsIm5ldCI6ImdycGMiLCJza2lwLWNlcnQtdmVyaWZ5Ijp0cnVlLCJzbmkiOiIweHdlYjEubG9ob21lLnRvcCIsInBhdGgiOiIweHdlYjEubG9ob21lLnRvcCIsInRscyI6InRscyJ9&config=https%3A%2F%2Fraw.githubusercontent.com%2FCuminLo%2Fclash-rules%2Fmaster%2FACL4SSR_Online_Full_lohome_meta.ini&scv=true&add_emoji=true&append_type=true'
     <<: *NodeParam
-    path: './ProxyProvider/Providers.yaml'
+    path: './ProxyProvider/sub0.yaml'
+  sub1:
+    url: 'https://sub.lohome.top/sub?target=clash&new_name=true&url=tag:zhilian,http%3A%2F%2Fsub2.cutecloud.net%2Flink%2FbKWVQ0MHAPlCTAf7%3Fclash%3D1%7Ctag:yiyuan,https%3A%2F%2Fapi2.xn--bnq37rc0nw50b.com%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3D12290d9e819684aa5c5cfd4e57173912%7Ctag:paopao,https%3A%2F%2Fcdn1723443473.kunlun-c3r0j7sv-ppg.xyz%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3D5a55dcc8f212bb76c2c9c68e70f9044b&config=https%3A%2F%2Fraw.githubusercontent.com%2FCuminLo%2Fclash-rules%2Fmaster%2FACL4SSR_Online_Full_lohome_meta.ini&scv=true&add_emoji=true&append_type=true'
+    <<: *NodeParam
+    path: './ProxyProvider/sub1.yaml'
 
 RuleSetDomain: &RuleSetDomain {type: http, behavior: domain, interval: 86400, proxy: DIRECT}
 RuleSetClassical: &RuleSetClassical {type: http, behavior: classical, interval: 86400, proxy: DIRECT}
@@ -400,7 +405,7 @@ proxy-groups:
   - {name: Ⓜ️ 微软云盘, <<: *Select, proxies: [DIRECT, 🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
   - {name: Ⓜ️ 微软服务, <<: *Select, proxies: [DIRECT, 🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
   - {name: 💬 自由消息, <<: *Select, proxies: [🔥 手动切换, 🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
-  - {name: 🐔 落地鸡, <<: *SelectAll, filter: *FilterVPS}
+  - {name: 🐔 落地鸡, <<: *Select, use: [sub0]}
   - {name: 🇺🇲 美国节点, <<: *UrlTest, filter: *FilterUS}
   - {name: 🇨🇳 台湾节点, <<: *UrlTest, filter: *FilterTW}
 

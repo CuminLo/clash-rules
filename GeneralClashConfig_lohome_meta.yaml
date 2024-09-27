@@ -57,16 +57,16 @@ dns:
   default-nameserver: [223.5.5.5, 119.29.29.29, 114.114.114.114]
   nameserver-policy:
     "+.lohome.top,+.syncthing.net,+.zerotier.net":
-      - https://223.5.5.5/dns-query#h3=true
+      - quic://223.5.5.5:853
       - https://1.12.12.12/dns-query
     "rule-set:direct,mydirect,china,chinax,chinatest": 
-      - https://223.5.5.5/dns-query#h3=true
+      - quic://223.5.5.5:853
       - https://1.12.12.12/dns-query
     "geosite:tracker,private":
-      - https://223.5.5.5/dns-query#h3=true
+      - quic://223.5.5.5:853
       - https://1.12.12.12/dns-query
     "geosite:cn,tld-cn,category-games@cn,apple-cn,apple,microsoft@cn,onedrive": 
-      - https://223.5.5.5/dns-query#h3=true
+      - quic://223.5.5.5:853
       - https://1.12.12.12/dns-query
     "rule-set:github,google,gfw,proxy,tiktok,openai,myopenai,proxyclassical,global":
       - https://dns.google/dns-query#ecs=120.76.0.0/14&ecs-override=true
@@ -75,10 +75,11 @@ dns:
       - https://dns.google/dns-query#ecs=120.76.0.0/14&ecs-override=true
       - https://dns12.quad9.net/dns-query#ecs=120.76.0.0/14&ecs-override=true
   proxy-server-nameserver: 
-      - https://223.5.5.5/dns-query#h3=true
+      - quic://223.5.5.5:853
+      - https://1.12.12.12/dns-query
   nameserver: 
-    - https://223.5.5.5/dns-query#h3=true
-    - https://1.12.12.12/dns-query
+      - quic://223.5.5.5:853
+      - https://1.12.12.12/dns-query
   fake-ip-filter-mode: blacklist
   fake-ip-filter:
     - "WORKGROUP"
@@ -124,276 +125,202 @@ sniffer:
     - "dlg.io.mi.com"
     - "+.apple.com"
 
+RuleSetDomain: &RuleSetDomain {type: http, behavior: domain, interval: 86400, proxy: DIRECT}
+RuleSetClassical: &RuleSetClassical {type: http, behavior: classical, interval: 86400, proxy: DIRECT}
+RuleSetIpcidr: &RuleSetIpcidr {type: http, behavior: ipcidr, interval: 86400, proxy: DIRECT}
+
 rule-providers:
   reject:
-    type: http
-    behavior: domain
+    <<: *RuleSetDomain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
     path: ./ruleset/reject.yaml
-    interval: 86400
 
   directprocess:
-    type: http
-    behavior: classical
+    <<: *RuleSetClassical
     url: "https://raw.githubusercontent.com/CuminLo/clash-rules/master/DirectProcess.list"
     path: ./ruleset/directprocess.yaml
-    interval: 1000
 
   mydirect:
-    type: http
-    behavior: classical
+    <<: *RuleSetClassical
     url: "https://raw.githubusercontent.com/CuminLo/clash-rules/master/DirectDomain.list"
     path: ./ruleset/mydirect.yaml
-    interval: 1000
 
   myproxy:
-    type: http
-    behavior: classical
+    <<: *RuleSetClassical
     url: "https://raw.githubusercontent.com/CuminLo/clash-rules/master/Proxy.list"
     path: ./ruleset/myproxy.yaml
-    interval: 1200
 
   binance:
-    type: http
-    behavior: classical
+    <<: *RuleSetClassical
     url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Binance/Binance_No_Resolve.yaml"
     path: ./ruleset/binance.yaml
-    interval: 86400
 
   mybinance:
-    type: http
-    behavior: classical
+    <<: *RuleSetClassical
     url: "https://raw.githubusercontent.com/CuminLo/clash-rules/master/Binance.list"
     path: ./ruleset/mybinance.yaml
-    interval: 86400
 
   crypto:
-    type: http
-    behavior: classical
+    <<: *RuleSetClassical
     url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Crypto/Crypto_No_Resolve.yaml"
     path: ./ruleset/crypto.yaml
-    interval: 86400
 
   mycrypto:
-    type: http
-    behavior: classical
+    <<: *RuleSetClassical
     url: "https://raw.githubusercontent.com/CuminLo/clash-rules/master/Crypto.list"
     path: ./ruleset/mycrypto.yaml
-    interval: 86400
 
   icloud:
-    type: http
-    behavior: domain
+    <<: *RuleSetDomain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt"
     path: ./ruleset/icloud.yaml
-    interval: 86400
 
   apple:
-    type: http
-    behavior: domain
+    <<: *RuleSetDomain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt"
     path: ./ruleset/apple.yaml
-    interval: 86400
 
   appleall:
-    type: http
-    behavior: classical
+    <<: *RuleSetClassical
     url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Apple/Apple_Classical_No_Resolve.yaml"
     path: ./ruleset/appleall.yaml
-    interval: 86400
 
   netflix:
-    type: http
-    behavior: classical
+    <<: *RuleSetClassical
     url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Netflix/Netflix_Classical_No_Resolve.yaml"
     path: ./ruleset/netflix.yaml
-    interval: 86400
 
   youtube:
-    type: http
-    behavior: classical
+    <<: *RuleSetClassical
     url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/YouTube/YouTube_No_Resolve.yaml"
     path: ./ruleset/youtube.yaml
-    interval: 86400
 
   googleFCM:
-    type: http
-    behavior: classical
+    <<: *RuleSetClassical
     url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/GoogleFCM/GoogleFCM_No_Resolve.yaml"
     path: ./ruleset/googleFCM.yaml
-    interval: 86400
 
   google:
-    type: http
-    behavior: classical
+    <<: *RuleSetClassical
     url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Google/Google_No_Resolve.yaml"
     path: ./ruleset/google.yaml
-    interval: 86400
 
   openai:
-    type: http
-    behavior: classical
+    <<: *RuleSetClassical
     url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/OpenAI/OpenAI_No_Resolve.yaml"
     path: ./ruleset/openai.yaml
-    interval: 86400
 
   myopenai:
-    type: http
-    behavior: classical
+    <<: *RuleSetClassical
     url: "https://raw.githubusercontent.com/CuminLo/clash-rules/master/AI.list"
     path: ./ruleset/myopenai.yaml
-    interval: 86400
 
   bahamut:
-    type: http
-    behavior: classical
+    <<: *RuleSetClassical
     url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Bahamut/Bahamut_No_Resolve.yaml"
     path: ./ruleset/bahamut.yaml
-    interval: 86400
 
   amazon:
-    type: http
-    behavior: classical
+    <<: *RuleSetClassical
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Amazon/Amazon_No_Resolve.yaml"
     path: ./ruleset/amazon.yaml
-    interval: 86400
 
   onedrive:
-    type: http
-    behavior: classical
+    <<: *RuleSetClassical
     url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/OneDrive/OneDrive_No_Resolve.yaml"
     path: ./ruleset/onedrive.yaml
-    interval: 86400
 
   microsoft:
-    type: http
-    behavior: classical
+    <<: *RuleSetClassical
     url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Microsoft/Microsoft_No_Resolve.yaml"
     path: ./ruleset/microsoft.yaml
-    interval: 86400
 
   discord:
-    type: http
-    behavior: classical
+    <<: *RuleSetClassical
     url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Discord/Discord_No_Resolve.yaml"
     path: ./ruleset/discord.yaml
-    interval: 86400
 
   twitter:
-    type: http
-    behavior: classical
+    <<: *RuleSetClassical
     url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Twitter/Twitter_No_Resolve.yaml"
     path: ./ruleset/twitter.yaml
-    interval: 86400
 
   tiktok:
-    type: http
-    behavior: classical
+    <<: *RuleSetClassical
     url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/TikTok/TikTok_No_Resolve.yaml"
     path: ./ruleset/tiktok.yaml
-    interval: 86400
 
   github:
-    type: http
-    behavior: classical
+    <<: *RuleSetClassical
     url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/GitHub/GitHub_No_Resolve.yaml"
     path: ./ruleset/github.yaml
-    interval: 86400
 
   proxy:
-    type: http
-    behavior: domain
+    <<: *RuleSetDomain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt"
     path: ./ruleset/proxy.yaml
-    interval: 86400
 
   china:
-    type: http
-    behavior: classical
+    <<: *RuleSetClassical
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/China/China_No_Resolve.yaml"
     path: ./ruleset/china.yaml
-    interval: 86400
 
   chinax:
-    type: http
-    behavior: classical
+    <<: *RuleSetClassical
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/China/China_Classical_No_Resolve.yaml"
     path: ./ruleset/chinax.yaml
-    interval: 86400
 
   chinatest:
-    type: http
-    behavior: classical
+    <<: *RuleSetClassical
     url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/ChinaTest/ChinaTest_Classical_No_Resolve.yaml"
     path: ./ruleset/chinatest.yaml
-    interval: 86400
 
   direct:
-    type: http
-    behavior: domain
+    <<: *RuleSetDomain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt"
     path: ./ruleset/direct.yaml
-    interval: 86400
 
   private:
-    type: http
-    behavior: domain
+    <<: *RuleSetDomain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt"
     path: ./ruleset/private.yaml
-    interval: 86400
 
   gfw:
-    type: http
-    behavior: domain
+    <<: *RuleSetDomain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt"
     path: ./ruleset/gfw.yaml
-    interval: 86400
 
   global:
-    type: http
-    behavior: classical
+    <<: *RuleSetClassical
     url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Global/Global_Classical_No_Resolve.yaml"
     path: ./ruleset/global.yaml
-    interval: 86400
 
   proxyclassical:
-    type: http
-    behavior: classical
+    <<: *RuleSetClassical
     url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Proxy/Proxy_Classical_No_Resolve.yaml"
     path: ./ruleset/proxyclassical.yaml
-    interval: 86400
 
   telegramcidr:
-    type: http
-    behavior: ipcidr
+    <<: *RuleSetIpcidr
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt"
     path: ./ruleset/telegramcidr.yaml
-    interval: 86400
 
   cncidr:
-    type: http
-    behavior: ipcidr
+    <<: *RuleSetIpcidr
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt"
     path: ./ruleset/cncidr.yaml
-    interval: 86400
 
   chinaips:
-    type: http
-    behavior: ipcidr
+    <<: *RuleSetIpcidr
     url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/ChinaIPs/ChinaIPs_IP.yaml"
     path: ./ruleset/chinaips.yaml
-    interval: 86400
 
   lancidr:
-    type: http
-    behavior: ipcidr
+    <<: *RuleSetIpcidr
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt"
     path: ./ruleset/lancidr.yaml
-    interval: 86400
 
   applications:
-    type: http
-    behavior: classical
+    <<: *RuleSetClassical
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt"
     path: ./ruleset/applications.yaml
-    interval: 86400
