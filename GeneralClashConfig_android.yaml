@@ -3,19 +3,26 @@ socks-port: 7891
 redir-port: 7892
 mixed-port: 7893
 tproxy-port: 7895
-allow-lan: false
+allow-lan: true
 bind-address: '*'
+
 skip-auth-prefixes:
   - 127.0.0.1/8
   - ::1/128
+
 secret: xxooooxx
 authentication:
   - "admin:xxooooxx"
-ipv6: true
+
+ipv6: false
 find-process-mode: strict
 log-level: debug
 mode: rule
+
 external-controller: 0.0.0.0:9090
+external-ui: metacubexd
+external-ui-url: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
+
 unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
@@ -24,11 +31,13 @@ geodata-mode: true
 geo-auto-update: true
 geo-update-interval: 24
 keep-alive-interval: 60
+
 geox-url:
   geoip: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.dat"
   geosite: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
   mmdb: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country.mmdb"
-  asn: "https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb"
+  asn: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/GeoLite2-ASN.mmdb"
+
 tun:
   enable: true
   stack: mixed # system gvisor mixed
@@ -162,28 +171,29 @@ dns:
   default-nameserver: [223.5.5.5, 119.29.29.29, 114.114.114.114]
   nameserver-policy:
     "+.lohome.top,+.syncthing.net,+.zerotier.net":
-      - https://223.5.5.5/dns-query#h3=true
+      - quic://223.5.5.5:853
       - https://1.12.12.12/dns-query
     "rule-set:direct,mydirect,china,chinax,chinatest": 
-      - https://223.5.5.5/dns-query#h3=true
+      - quic://223.5.5.5:853
       - https://1.12.12.12/dns-query
     "geosite:tracker,private":
-      - https://223.5.5.5/dns-query#h3=true
+      - quic://223.5.5.5:853
       - https://1.12.12.12/dns-query
     "geosite:cn,tld-cn,category-games@cn,apple-cn,apple,microsoft@cn,onedrive": 
-      - https://223.5.5.5/dns-query#h3=true
+      - quic://223.5.5.5:853
       - https://1.12.12.12/dns-query
     "rule-set:github,google,gfw,proxy,tiktok,openai,myopenai,proxyclassical,global":
-      - https://dns.google/dns-query#ecs=120.76.0.0/14&ecs-override=true
-      - https://dns12.quad9.net/dns-query#ecs=120.76.0.0/14&ecs-override=true
+      - https://8.8.8.8/dns-query#ecs=120.76.0.0/14&ecs-override=true
+      - https://9.9.9.12/dns-query#ecs=120.76.0.0/14&ecs-override=true
     "geosite:github,google,facebook,twitter,tiktok,openai":
-      - https://dns.google/dns-query#ecs=120.76.0.0/14&ecs-override=true
-      - https://dns12.quad9.net/dns-query#ecs=120.76.0.0/14&ecs-override=true
+      - https://8.8.8.8/dns-query#ecs=120.76.0.0/14&ecs-override=true
+      - https://9.9.9.12/dns-query#ecs=120.76.0.0/14&ecs-override=true
   proxy-server-nameserver: 
-      - https://223.5.5.5/dns-query#h3=true
+      - quic://223.5.5.5:853
+      - https://1.12.12.12/dns-query
   nameserver: 
-    - https://223.5.5.5/dns-query#h3=true
-    - https://1.12.12.12/dns-query
+      - quic://223.5.5.5:853
+      - https://1.12.12.12/dns-query
   fake-ip-filter-mode: blacklist
   fake-ip-filter:
     - "+.*"
@@ -200,12 +210,17 @@ sniffer:
       ports: [443, 8443]
     QUIC:
       ports: [443, 8443]
+  force-domain:
+    - +.v2ex.com
   skip-domain:
     - "Mijia Cloud"
     - "dlg.io.mi.com"
+    - "+.push.apple.com"
     - "+.apple.com"
 
-NodeParam: &NodeParam {type: http, interval: 86400, health-check: {enable: true, url: 'http://www.google.com/generate_204', interval: 60}}
+global-ua: clash.meta
+
+NodeParam: &NodeParam {type: http, override: {udp: true, skip-cert-verify: true, up: 100, down: 1000}, interval: 86400, health-check: {enable: true, url: 'http://www.google.com/generate_204', interval: 180}}
 
 proxy-providers: 
   sub0:
@@ -450,6 +465,10 @@ Select: &Select
   interval: 300
   timeout: 600
 
+pr: &pr {type: select, disable-udp: false, lazy: true, hidden: false, interval: 300, timeout: 600, proxies: [🔥 手动切换, 🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
+twPr: &twPr {type: select, disable-udp: false, lazy: true, hidden: false, interval: 300, timeout: 600, proxies: [🇨🇳 台湾节点, 🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
+directPr: &directPr {type: select, disable-udp: false, lazy: true, hidden: false, interval: 300, timeout: 600, proxies: [DIRECT, 🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
+
 proxy-groups: 
   - {name: 🚀 节点选择, <<: *Select, proxies: [🔥 手动切换, 🐔 落地鸡, ♻️ 自动选择, DIRECT]}
   - {name: 🔥 手动切换, <<: *SelectAll}
@@ -457,15 +476,15 @@ proxy-groups:
   - {name: 🅱️ Crypto, <<: *SelectAll, filter: *FilterCrypto}
   - {name: 🎯 全球直连, type: select, proxies: [DIRECT]}
   - {name: 🆎 AdBlock, type: select, proxies: [REJECT, DIRECT]}
-  - {name: 🇬 Google, <<: *Select, proxies: [🔥 手动切换, 🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
-  - {name: 🤖 Chat服务, <<: *Select, proxies: [🔥 手动切换, 🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
-  - {name: 🍎 苹果服务, <<: *Select, proxies: [DIRECT, 🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
-  - {name: 📹 油管视频, <<: *Select, proxies: [🔥 手动切换, 🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
-  - {name: 👨‍💻‍ Github, <<: *Select, proxies: [🔥 手动切换, 🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
-  - {name: 📺 巴哈姆特, <<: *Select, proxies: [🇨🇳 台湾节点, 🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
-  - {name: Ⓜ️ 微软云盘, <<: *Select, proxies: [DIRECT, 🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
-  - {name: Ⓜ️ 微软服务, <<: *Select, proxies: [DIRECT, 🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
-  - {name: 💬 自由消息, <<: *Select, proxies: [🔥 手动切换, 🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
+  - {name: 🇬 Google, <<: *pr}
+  - {name: 🤖 Chat服务, <<: *pr}
+  - {name: 🍎 苹果服务, <<: *directPr}
+  - {name: 📹 油管视频, <<: *pr}
+  - {name: 👨‍💻‍ Github, <<: *pr}
+  - {name: 📺 巴哈姆特, <<: *twPr}
+  - {name: Ⓜ️ 微软云盘, <<: *directPr}
+  - {name: Ⓜ️ 微软服务, <<: *directPr}
+  - {name: 💬 自由消息, <<: *pr}
   - {name: 🐔 落地鸡, <<: *Select, use: [sub0]}
   - {name: 🇺🇲 美国节点, <<: *UrlTest, filter: *FilterUS}
   - {name: 🇨🇳 台湾节点, <<: *UrlTest, filter: *FilterTW}
