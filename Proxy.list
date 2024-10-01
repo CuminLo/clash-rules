@@ -9,5 +9,6 @@ payload:
   - DOMAIN-SUFFIX,steamcommunity.com
   - DOMAIN-SUFFIX,metacubex.one
   - DOMAIN-SUFFIX,api.nn.ci
+  - DOMAIN-SUFFIX,pianyuan.org
   - PROCESS-NAME,Dropbox
   - PROCESS-NAME,DropboxFileProvider

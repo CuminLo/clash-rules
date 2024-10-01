@@ -17,7 +17,7 @@ mode: rule
 
 external-controller: 0.0.0.0:9090
 external-ui: metacubexd
-external-ui-url: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
+external-ui-url: "https://ghp.ci/https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
 
 unified-delay: true
 tcp-concurrent: true
@@ -29,10 +29,10 @@ geo-update-interval: 24
 keep-alive-interval: 60
 
 geox-url:
-  geoip: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.dat"
-  geosite: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
-  mmdb: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country.mmdb"
-  asn: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/GeoLite2-ASN.mmdb"
+  geoip: "https://ghp.ci/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.dat"
+  geosite: "https://ghp.ci/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
+  mmdb: "https://ghp.ci/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country.mmdb"
+  asn: "https://ghp.ci/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/GeoLite2-ASN.mmdb"
 
 tun:
   enable: true
