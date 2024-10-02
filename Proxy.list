@@ -12,5 +12,6 @@ payload:
   - DOMAIN-SUFFIX,pianyuan.org
   - DOMAIN-SUFFIX,apkflash.net
   - DOMAIN-SUFFIX,apkcombo.com
+  - DOMAIN-SUFFIX,androidcombo.com
   - PROCESS-NAME,Dropbox
   - PROCESS-NAME,DropboxFileProvider
