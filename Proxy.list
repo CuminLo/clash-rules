@@ -10,5 +10,7 @@ payload:
   - DOMAIN-SUFFIX,metacubex.one
   - DOMAIN-SUFFIX,api.nn.ci
   - DOMAIN-SUFFIX,pianyuan.org
+  - DOMAIN-SUFFIX,apkflash.net
+  - DOMAIN-SUFFIX,apkcombo.com
   - PROCESS-NAME,Dropbox
   - PROCESS-NAME,DropboxFileProvider
