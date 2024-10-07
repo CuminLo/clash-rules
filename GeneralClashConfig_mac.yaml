@@ -178,17 +178,17 @@ rule-providers:
 
   directprocess:
     <<: *RuleSetClassical
-    url: "https://raw.githubusercontent.com/CuminLo/clash-rules/master/DirectProcess.list"
+    url: "https://ghp.ci/https://raw.githubusercontent.com/CuminLo/clash-rules/master/DirectProcess.list"
     path: ./ruleset/directprocess.yaml
 
   mydirect:
     <<: *RuleSetClassical
-    url: "https://raw.githubusercontent.com/CuminLo/clash-rules/master/DirectDomain.list"
+    url: "https://ghp.ci/https://raw.githubusercontent.com/CuminLo/clash-rules/master/DirectDomain.list"
     path: ./ruleset/mydirect.yaml
 
   myproxy:
     <<: *RuleSetClassical
-    url: "https://raw.githubusercontent.com/CuminLo/clash-rules/master/Proxy.list"
+    url: "https://ghp.ci/https://raw.githubusercontent.com/CuminLo/clash-rules/master/Proxy.list"
     path: ./ruleset/myproxy.yaml
 
   binance:
@@ -198,7 +198,7 @@ rule-providers:
 
   mybinance:
     <<: *RuleSetClassical
-    url: "https://raw.githubusercontent.com/CuminLo/clash-rules/master/Binance.list"
+    url: "https://ghp.ci/https://raw.githubusercontent.com/CuminLo/clash-rules/master/Binance.list"
     path: ./ruleset/mybinance.yaml
 
   crypto:
@@ -208,7 +208,7 @@ rule-providers:
 
   mycrypto:
     <<: *RuleSetClassical
-    url: "https://raw.githubusercontent.com/CuminLo/clash-rules/master/Crypto.list"
+    url: "https://ghp.ci/https://raw.githubusercontent.com/CuminLo/clash-rules/master/Crypto.list"
     path: ./ruleset/mycrypto.yaml
 
   icloud:
@@ -253,7 +253,7 @@ rule-providers:
 
   myopenai:
     <<: *RuleSetClassical
-    url: "https://raw.githubusercontent.com/CuminLo/clash-rules/master/AI.list"
+    url: "https://ghp.ci/https://raw.githubusercontent.com/CuminLo/clash-rules/master/AI.list"
     path: ./ruleset/myopenai.yaml
 
   bahamut:
