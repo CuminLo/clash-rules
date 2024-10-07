@@ -13,5 +13,6 @@ payload:
   - DOMAIN-SUFFIX,apkflash.net
   - DOMAIN-SUFFIX,apkcombo.com
   - DOMAIN-SUFFIX,androidcombo.com
+  - DOMAIN-SUFFIX,qbittorrent.org
   - PROCESS-NAME,Dropbox
   - PROCESS-NAME,DropboxFileProvider
