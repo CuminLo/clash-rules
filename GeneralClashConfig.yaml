@@ -133,7 +133,7 @@ sniffer:
 
 global-ua: clash.meta
 
-NodeParam: &NodeParam {type: http, override: {udp: true, skip-cert-verify: true, up: 100, down: 1000}, interval: 86400, health-check: {enable: true, url: 'http://www.google.com/generate_204', interval: 180}}
+NodeParam: &NodeParam {type: http, override: {udp: true, skip-cert-verify: true, up: 60, down: 300}, interval: 86400, health-check: {enable: true, url: 'http://www.google.com/generate_204', interval: 180}}
 
 proxy-providers: 
   sub0:
@@ -157,17 +157,17 @@ rule-providers:
 
   directprocess:
     <<: *RuleSetClassical
-    url: "https://raw.githubusercontent.com/CuminLo/clash-rules/master/DirectProcess.list"
+    url: "https://ghp.ci/https://raw.githubusercontent.com/CuminLo/clash-rules/master/DirectProcess.list"
     path: ./ruleset/directprocess.yaml
 
   mydirect:
     <<: *RuleSetClassical
-    url: "https://raw.githubusercontent.com/CuminLo/clash-rules/master/DirectDomain.list"
+    url: "https://ghp.ci/https://raw.githubusercontent.com/CuminLo/clash-rules/master/DirectDomain.list"
     path: ./ruleset/mydirect.yaml
 
   myproxy:
     <<: *RuleSetClassical
-    url: "https://raw.githubusercontent.com/CuminLo/clash-rules/master/Proxy.list"
+    url: "https://ghp.ci/https://raw.githubusercontent.com/CuminLo/clash-rules/master/Proxy.list"
     path: ./ruleset/myproxy.yaml
 
   binance:
@@ -177,7 +177,7 @@ rule-providers:
 
   mybinance:
     <<: *RuleSetClassical
-    url: "https://raw.githubusercontent.com/CuminLo/clash-rules/master/Binance.list"
+    url: "https://ghp.ci/https://raw.githubusercontent.com/CuminLo/clash-rules/master/Binance.list"
     path: ./ruleset/mybinance.yaml
 
   crypto:
@@ -187,7 +187,7 @@ rule-providers:
 
   mycrypto:
     <<: *RuleSetClassical
-    url: "https://raw.githubusercontent.com/CuminLo/clash-rules/master/Crypto.list"
+    url: "https://ghp.ci/https://raw.githubusercontent.com/CuminLo/clash-rules/master/Crypto.list"
     path: ./ruleset/mycrypto.yaml
 
   icloud:
@@ -232,7 +232,7 @@ rule-providers:
 
   myopenai:
     <<: *RuleSetClassical
-    url: "https://raw.githubusercontent.com/CuminLo/clash-rules/master/AI.list"
+    url: "https://ghp.ci/https://raw.githubusercontent.com/CuminLo/clash-rules/master/AI.list"
     path: ./ruleset/myopenai.yaml
 
   bahamut:
