@@ -133,7 +133,7 @@ sniffer:
 
 global-ua: clash.meta
 
-NodeParam: &NodeParam {type: http, override: {udp: true, skip-cert-verify: true, up: 60, down: 300}, interval: 86400, health-check: {enable: true, url: 'http://www.google.com/generate_204', interval: 180}}
+NodeParam: &NodeParam {type: http, override: {udp: true, skip-cert-verify: true, up: 60, down: 300}, interval: 86400, health-check: {enable: true, url: 'http://connectivitycheck.platform.hicloud.com/generate_204', interval: 180}}
 
 proxy-providers: 
   sub0:
