@@ -98,3 +98,7 @@ payload:
   - DOMAIN-KEYWORD,readx
   - DOMAIN-SUFFIX,vdo.ninja
   - DOMAIN-SUFFIX,yibentushu.com
+  - DOMAIN-SUFFIX,myip.ipip.net
+  - DOMAIN-SUFFIX,ddns.oray.com
+  - DOMAIN-SUFFIX,ip.3322.net
+  - DOMAIN-SUFFIX,4.ipw.cn
