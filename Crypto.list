@@ -44,5 +44,6 @@ payload:
   - DOMAIN-SUFFIX,www-bitmex-com.translate.goog
   - DOMAIN-SUFFIX,bitmex.com
   - DOMAIN-SUFFIX,bitmex.zendesk.com
+  - DOMAIN-SUFFIX,greeks.live
   - DOMAIN-SUFFIX,scroll.io
   - DOMAIN-SUFFIX,scroll.ghost.io
