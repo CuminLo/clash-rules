@@ -46,5 +46,6 @@ payload:
   - DOMAIN-SUFFIX,bitmex.zendesk.com
   - DOMAIN-SUFFIX,greeks.live
   - DOMAIN-SUFFIX,deribit.com
+  - DOMAIN-SUFFIX,signalplus.com
   - DOMAIN-SUFFIX,scroll.io
   - DOMAIN-SUFFIX,scroll.ghost.io
