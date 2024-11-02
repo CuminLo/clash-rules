@@ -8,6 +8,7 @@ payload:
   - DOMAIN-SUFFIX,kucoin.cloud
   - DOMAIN-SUFFIX,kucoin.fit
   - DOMAIN-SUFFIX,bybit.com
+  - DOMAIN-SUFFIX,bybit-aws.com
   - DOMAIN-SUFFIX,pionex.com
   - DOMAIN-SUFFIX,picolzh.com
   - DOMAIN-SUFFIX,picol.com
