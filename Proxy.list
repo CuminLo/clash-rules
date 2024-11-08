@@ -16,5 +16,6 @@ payload:
   - DOMAIN-SUFFIX,network
   - DOMAIN-SUFFIX,qbittorrent.org
   - DOMAIN-SUFFIX,restic.net
+  - DOMAIN-SUFFIX,activated.win
   - PROCESS-NAME,Dropbox
   - PROCESS-NAME,DropboxFileProvider
