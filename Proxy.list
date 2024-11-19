@@ -18,5 +18,6 @@ payload:
   - DOMAIN-SUFFIX,restic.net
   - DOMAIN-SUFFIX,activated.win
   - DOMAIN-SUFFIX,appstorrent.ru
+  - DOMAIN-SUFFIX,annas-archive.org
   - PROCESS-NAME,Dropbox
   - PROCESS-NAME,DropboxFileProvider
