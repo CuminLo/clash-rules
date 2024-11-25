@@ -4,6 +4,7 @@ payload:
   - PROCESS-NAME,Binance
   - DOMAIN-SUFFIX,appsflayer.com
   - DOMAIN-SUFFIX,bnbzh.ac
+  - DOMAIN-KEYWORD,binance
   - DOMAIN-SUFFIX,binance.cc
   - DOMAIN-SUFFIX,binance.charity
   - DOMAIN-SUFFIX,binance.cloud
@@ -18,6 +19,7 @@ payload:
   - DOMAIN-SUFFIX,binanceapi.com
   - DOMAIN-SUFFIX,binance.click
   - DOMAIN-SUFFIX,binance.im
+  - DOMAIN-KEYWORD,binancezh
   - DOMAIN-SUFFIX,binancezh.be
   - DOMAIN-SUFFIX,binancezh.biz
   - DOMAIN-SUFFIX,binancezh.cc
@@ -43,10 +45,13 @@ payload:
   - DOMAIN-SUFFIX,bnappzh.cloud
   - DOMAIN-SUFFIX,bnappzh.net
   - DOMAIN-SUFFIX,binancefuture.com
+  - DOMAIN-KEYWORD,dashiyirui
   - DOMAIN-SUFFIX,dashiyirui.net
   - DOMAIN-SUFFIX,dashiyirui.club
+  - DOMAIN-KEYWORD,suitechsui
   - DOMAIN-SUFFIX,suitechsui.cloud
   - DOMAIN-SUFFIX,suitechsui.io
+  - DOMAIN-SUFFIX,suitechsui.online
   - DOMAIN-SUFFIX,suitechsui.support
   - DOMAIN-SUFFIX,suitechsui.systems
   - DOMAIN-SUFFIX,suitechsui.education
