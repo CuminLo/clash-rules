@@ -199,7 +199,6 @@ filtering:
       answer: www.googleapis.com
     - domain: developers.google.cn
       answer: developers.google.com
-
     - domain: www.google.cn
       answer: www.google.com
     - domain: dns.alidns.com
