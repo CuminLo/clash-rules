@@ -1,6 +1,7 @@
 payload:
   - PROCESS-NAME,com.tradingview.tradingviewapp
   - PROCESS-NAME,TradingView Helper
+  - DOMAIN-KEYWORD,defillama
   - DOMAIN-SUFFIX,tradingview.com
   - DOMAIN-SUFFIX,kucoin.com
   - DOMAIN-SUFFIX,kucoin.plus
