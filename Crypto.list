@@ -2,6 +2,15 @@ payload:
   - PROCESS-NAME,com.tradingview.tradingviewapp
   - PROCESS-NAME,TradingView Helper
   - DOMAIN-KEYWORD,defillama
+  - DOMAIN-KEYWORD,uniswap
+  - DOMAIN-KEYWORD,pancakeswap
+  - DOMAIN-KEYWORD,binance
+  - DOMAIN-KEYWORD,ethereum
+  - DOMAIN-KEYWORD,arbitrum
+  - DOMAIN-KEYWORD,bnbchain
+  - DOMAIN-KEYWORD,polygon
+  - DOMAIN-KEYWORD,optimism
+  - DOMAIN-KEYWORD,zksync
   - DOMAIN-SUFFIX,tradingview.com
   - DOMAIN-SUFFIX,kucoin.com
   - DOMAIN-SUFFIX,kucoin.plus
@@ -27,6 +36,7 @@ payload:
   - DOMAIN-SUFFIX,ave.ai
   - DOMAIN-SUFFIX,avesp.xyz
   - DOMAIN-SUFFIX,avedex.live
+  - DOMAIN-SUFFIX,defibit.io
   - DOMAIN-SUFFIX,opencw.xyz
   - DOMAIN-SUFFIX,opencc.xyz
   - DOMAIN-SUFFIX,bitkeep.com
@@ -53,3 +63,6 @@ payload:
   - DOMAIN-SUFFIX,xhashapp.com
   - DOMAIN-SUFFIX,scroll.io
   - DOMAIN-SUFFIX,scroll.ghost.io
+  - DOMAIN-SUFFIX,llamarpc.com
+  - DOMAIN-SUFFIX,blockpi.network
+  - DOMAIN-SUFFIX,publicnode.com
