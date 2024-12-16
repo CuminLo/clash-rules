@@ -11,6 +11,7 @@ payload:
   - DOMAIN-KEYWORD,polygon
   - DOMAIN-KEYWORD,optimism
   - DOMAIN-KEYWORD,zksync
+  - DOMAIN-KEYWORD,coincall
   - DOMAIN-SUFFIX,tradingview.com
   - DOMAIN-SUFFIX,kucoin.com
   - DOMAIN-SUFFIX,kucoin.plus
