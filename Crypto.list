@@ -65,6 +65,7 @@ payload:
   - DOMAIN-SUFFIX,greeks.live
   - DOMAIN-SUFFIX,deribit.com
   - DOMAIN-SUFFIX,signalplus.com
+  - DOMAIN-SUFFIX,sp2x.com
   - DOMAIN-SUFFIX,xhashapp.com
   - DOMAIN-SUFFIX,scroll.io
   - DOMAIN-SUFFIX,scroll.ghost.io
