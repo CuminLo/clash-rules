@@ -71,3 +71,4 @@ payload:
   - DOMAIN-SUFFIX,llamarpc.com
   - DOMAIN-SUFFIX,blockpi.network
   - DOMAIN-SUFFIX,publicnode.com
+  - DOMAIN-SUFFIX,walletlink.org
