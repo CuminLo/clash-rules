@@ -5,6 +5,7 @@ payload:
   - DOMAIN-KEYWORD,uniswap
   - DOMAIN-KEYWORD,pancakeswap
   - DOMAIN-KEYWORD,binance
+  - DOMAIN-KEYWORD,deribit
   - DOMAIN-KEYWORD,ethereum
   - DOMAIN-KEYWORD,arbitrum
   - DOMAIN-KEYWORD,bnbchain
