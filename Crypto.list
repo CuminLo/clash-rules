@@ -75,3 +75,4 @@ payload:
   - DOMAIN-SUFFIX,blockpi.network
   - DOMAIN-SUFFIX,publicnode.com
   - DOMAIN-SUFFIX,walletlink.org
+  - DOMAIN-SUFFIX,usual.money
