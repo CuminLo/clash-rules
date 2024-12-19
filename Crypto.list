@@ -15,6 +15,7 @@ payload:
   - DOMAIN-KEYWORD,coincall
   - DOMAIN-KEYWORD,dydx
   - DOMAIN-KEYWORD,hyperliquid
+  - DOMAIN-KEYWORD,exchange
   - DOMAIN-SUFFIX,aptoslabs.com
   - DOMAIN-SUFFIX,martianwallet.xyz
   - DOMAIN-SUFFIX,tradingview.com
