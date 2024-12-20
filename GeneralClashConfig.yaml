@@ -121,7 +121,7 @@ dns:
 
 global-ua: clash.meta
 
-NodeParam: &NodeParam {type: http, override: {udp: true, skip-cert-verify: true, up: 40, down: 80}, interval: 86400, health-check: {enable: true, url: 'http://connectivitycheck.platform.hicloud.com/generate_204', interval: 300}}
+NodeParam: &NodeParam {type: http, override: {udp: true, skip-cert-verify: true, up: 30, down: 100}, interval: 86400, health-check: {enable: true, url: 'http://connectivitycheck.platform.hicloud.com/generate_204', interval: 3600, lazy: true, timeout: 3000}}
 
 proxy-providers: 
   vps:
@@ -356,7 +356,8 @@ UrlTest: &UrlTest
   tolerance: 100
   lazy: true
   interval: 300
-  timeout: 600
+  timeout: 1000
+  max-failed-times: 3
 
 SelectAll: &SelectAll 
   type: select
@@ -365,7 +366,8 @@ SelectAll: &SelectAll
   include-all: true
   lazy: true
   interval: 300
-  timeout: 600
+  timeout: 1000
+  max-failed-times: 3
 
 Select: &Select 
   type: select
@@ -373,11 +375,12 @@ Select: &Select
   hidden: false
   lazy: true
   interval: 300
-  timeout: 600
+  timeout: 1000
+  max-failed-times: 3
 
-pr: &pr {type: select, disable-udp: false, lazy: true, hidden: false, interval: 300, timeout: 600, proxies: [🔥 手动切换, 🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
-twPr: &twPr {type: select, disable-udp: false, lazy: true, hidden: false, interval: 300, timeout: 600, proxies: [🇨🇳 台湾节点, 🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
-directPr: &directPr {type: select, disable-udp: false, lazy: true, hidden: false, interval: 300, timeout: 600, proxies: [DIRECT, 🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
+pr: &pr {type: select, disable-udp: false, lazy: true, hidden: false, interval: 300, timeout: 1000, proxies: [🔥 手动切换, 🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
+twPr: &twPr {type: select, disable-udp: false, lazy: true, hidden: false, interval: 300, timeout: 1000, proxies: [🇨🇳 台湾节点, 🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
+directPr: &directPr {type: select, disable-udp: false, lazy: true, hidden: false, interval: 300, timeout: 1000, proxies: [DIRECT, 🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
 
 proxy-groups: 
   - {name: 🚀 节点选择, <<: *Select, proxies: [🔥 手动切换, 🇨🇳 台湾节点, 🇭🇰 香港节点, 🐔 落地鸡, ♻️ 自动选择, DIRECT]}
