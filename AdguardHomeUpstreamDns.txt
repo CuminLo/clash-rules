@@ -6,6 +6,7 @@
 [/ip6.arpa/]quic://223.5.5.5
 [/myip.ipip.net/oray.com/ip.3322.net/]quic://223.5.5.5
 [/api.xhofe.top/]quic://223.5.5.5
+[/aaplimg.com/]quic://223.5.5.5
 [/chinaapper.com/]quic://223.5.5.5
 [/oray.net/myaddr.tools/synology.me/ddnsfree.com/lohome.top/]quic://223.5.5.5
 [/hhdd.com/]quic://223.5.5.5
