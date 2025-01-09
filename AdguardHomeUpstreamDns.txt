@@ -108,6 +108,7 @@
 [/wpscdn.cn/]quic://223.5.5.5
 [/xunlei.com/]quic://223.5.5.5
 [/shifen.com/]quic://223.5.5.5
+[/schooldmcc.cc/]quic://223.5.5.5
 [/bdurl.net/]quic://223.5.5.5
 [/amemv.com/]quic://223.5.5.5
 [/toutiao.com/]quic://223.5.5.5
@@ -125,6 +126,7 @@
 [/tcloudscdn.com/]quic://223.5.5.5
 [/qcloud.com/]quic://223.5.5.5
 [/txyscdn/]quic://223.5.5.5
+[/tengyuone.com/tengyucloud.com/]quic://223.5.5.5
 [/tencent.com/tencent.com.hk/]quic://223.5.5.5
 [/tencent-blackboard.com/]quic://223.5.5.5
 [/tencent-cloud.com/]quic://223.5.5.5
