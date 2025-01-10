@@ -126,6 +126,7 @@
 [/tcloudscdn.com/]quic://223.5.5.5
 [/qcloud.com/]quic://223.5.5.5
 [/txyscdn/]quic://223.5.5.5
+[/time.windows.com/]quic://223.5.5.5
 [/tengyuone.com/tengyucloud.com/]quic://223.5.5.5
 [/tencent.com/tencent.com.hk/]quic://223.5.5.5
 [/tencent-blackboard.com/]quic://223.5.5.5
