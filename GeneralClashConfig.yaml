@@ -50,6 +50,7 @@ profile:
 dns:
   enable: true
   ipv6: true
+  prefer-h3: false
   respect-rules: true
   listen: 0.0.0.0:53
   enhanced-mode: fake-ip # fake-ip or redir-host
@@ -121,14 +122,9 @@ dns:
 
 global-ua: clash.meta
 
-NodeParam: &NodeParam {type: http, override: {udp: true, skip-cert-verify: true, up: 30, down: 100}, interval: 86400, health-check: {enable: true, url: 'http://connectivitycheck.platform.hicloud.com/generate_204', interval: 3600, lazy: true, timeout: 3000}}
+NodeParam: &NodeParam {type: http, override: {udp: true, skip-cert-verify: true}, interval: 86400, health-check: {enable: true, url: 'http://connectivitycheck.platform.hicloud.com/generate_204', interval: 3600, lazy: true, timeout: 3000}}
 
 proxy-providers: 
-  vps:
-    url: ''
-    <<: *NodeParam
-    path: './ProxyProvider/vps.yaml'
-
 
 RuleSetDomain: &RuleSetDomain {type: http, behavior: domain, interval: 86400, proxy: DIRECT}
 RuleSetClassical: &RuleSetClassical {type: http, behavior: classical, interval: 86400, proxy: DIRECT}
@@ -207,7 +203,7 @@ rule-providers:
 
   googleFCM:
     <<: *RuleSetClassical
-    url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/GoogleFCM/GoogleFCM_Resolve.list"
+    url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GoogleFCM/GoogleFCM_No_Resolve.yaml"
     path: ./ruleset/googleFCM.yaml
 
   google:
@@ -247,7 +243,7 @@ rule-providers:
 
   discord:
     <<: *RuleSetClassical
-    url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Discord/Discord.list"
+    url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Discord/Discord_No_Resolve.yaml"
     path: ./ruleset/discord.yaml
 
   twitter:
