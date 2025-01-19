@@ -17,6 +17,7 @@ payload:
   - DOMAIN-KEYWORD,dydx
   - DOMAIN-KEYWORD,hyperliquid
   - DOMAIN-KEYWORD,exchange
+  - DOMAIN-KEYWORD,solana
   - DOMAIN-SUFFIX,aptoslabs.com
   - DOMAIN-SUFFIX,martianwallet.xyz
   - DOMAIN-SUFFIX,tradingview.com
@@ -46,6 +47,7 @@ payload:
   - DOMAIN-SUFFIX,avesp.xyz
   - DOMAIN-SUFFIX,avedex.live
   - DOMAIN-SUFFIX,defibit.io
+  - DOMAIN-SUFFIX,dexscreener.com
   - DOMAIN-SUFFIX,opencw.xyz
   - DOMAIN-SUFFIX,opencc.xyz
   - DOMAIN-SUFFIX,bitkeep.com
@@ -68,6 +70,9 @@ payload:
   - DOMAIN-SUFFIX,bitmex.zendesk.com
   - DOMAIN-SUFFIX,greeks.live
   - DOMAIN-SUFFIX,deribit.com
+  - DOMAIN-SUFFIX,gmgn.io
+  - DOMAIN-SUFFIX,pump.fun
+  - DOMAIN-SUFFIX,solscan.io
   - DOMAIN-SUFFIX,signalplus.com
   - DOMAIN-SUFFIX,sp2x.com
   - DOMAIN-SUFFIX,xhashapp.com
