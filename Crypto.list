@@ -70,6 +70,7 @@ payload:
   - DOMAIN-SUFFIX,bitmex.zendesk.com
   - DOMAIN-SUFFIX,greeks.live
   - DOMAIN-SUFFIX,deribit.com
+  - DOMAIN-SUFFIX,geckoterminal.com
   - DOMAIN-SUFFIX,gmgn.io
   - DOMAIN-SUFFIX,pump.fun
   - DOMAIN-SUFFIX,solflare.com
