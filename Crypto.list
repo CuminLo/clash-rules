@@ -72,6 +72,7 @@ payload:
   - DOMAIN-SUFFIX,deribit.com
   - DOMAIN-SUFFIX,gmgn.io
   - DOMAIN-SUFFIX,pump.fun
+  - DOMAIN-SUFFIX,solflare.com
   - DOMAIN-SUFFIX,solscan.io
   - DOMAIN-SUFFIX,signalplus.com
   - DOMAIN-SUFFIX,sp2x.com
