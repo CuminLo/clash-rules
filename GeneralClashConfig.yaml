@@ -17,7 +17,7 @@ mode: rule
 
 external-controller: 0.0.0.0:9090
 external-ui: metacubexd
-external-ui-url: "https://gh-proxy.com/github.com/MetaCubeX/metacubexd/archive/gh-pages.zip"
+external-ui-url: "https://ghfast.top/github.com/MetaCubeX/metacubexd/archive/gh-pages.zip"
 
 unified-delay: true
 tcp-concurrent: true
@@ -29,10 +29,10 @@ geo-update-interval: 24
 keep-alive-interval: 60
 
 geox-url:
-  geoip: "https://gh-proxy.com/github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.dat"
-  geosite: "https://gh-proxy.com/github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
-  mmdb: "https://gh-proxy.com/github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country.mmdb"
-  asn: "https://gh-proxy.com/github.com/MetaCubeX/meta-rules-dat/releases/download/latest/GeoLite2-ASN.mmdb"
+  geoip: "https://ghfast.top/github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.dat"
+  geosite: "https://ghfast.top/github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
+  mmdb: "https://ghfast.top/github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country.mmdb"
+  asn: "https://ghfast.top/github.com/MetaCubeX/meta-rules-dat/releases/download/latest/GeoLite2-ASN.mmdb"
 
 tun:
   enable: true
@@ -133,208 +133,208 @@ RuleSetIpcidr: &RuleSetIpcidr {type: http, behavior: ipcidr, interval: 86400, pr
 rule-providers:
   reject:
     <<: *RuleSetDomain
-    url: "https://gh-proxy.com/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt"
+    url: "https://ghfast.top/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt"
     path: ./ruleset/reject.yaml
 
   directprocess:
     <<: *RuleSetClassical
-    url: "https://gh-proxy.com/raw.githubusercontent.com/CuminLo/clash-rules/master/DirectProcess.list"
+    url: "https://ghfast.top/raw.githubusercontent.com/CuminLo/clash-rules/master/DirectProcess.list"
     path: ./ruleset/directprocess.yaml
 
   mydirect:
     <<: *RuleSetClassical
-    url: "https://gh-proxy.com/raw.githubusercontent.com/CuminLo/clash-rules/master/DirectDomain.list"
+    url: "https://ghfast.top/raw.githubusercontent.com/CuminLo/clash-rules/master/DirectDomain.list"
     path: ./ruleset/mydirect.yaml
 
   myproxy:
     <<: *RuleSetClassical
-    url: "https://gh-proxy.com/raw.githubusercontent.com/CuminLo/clash-rules/master/Proxy.list"
+    url: "https://ghfast.top/raw.githubusercontent.com/CuminLo/clash-rules/master/Proxy.list"
     path: ./ruleset/myproxy.yaml
 
   binance:
     <<: *RuleSetClassical
-    url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Binance/Binance_No_Resolve.yaml"
+    url: "https://ghfast.top/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Binance/Binance_No_Resolve.yaml"
     path: ./ruleset/binance.yaml
 
   mybinance:
     <<: *RuleSetClassical
-    url: "https://gh-proxy.com/raw.githubusercontent.com/CuminLo/clash-rules/master/Binance.list"
+    url: "https://ghfast.top/raw.githubusercontent.com/CuminLo/clash-rules/master/Binance.list"
     path: ./ruleset/mybinance.yaml
 
   cryptocurrency:
     <<: *RuleSetClassical
-    url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Cryptocurrency/Cryptocurrency.yaml"
+    url: "https://ghfast.top/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Cryptocurrency/Cryptocurrency.yaml"
     path: ./ruleset/cryptocurrency.yaml
 
   crypto:
     <<: *RuleSetClassical
-    url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Crypto/Crypto_No_Resolve.yaml"
+    url: "https://ghfast.top/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Crypto/Crypto_No_Resolve.yaml"
     path: ./ruleset/crypto.yaml
 
   mycrypto:
     <<: *RuleSetClassical
-    url: "https://gh-proxy.com/raw.githubusercontent.com/CuminLo/clash-rules/master/Crypto.list"
+    url: "https://ghfast.top/raw.githubusercontent.com/CuminLo/clash-rules/master/Crypto.list"
     path: ./ruleset/mycrypto.yaml
 
   icloud:
     <<: *RuleSetDomain
-    url: "https://gh-proxy.com/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/icloud.txt"
+    url: "https://ghfast.top/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/icloud.txt"
     path: ./ruleset/icloud.yaml
 
   apple:
     <<: *RuleSetDomain
-    url: "https://gh-proxy.com/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/apple.txt"
+    url: "https://ghfast.top/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/apple.txt"
     path: ./ruleset/apple.yaml
 
   appleall:
     <<: *RuleSetClassical
-    url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple_Classical_No_Resolve.yaml"
+    url: "https://ghfast.top/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple_Classical_No_Resolve.yaml"
     path: ./ruleset/appleall.yaml
 
   netflix:
     <<: *RuleSetClassical
-    url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix_Classical_No_Resolve.yaml"
+    url: "https://ghfast.top/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix_Classical_No_Resolve.yaml"
     path: ./ruleset/netflix.yaml
 
   youtube:
     <<: *RuleSetClassical
-    url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube_No_Resolve.yaml"
+    url: "https://ghfast.top/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube_No_Resolve.yaml"
     path: ./ruleset/youtube.yaml
 
   googleFCM:
     <<: *RuleSetClassical
-    url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GoogleFCM/GoogleFCM_No_Resolve.yaml"
+    url: "https://ghfast.top/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GoogleFCM/GoogleFCM_No_Resolve.yaml"
     path: ./ruleset/googleFCM.yaml
 
   google:
     <<: *RuleSetClassical
-    url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google_No_Resolve.yaml"
+    url: "https://ghfast.top/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google_No_Resolve.yaml"
     path: ./ruleset/google.yaml
 
   openai:
     <<: *RuleSetClassical
-    url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI_No_Resolve.yaml"
+    url: "https://ghfast.top/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI_No_Resolve.yaml"
     path: ./ruleset/openai.yaml
 
   myopenai:
     <<: *RuleSetClassical
-    url: "https://gh-proxy.com/raw.githubusercontent.com/CuminLo/clash-rules/master/AI.list"
+    url: "https://ghfast.top/raw.githubusercontent.com/CuminLo/clash-rules/master/AI.list"
     path: ./ruleset/myopenai.yaml
 
   bahamut:
     <<: *RuleSetClassical
-    url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bahamut/Bahamut_No_Resolve.yaml"
+    url: "https://ghfast.top/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bahamut/Bahamut_No_Resolve.yaml"
     path: ./ruleset/bahamut.yaml
 
   amazon:
     <<: *RuleSetClassical
-    url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Amazon/Amazon_No_Resolve.yaml"
+    url: "https://ghfast.top/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Amazon/Amazon_No_Resolve.yaml"
     path: ./ruleset/amazon.yaml
 
   onedrive:
     <<: *RuleSetClassical
-    url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OneDrive/OneDrive_No_Resolve.yaml"
+    url: "https://ghfast.top/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OneDrive/OneDrive_No_Resolve.yaml"
     path: ./ruleset/onedrive.yaml
 
   microsoft:
     <<: *RuleSetClassical
-    url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft_No_Resolve.yaml"
+    url: "https://ghfast.top/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft_No_Resolve.yaml"
     path: ./ruleset/microsoft.yaml
 
   discord:
     <<: *RuleSetClassical
-    url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Discord/Discord_No_Resolve.yaml"
+    url: "https://ghfast.top/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Discord/Discord_No_Resolve.yaml"
     path: ./ruleset/discord.yaml
 
   twitter:
     <<: *RuleSetClassical
-    url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter_No_Resolve.yaml"
+    url: "https://ghfast.top/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter_No_Resolve.yaml"
     path: ./ruleset/twitter.yaml
 
   tiktok:
     <<: *RuleSetClassical
-    url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TikTok/TikTok_No_Resolve.yaml"
+    url: "https://ghfast.top/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TikTok/TikTok_No_Resolve.yaml"
     path: ./ruleset/tiktok.yaml
 
   mygithub:
     <<: *RuleSetClassical
-    url: "https://gh-proxy.com/raw.githubusercontent.com/CuminLo/clash-rules/master/Github.list"
+    url: "https://ghfast.top/raw.githubusercontent.com/CuminLo/clash-rules/master/Github.list"
     format: text
     path: ./ruleset/mygithub.yaml
 
   github:
     <<: *RuleSetClassical
-    url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub_No_Resolve.yaml"
+    url: "https://ghfast.top/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub_No_Resolve.yaml"
     path: ./ruleset/github.yaml
 
   proxy:
     <<: *RuleSetDomain
-    url: "https://gh-proxy.com/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/proxy.txt"
+    url: "https://ghfast.top/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/proxy.txt"
     path: ./ruleset/proxy.yaml
 
   china:
     <<: *RuleSetClassical
-    url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/China/China_No_Resolve.yaml"
+    url: "https://ghfast.top/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/China/China_No_Resolve.yaml"
     path: ./ruleset/china.yaml
 
   chinax:
     <<: *RuleSetClassical
-    url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/China/China_Classical_No_Resolve.yaml"
+    url: "https://ghfast.top/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/China/China_Classical_No_Resolve.yaml"
     path: ./ruleset/chinax.yaml
 
   chinatest:
     <<: *RuleSetClassical
-    url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaTest/ChinaTest_Classical_No_Resolve.yaml"
+    url: "https://ghfast.top/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaTest/ChinaTest_Classical_No_Resolve.yaml"
     path: ./ruleset/chinatest.yaml
 
   direct:
     <<: *RuleSetDomain
-    url: "https://gh-proxy.com/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/direct.txt"
+    url: "https://ghfast.top/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/direct.txt"
     path: ./ruleset/direct.yaml
 
   private:
     <<: *RuleSetDomain
-    url: "https://gh-proxy.com/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/private.txt"
+    url: "https://ghfast.top/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/private.txt"
     path: ./ruleset/private.yaml
 
   gfw:
     <<: *RuleSetDomain
-    url: "https://gh-proxy.com/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/gfw.txt"
+    url: "https://ghfast.top/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/gfw.txt"
     path: ./ruleset/gfw.yaml
 
   global:
     <<: *RuleSetClassical
-    url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Global/Global_Classical_No_Resolve.yaml"
+    url: "https://ghfast.top/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Global/Global_Classical_No_Resolve.yaml"
     path: ./ruleset/global.yaml
 
   proxyclassical:
     <<: *RuleSetClassical
-    url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy_Classical_No_Resolve.yaml"
+    url: "https://ghfast.top/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy_Classical_No_Resolve.yaml"
     path: ./ruleset/proxyclassical.yaml
 
   telegramcidr:
     <<: *RuleSetIpcidr
-    url: "https://gh-proxy.com/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/telegramcidr.txt"
+    url: "https://ghfast.top/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/telegramcidr.txt"
     path: ./ruleset/telegramcidr.yaml
 
   cncidr:
     <<: *RuleSetIpcidr
-    url: "https://gh-proxy.com/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/cncidr.txt"
+    url: "https://ghfast.top/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/cncidr.txt"
     path: ./ruleset/cncidr.yaml
 
   chinaips:
     <<: *RuleSetIpcidr
-    url: "https://gh-proxy.com/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaIPs/ChinaIPs_IP.yaml"
+    url: "https://ghfast.top/raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaIPs/ChinaIPs_IP.yaml"
     path: ./ruleset/chinaips.yaml
 
   lancidr:
     <<: *RuleSetIpcidr
-    url: "https://gh-proxy.com/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/lancidr.txt"
+    url: "https://ghfast.top/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/lancidr.txt"
     path: ./ruleset/lancidr.yaml
 
   applications:
     <<: *RuleSetClassical
-    url: "https://gh-proxy.com/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/applications.txt"
+    url: "https://ghfast.top/raw.githubusercontent.com/Loyalsoldier/clash-rules/release/applications.txt"
     path: ./ruleset/applications.yaml
 
 FilterCrypto: &FilterCrypto '^(?=.*((?i)🇸🇬|坡|狮|SG|Singapore|台|新北|彰化|TW|Taiwan|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP))^(?!.*(网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点)).*$'
@@ -365,7 +365,7 @@ SelectAll: &SelectAll
   timeout: 1000
   max-failed-times: 3
 
-Select: &Select 
+Select: &Select
   type: select
   disable-udp: false
   hidden: false
@@ -374,16 +374,24 @@ Select: &Select
   timeout: 1000
   max-failed-times: 3
 
-pr: &pr {type: select, disable-udp: false, lazy: true, hidden: false, interval: 300, timeout: 1000, proxies: [🔥 手动切换, 🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
+Fallback: &Fallback
+  type: fallback
+  disable-udp: false
+  hidden: false
+  lazy: true
+  interval: 300
+  timeout: 1000
+  max-failed-times: 3
+
+pr: &pr {type: select, disable-udp: false, lazy: true, hidden: false, interval: 300, timeout: 1000, proxies: [🔥 手动切换, 🚀 节点选择, 🐔 落地鸡, 🐔 落地鸡-Fallback, 🇺🇲 美国节点, ♻️ 自动选择]}
 twPr: &twPr {type: select, disable-udp: false, lazy: true, hidden: false, interval: 300, timeout: 1000, proxies: [🇨🇳 台湾节点, 🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
 directPr: &directPr {type: select, disable-udp: false, lazy: true, hidden: false, interval: 300, timeout: 1000, proxies: [DIRECT, 🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
 
 proxy-groups: 
-  - {name: 🚀 节点选择, <<: *Select, proxies: [🔥 手动切换, 🇨🇳 台湾节点, 🇭🇰 香港节点, 🐔 落地鸡, ♻️ 自动选择, DIRECT]}
+  - {name: 🚀 节点选择, <<: *Select, proxies: [🔥 手动切换, 🇨🇳 台湾节点, 🇭🇰 香港节点, 🐔 落地鸡, 🐔 落地鸡-Fallback, ♻️ 自动选择, DIRECT]}
   - {name: 🔥 手动切换, <<: *SelectAll}
   - {name: ♻️ 自动选择, <<: *UrlTest}
   - {name: 🅱️ Crypto, <<: *SelectAll, filter: *FilterCrypto}
-  - {name: 🎯 全球直连, type: select, proxies: [DIRECT]}
   - {name: 🆎 AdBlock, type: select, proxies: [REJECT, DIRECT]}
   - {name: 🍎 苹果服务, <<: *directPr}
   - {name: 🇬 Google, <<: *pr}
@@ -395,6 +403,7 @@ proxy-groups:
   - {name: Ⓜ️ 微软云盘, <<: *directPr}
   - {name: Ⓜ️ 微软服务, <<: *directPr}
   - {name: 🐔 落地鸡, <<: *Select, use: [vps]}
+  - {name: 🐔 落地鸡-Fallback, <<: *Fallback, use: [vps-fallback]}
   - {name: 🐚 贝贝云, <<: *Select, use: [beibei]}
   - {name: 🐶 泡泡狗, <<: *Select, use: [paopaodog]}
   - {name: 🚁 机场cordc, <<: *Select, use: [cordc]}
@@ -411,8 +420,8 @@ rules:
   - RULE-SET,binance,🅱️ Crypto
   - RULE-SET,cryptocurrency,🅱️ Crypto
   - RULE-SET,crypto,🅱️ Crypto
-  - RULE-SET,directprocess,🎯 全球直连
-  - RULE-SET,mydirect,🎯 全球直连
+  - RULE-SET,directprocess,DIRECT
+  - RULE-SET,mydirect,DIRECT
   - PROCESS-NAME,android.uid.system,🇬 Google
   - PROCESS-NAME,com.google.uid.shared,🇬 Google
   - PROCESS-NAME,com.android.vending,🇬 Google
@@ -423,15 +432,15 @@ rules:
   - DOMAIN-SUFFIX,services.googleapis.cn,🇬 Google
   - DOMAIN-SUFFIX,voice.google.com,🇬 Google
   - DOMAIN-SUFFIX,dl.google.com,🇬 Google
-  - IP-CIDR,224.0.0.0/4,🎯 全球直连,no-resolve
-  - IP-CIDR,103.41.167.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,74.48.160.148/32,🎯 全球直连,no-resolve
+  - IP-CIDR,224.0.0.0/4,DIRECT,no-resolve
+  - IP-CIDR,103.41.167.0/24,DIRECT,no-resolve
+  - IP-CIDR,74.48.160.148/32,DIRECT,no-resolve
   - RULE-SET,openai,🤖 Chat服务
   - RULE-SET,myopenai,🤖 Chat服务
-  - RULE-SET,applications,🎯 全球直连
-  - DOMAIN,clash.razord.top,🎯 全球直连
-  - DOMAIN,yacd.haishan.me,🎯 全球直连
-  - RULE-SET,private,🎯 全球直连
+  - RULE-SET,applications,DIRECT
+  - DOMAIN,clash.razord.top,DIRECT
+  - DOMAIN,yacd.haishan.me,DIRECT
+  - RULE-SET,private,DIRECT
   - RULE-SET,icloud,🍎 苹果服务
   - RULE-SET,apple,🍎 苹果服务
   - RULE-SET,appleall,🍎 苹果服务
@@ -444,9 +453,9 @@ rules:
   - RULE-SET,google,🇬 Google
   - GEOSITE,google,🇬 Google
   - GEOIP,google,🇬 Google
-  - GEOSITE,steam@cn,🎯 全球直连
-  - GEOSITE,category-games@cn,🎯 全球直连
-  - GEOSITE,tracker,🎯 全球直连
+  - GEOSITE,steam@cn,DIRECT
+  - GEOSITE,category-games@cn,DIRECT
+  - GEOSITE,tracker,DIRECT
   - RULE-SET,reject,🆎 AdBlock
   - GEOSITE,category-ads-all,🆎 AdBlock
   - RULE-SET,bahamut,📺 巴哈姆特
@@ -468,13 +477,13 @@ rules:
   - RULE-SET,proxy,🚀 节点选择
   - RULE-SET,global,🚀 节点选择
   - RULE-SET,proxyclassical,🚀 节点选择
-  - RULE-SET,china,🎯 全球直连
-  - RULE-SET,chinax,🎯 全球直连
-  - RULE-SET,chinatest,🎯 全球直连
-  - RULE-SET,direct,🎯 全球直连
-  - RULE-SET,lancidr,🎯 全球直连,no-resolve
-  - RULE-SET,cncidr,🎯 全球直连,no-resolve
-  - RULE-SET,chinaips,🎯 全球直连,no-resolve
-  - GEOIP,LAN,🎯 全球直连,no-resolve
-  - GEOIP,CN,🎯 全球直连,no-resolve
+  - RULE-SET,china,DIRECT
+  - RULE-SET,chinax,DIRECT
+  - RULE-SET,chinatest,DIRECT
+  - RULE-SET,direct,DIRECT
+  - RULE-SET,lancidr,DIRECT,no-resolve
+  - RULE-SET,cncidr,DIRECT,no-resolve
+  - RULE-SET,chinaips,DIRECT,no-resolve
+  - GEOIP,LAN,DIRECT,no-resolve
+  - GEOIP,CN,DIRECT,no-resolve
   - MATCH,🐟 漏网之鱼
