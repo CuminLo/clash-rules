@@ -13,3 +13,4 @@ payload:
   - DOMAIN-SUFFIX,claude.ai
   - DOMAIN,openaiapi-site.azureedge.net
   - DOMAIN-SUFFIX,perplexity.ai
+  - DOMAIN-SUFFIX,grok.com
