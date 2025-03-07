@@ -13,7 +13,6 @@ payload:
   - DOMAIN-SUFFIX,apkflash.net
   - DOMAIN-SUFFIX,apkcombo.com
   - DOMAIN-SUFFIX,androidcombo.com
-  - DOMAIN-SUFFIX,network
   - DOMAIN-SUFFIX,qbittorrent.org
   - DOMAIN-SUFFIX,restic.net
   - DOMAIN-SUFFIX,activated.win
