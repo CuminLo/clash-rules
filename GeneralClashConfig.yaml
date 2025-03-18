@@ -126,7 +126,6 @@ NodeParam: &NodeParam {type: http, override: {udp: true, skip-cert-verify: true}
 
 proxy-providers: 
 
-
 RuleSetDomain: &RuleSetDomain {type: http, behavior: domain, interval: 86400, proxy: DIRECT}
 RuleSetClassical: &RuleSetClassical {type: http, behavior: classical, interval: 86400, proxy: DIRECT}
 RuleSetIpcidr: &RuleSetIpcidr {type: http, behavior: ipcidr, interval: 86400, proxy: DIRECT}
@@ -379,7 +378,7 @@ twPr: &twPr {type: select, disable-udp: false, lazy: true, hidden: false, interv
 directPr: &directPr {type: select, disable-udp: false, lazy: true, hidden: false, interval: 300, timeout: 1000, proxies: [DIRECT, 🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
 
 proxy-groups: 
-  - {name: 🚀 节点选择, <<: *Select, proxies: [🔥 手动切换, 🗨 GPT节点, 🇭🇰 香港节点, 🐔 落地鸡, ♻️ 自动选择, DIRECT]}
+  - {name: 🚀 节点选择, <<: *Select, proxies: [🔥 手动切换, 🦦 海獭, 🗨 GPT节点, 🇭🇰 香港节点, 🐔 落地鸡, ♻️ 自动选择, DIRECT]}
   - {name: 🔥 手动切换, <<: *SelectAll}
   - {name: ⏳ 测速吧, <<: *SelectAll}
   - {name: ♻️ 自动选择, <<: *UrlTest}
@@ -387,7 +386,7 @@ proxy-groups:
   - {name: 🆎 AdBlock, type: select, proxies: [REJECT, DIRECT]}
   - {name: 🍎 苹果服务, <<: *directPr}
   - {name: 🇬 Google, <<: *pr}
-  - {name: 🤖 Chat服务, <<: *Select, proxies: [🗨 GPT节点, 🐔 落地鸡, 🔥 手动切换]}
+  - {name: 🤖 Chat服务, <<: *Select, proxies: [🗨 GPT节点, ✈️ riolu, 🐔 落地鸡, 🔥 手动切换]}
   - {name: 📹 油管视频, <<: *pr}
   - {name: 👨‍💻‍ Github, <<: *pr}
   - {name: 💬 自由消息, <<: *pr}
@@ -395,10 +394,8 @@ proxy-groups:
   - {name: Ⓜ️ 微软云盘, <<: *directPr}
   - {name: Ⓜ️ 微软服务, <<: *directPr}
   - {name: 🐔 落地鸡, <<: *Select, use: [vps]}
-  - {name: 🐚 贝贝云, <<: *Select, use: [beibei]}
-  - {name: 🐶 泡泡狗, <<: *Select, use: [paopaodog]}
-  - {name: 🚁 机场cordc, <<: *Select, use: [cordc]}
-  - {name: ✈️ boostnet1, <<: *Select, use: [boostnet1]}
+  - {name: 🦦 海獭, <<: *Select, use: [haita]}
+  - {name: ✈️ riolu, <<: *Select, use: [riolu]}
   - {name: 🇺🇲 美国节点, <<: *UrlTest, filter: *FilterUS}
   - {name: 🗨 GPT节点, <<: *UrlTest, filter: *FilterChat}
   - {name: 🇭🇰 香港节点, <<: *UrlTest, filter: *FilterHK}
