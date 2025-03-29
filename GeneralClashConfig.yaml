@@ -125,6 +125,7 @@ global-ua: clash.meta
 NodeParam: &NodeParam {type: http, override: {udp: true, skip-cert-verify: true}, interval: 86400, health-check: {enable: true, url: 'http://connectivitycheck.platform.hicloud.com/generate_204', interval: 3600, lazy: true, timeout: 3000}}
 
 proxy-providers: 
+  vps:
 
 RuleSetDomain: &RuleSetDomain {type: http, behavior: domain, interval: 86400, proxy: DIRECT}
 RuleSetClassical: &RuleSetClassical {type: http, behavior: classical, interval: 86400, proxy: DIRECT}
@@ -340,7 +341,6 @@ rule-providers:
 FilterCrypto: &FilterCrypto '^(?=.*((?i)🇸🇬|坡|狮|SG|Singapore|台|新北|彰化|TW|Taiwan|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP))^(?!.*(网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点)).*$'
 FilterUS: &FilterUS '^(?=.*((?i)🇺🇸|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|(\b(US|United States)\b)))^(?!.*(网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点)).*$'
 FilterHK: &FilterHK '^(?=.*((?i)港|(\b(HK|Hong Kong)\b)))^(?!.*(网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点)).*$'
-FilterChat: &FilterChat '(Reality台|tw|taiwan|Chat|GPT)'
 
 UrlTest: &UrlTest 
   type: url-test
@@ -374,11 +374,11 @@ Select: &Select
   max-failed-times: 3
 
 pr: &pr {type: select, disable-udp: false, lazy: true, hidden: false, interval: 300, timeout: 1000, proxies: [🔥 手动切换, 🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
-twPr: &twPr {type: select, disable-udp: false, lazy: true, hidden: false, interval: 300, timeout: 1000, proxies: [🗨 GPT节点, 🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
+twPr: &twPr {type: select, disable-udp: false, lazy: true, hidden: false, interval: 300, timeout: 1000, proxies: [🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
 directPr: &directPr {type: select, disable-udp: false, lazy: true, hidden: false, interval: 300, timeout: 1000, proxies: [DIRECT, 🚀 节点选择, 🐔 落地鸡, 🇺🇲 美国节点, ♻️ 自动选择]}
 
 proxy-groups: 
-  - {name: 🚀 节点选择, <<: *Select, proxies: [🔥 手动切换, 🦦 海獭, 🗨 GPT节点, 🇭🇰 香港节点, 🐔 落地鸡, ♻️ 自动选择, DIRECT]}
+  - {name: 🚀 节点选择, <<: *Select, proxies: [🔥 手动切换, 🦦 海獭, 🇭🇰 香港节点, 🐔 落地鸡, ♻️ 自动选择, DIRECT]}
   - {name: 🔥 手动切换, <<: *SelectAll}
   - {name: ⏳ 测速吧, <<: *SelectAll}
   - {name: ♻️ 自动选择, <<: *UrlTest}
@@ -386,7 +386,7 @@ proxy-groups:
   - {name: 🆎 AdBlock, type: select, proxies: [REJECT, DIRECT]}
   - {name: 🍎 苹果服务, <<: *directPr}
   - {name: 🇬 Google, <<: *pr}
-  - {name: 🤖 Chat服务, <<: *Select, proxies: [🗨 GPT节点, ✈️ riolu, 🐔 落地鸡, 🔥 手动切换]}
+  - {name: 🤖 Chat服务, <<: *Select, proxies: [✈️ riolu, 🐔 落地鸡, 🔥 手动切换]}
   - {name: 📹 油管视频, <<: *pr}
   - {name: 👨‍💻‍ Github, <<: *pr}
   - {name: 💬 自由消息, <<: *pr}
@@ -397,7 +397,6 @@ proxy-groups:
   - {name: 🦦 海獭, <<: *Select, use: [haita]}
   - {name: ✈️ riolu, <<: *Select, use: [riolu]}
   - {name: 🇺🇲 美国节点, <<: *UrlTest, filter: *FilterUS}
-  - {name: 🗨 GPT节点, <<: *UrlTest, filter: *FilterChat}
   - {name: 🇭🇰 香港节点, <<: *UrlTest, filter: *FilterHK}
   - {name: 🐟 漏网之鱼, type: select, disable-udp: false, lazy: true, hidden: false, interval: 300, timeout: 600, proxies: [DIRECT, 🇭🇰 香港节点, 🇺🇲 美国节点, 🚀 节点选择]}
 
