@@ -2,4 +2,3 @@ payload:
   - DOMAIN-SUFFIX,tracker.theoks.net
   - DOMAIN-SUFFIX,fleira.no
   - DOMAIN-SUFFIX,t.nyaatracker.com
-  - SRC-IP-CIDR,192.168.50.22/32,DIRECT
