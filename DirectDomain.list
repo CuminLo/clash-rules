@@ -8,6 +8,7 @@ payload:
   - DOMAIN-SUFFIX,ddnsfree.com
   - DOMAIN-SUFFIX,myaddr.tools
   - DOMAIN-SUFFIX,oray.net
+  - DOMAIN-SUFFIX,bitwarden.com
   - DOMAIN-SUFFIX,hpeprint.com
   - DOMAIN-SUFFIX,epson.com
   - DOMAIN-SUFFIX,epsonconnect.com
