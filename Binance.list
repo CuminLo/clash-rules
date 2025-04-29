@@ -46,7 +46,8 @@ payload:
   - DOMAIN-SUFFIX,bnappzh.net
   - DOMAIN-SUFFIX,binancefuture.com
   - DOMAIN-SUFFIX,bnbstatic.com
-  - DOMAIN-SUFFIX,bntrace.com
+  - DOMAIN-KEYWORD,bnappweb
+  - DOMAIN-SUFFIX,bnappweb.biz
   - DOMAIN-KEYWORD,dashiyirui
   - DOMAIN-SUFFIX,dashiyirui.net
   - DOMAIN-SUFFIX,dashiyirui.club
@@ -61,6 +62,7 @@ payload:
   - DOMAIN-SUFFIX,saasexch.co
   - DOMAIN-SUFFIX,saasexch.cc
   - DOMAIN-SUFFIX,saasexch.info
+  - DOMAIN-SUFFIX,mokexapp.io
   - DOMAIN-SUFFIX,mokexweb.me
   - DOMAIN-SUFFIX,mokexapp.net
   - DOMAIN-SUFFIX,marketwebb.com
@@ -74,3 +76,4 @@ payload:
   - DOMAIN-SUFFIX,walletconnect.org
   - DOMAIN-SUFFIX,starknet.io
   - DOMAIN-SUFFIX,domain-config-1306379396.file.myqcloud.com
+  - DOMAIN-SUFFIX,d3sknckuh1o9tg.cloudfront.net
