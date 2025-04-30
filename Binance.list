@@ -3,77 +3,25 @@ payload:
   - PROCESS-NAME,Binance Helper
   - PROCESS-NAME,Binance
   - DOMAIN-SUFFIX,appsflayer.com
-  - DOMAIN-SUFFIX,bnbzh.ac
+  - DOMAIN-KEYWORD,bnbzh
   - DOMAIN-KEYWORD,binance
-  - DOMAIN-SUFFIX,binance.cc
-  - DOMAIN-SUFFIX,binance.charity
-  - DOMAIN-SUFFIX,binance.cloud
-  - DOMAIN-SUFFIX,binance.co
-  - DOMAIN-SUFFIX,binance.com
-  - DOMAIN-SUFFIX,binance.info
-  - DOMAIN-SUFFIX,binance.me
-  - DOMAIN-SUFFIX,binance.net
-  - DOMAIN-SUFFIX,binance.org
-  - DOMAIN-SUFFIX,binance.us
-  - DOMAIN-SUFFIX,binance.vision
-  - DOMAIN-SUFFIX,binanceapi.com
-  - DOMAIN-SUFFIX,binance.click
-  - DOMAIN-SUFFIX,binance.im
+  - DOMAIN-KEYWORD,binanceapi
   - DOMAIN-KEYWORD,binancezh
-  - DOMAIN-SUFFIX,binancezh.be
-  - DOMAIN-SUFFIX,binancezh.biz
-  - DOMAIN-SUFFIX,binancezh.cc
-  - DOMAIN-SUFFIX,binancezh.co
-  - DOMAIN-SUFFIX,binancezh.com
-  - DOMAIN-SUFFIX,binancezh.info
-  - DOMAIN-SUFFIX,binancezh.ink
-  - DOMAIN-SUFFIX,binancezh.in
-  - DOMAIN-SUFFIX,binancezh.cz
-  - DOMAIN-SUFFIX,binancezh.kim
-  - DOMAIN-SUFFIX,binancezh.link
-  - DOMAIN-SUFFIX,binancezh.live
-  - DOMAIN-SUFFIX,binancezh.mobi
-  - DOMAIN-SUFFIX,binancezh.net
-  - DOMAIN-SUFFIX,binancezh.pro
-  - DOMAIN-SUFFIX,binancezh.sh
-  - DOMAIN-SUFFIX,binancezh.top
-  - DOMAIN-SUFFIX,bnappzh.co
-  - DOMAIN-SUFFIX,bnappzh.info
-  - DOMAIN-SUFFIX,bnappzh.link
-  - DOMAIN-SUFFIX,bnappzh.club
-  - DOMAIN-SUFFIX,bnappzh.mobi
-  - DOMAIN-SUFFIX,bnappzh.cloud
-  - DOMAIN-SUFFIX,bnappzh.net
-  - DOMAIN-SUFFIX,binancefuture.com
-  - DOMAIN-SUFFIX,bnbstatic.com
+  - DOMAIN-KEYWORD,bnappzh
+  - DOMAIN-KEYWORD,binancefuture
+  - DOMAIN-KEYWORD,binancecnt
+  - DOMAIN-KEYWORD,bnbstatic
   - DOMAIN-KEYWORD,bnappweb
-  - DOMAIN-SUFFIX,bnappweb.biz
   - DOMAIN-KEYWORD,dashiyirui
-  - DOMAIN-SUFFIX,dashiyirui.net
-  - DOMAIN-SUFFIX,dashiyirui.club
   - DOMAIN-KEYWORD,suitechsui
-  - DOMAIN-SUFFIX,suitechsui.cloud
-  - DOMAIN-SUFFIX,suitechsui.io
-  - DOMAIN-SUFFIX,suitechsui.online
-  - DOMAIN-SUFFIX,suitechsui.support
-  - DOMAIN-SUFFIX,suitechsui.systems
-  - DOMAIN-SUFFIX,suitechsui.education
-  - DOMAIN-SUFFIX,saasexch.com
-  - DOMAIN-SUFFIX,saasexch.co
-  - DOMAIN-SUFFIX,saasexch.cc
-  - DOMAIN-SUFFIX,saasexch.info
-  - DOMAIN-SUFFIX,mokexapp.io
-  - DOMAIN-SUFFIX,mokexweb.me
-  - DOMAIN-SUFFIX,mokexapp.net
-  - DOMAIN-SUFFIX,marketwebb.com
-  - DOMAIN-SUFFIX,marketwebb.ac
-  - DOMAIN-SUFFIX,marketwebb.academy
-  - DOMAIN-SUFFIX,mokexapp.cloud
+  - DOMAIN-KEYWORD,saasexch
+  - DOMAIN-KEYWORD,mokexapp
+  - DOMAIN-KEYWORD,mokexweb
+  - DOMAIN-KEYWORD,marketwebb
   - DOMAIN-SUFFIX,riskified.com
   - DOMAIN-SUFFIX,c.riskified.com
   - DOMAIN-SUFFIX,launches.appsflyer.com
   - DOMAIN-SUFFIX,jex.com
-  - DOMAIN-SUFFIX,walletconnect.org
   - DOMAIN-SUFFIX,starknet.io
   - DOMAIN-SUFFIX,domain-config-1306379396.file.myqcloud.com
   - DOMAIN-SUFFIX,d3sknckuh1o9tg.cloudfront.net

@@ -66,6 +66,7 @@ payload:
   - DOMAIN-SUFFIX,okx.com
   - DOMAIN-SUFFIX,onetrust.com
   - DOMAIN-SUFFIX,www-bitmex-com.translate.goog
+  - DOMAIN-SUFFIX,walletconnect.org
   - DOMAIN-SUFFIX,bitmex.com
   - DOMAIN-SUFFIX,bitmex.zendesk.com
   - DOMAIN-SUFFIX,greeks.live
