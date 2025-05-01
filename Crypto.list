@@ -18,6 +18,7 @@ payload:
   - DOMAIN-KEYWORD,hyperliquid
   - DOMAIN-KEYWORD,exchange
   - DOMAIN-KEYWORD,solana
+  - DOMAIN-KEYWORD,vertexprotocol
   - DOMAIN-SUFFIX,aptoslabs.com
   - DOMAIN-SUFFIX,martianwallet.xyz
   - DOMAIN-SUFFIX,tradingview.com
@@ -89,3 +90,5 @@ payload:
   - DOMAIN-SUFFIX,usual.money
   - DOMAIN-SUFFIX,privy.io
   - DOMAIN-SUFFIX,bsquared.network
+  - DOMAIN-SUFFIX,jup.ag
+  - DOMAIN-SUFFIX,rootdata
