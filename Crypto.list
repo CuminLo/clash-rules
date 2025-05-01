@@ -1,8 +1,10 @@
 payload:
   - PROCESS-NAME,com.tradingview.tradingviewapp
   - PROCESS-NAME,TradingView Helper
-  - DOMAIN-KEYWORD,defillama
   - DOMAIN-SUFFIX,llama.fi
+  - DOMAIN-KEYWORD,defillama
+  - DOMAIN-KEYWORD,astria
+  - DOMAIN-KEYWORD,arbiscan
   - DOMAIN-KEYWORD,uniswap
   - DOMAIN-KEYWORD,pancakeswap
   - DOMAIN-KEYWORD,binance
@@ -19,9 +21,9 @@ payload:
   - DOMAIN-KEYWORD,exchange
   - DOMAIN-KEYWORD,solana
   - DOMAIN-KEYWORD,vertexprotocol
+  - DOMAIN-KEYWORD,tradingview
   - DOMAIN-SUFFIX,aptoslabs.com
   - DOMAIN-SUFFIX,martianwallet.xyz
-  - DOMAIN-SUFFIX,tradingview.com
   - DOMAIN-SUFFIX,kucoin.com
   - DOMAIN-SUFFIX,kucoin.plus
   - DOMAIN-SUFFIX,kucoin.work
@@ -91,4 +93,5 @@ payload:
   - DOMAIN-SUFFIX,privy.io
   - DOMAIN-SUFFIX,bsquared.network
   - DOMAIN-SUFFIX,jup.ag
-  - DOMAIN-SUFFIX,rootdata
+  - DOMAIN-SUFFIX,range.org
+  - DOMAIN-SUFFIX,rootdata.com
