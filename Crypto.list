@@ -7,11 +7,12 @@ payload:
   - DOMAIN-KEYWORD,arbiscan
   - DOMAIN-KEYWORD,uniswap
   - DOMAIN-KEYWORD,pancakeswap
-  - DOMAIN-KEYWORD,binance
   - DOMAIN-KEYWORD,deribit
   - DOMAIN-KEYWORD,ethereum
   - DOMAIN-KEYWORD,arbitrum
   - DOMAIN-KEYWORD,bnbchain
+  - DOMAIN-KEYWORD,bscscan
+  - DOMAIN-KEYWORD,binance
   - DOMAIN-KEYWORD,polygon
   - DOMAIN-KEYWORD,optimism
   - DOMAIN-KEYWORD,zksync
@@ -20,9 +21,11 @@ payload:
   - DOMAIN-KEYWORD,hyperliquid
   - DOMAIN-KEYWORD,exchange
   - DOMAIN-KEYWORD,solana
+  - DOMAIN-KEYWORD,mintscan
   - DOMAIN-KEYWORD,vertexprotocol
   - DOMAIN-KEYWORD,tradingview
   - DOMAIN-SUFFIX,aptoslabs.com
+  - DOMAIN-SUFFIX,celer.network
   - DOMAIN-SUFFIX,martianwallet.xyz
   - DOMAIN-SUFFIX,kucoin.com
   - DOMAIN-SUFFIX,kucoin.plus
@@ -95,3 +98,4 @@ payload:
   - DOMAIN-SUFFIX,jup.ag
   - DOMAIN-SUFFIX,range.org
   - DOMAIN-SUFFIX,rootdata.com
+  - DOMAIN-SUFFIX,noble.xyz
