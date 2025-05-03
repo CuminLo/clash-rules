@@ -5,22 +5,25 @@ payload:
   - DOMAIN-KEYWORD,defillama
   - DOMAIN-KEYWORD,astria
   - DOMAIN-KEYWORD,arbiscan
-  - DOMAIN-KEYWORD,uniswap
-  - DOMAIN-KEYWORD,pancakeswap
-  - DOMAIN-KEYWORD,deribit
-  - DOMAIN-KEYWORD,ethereum
   - DOMAIN-KEYWORD,arbitrum
+  - DOMAIN-KEYWORD,basescan
   - DOMAIN-KEYWORD,bnbchain
   - DOMAIN-KEYWORD,bscscan
   - DOMAIN-KEYWORD,binance
+  - DOMAIN-KEYWORD,deribit
+  - DOMAIN-KEYWORD,dydx
+  - DOMAIN-KEYWORD,ethereum
+  - DOMAIN-KEYWORD,etherscan
+  - DOMAIN-KEYWORD,uniswap
+  - DOMAIN-KEYWORD,pancakeswap
   - DOMAIN-KEYWORD,polygon
   - DOMAIN-KEYWORD,optimism
   - DOMAIN-KEYWORD,zksync
   - DOMAIN-KEYWORD,coincall
-  - DOMAIN-KEYWORD,dydx
   - DOMAIN-KEYWORD,hyperliquid
   - DOMAIN-KEYWORD,exchange
   - DOMAIN-KEYWORD,solana
+  - DOMAIN-KEYWORD,solscan
   - DOMAIN-KEYWORD,mintscan
   - DOMAIN-KEYWORD,vertexprotocol
   - DOMAIN-KEYWORD,tradingview
@@ -82,7 +85,6 @@ payload:
   - DOMAIN-SUFFIX,gmgn.ai
   - DOMAIN-SUFFIX,pump.fun
   - DOMAIN-SUFFIX,solflare.com
-  - DOMAIN-SUFFIX,solscan.io
   - DOMAIN-SUFFIX,signalplus.com
   - DOMAIN-SUFFIX,sp2x.com
   - DOMAIN-SUFFIX,xhashapp.com
