@@ -25,11 +25,12 @@ payload:
   - DOMAIN-KEYWORD,solana
   - DOMAIN-KEYWORD,solscan
   - DOMAIN-KEYWORD,mintscan
+  - DOMAIN-KEYWORD,martianwallet
+  - DOMAIN-KEYWORD,metamask
   - DOMAIN-KEYWORD,vertexprotocol
   - DOMAIN-KEYWORD,tradingview
   - DOMAIN-SUFFIX,aptoslabs.com
   - DOMAIN-SUFFIX,celer.network
-  - DOMAIN-SUFFIX,martianwallet.xyz
   - DOMAIN-SUFFIX,kucoin.com
   - DOMAIN-SUFFIX,kucoin.plus
   - DOMAIN-SUFFIX,kucoin.work
