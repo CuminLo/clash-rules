@@ -29,6 +29,7 @@ payload:
   - DOMAIN-KEYWORD,metamask
   - DOMAIN-KEYWORD,vertexprotocol
   - DOMAIN-KEYWORD,tradingview
+  - DOMAIN-KEYWORD,campnetwork
   - DOMAIN-SUFFIX,aptoslabs.com
   - DOMAIN-SUFFIX,celer.network
   - DOMAIN-SUFFIX,kucoin.com
