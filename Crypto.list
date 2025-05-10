@@ -32,6 +32,7 @@ payload:
   - DOMAIN-KEYWORD,campnetwork
   - DOMAIN-SUFFIX,aptoslabs.com
   - DOMAIN-SUFFIX,celer.network
+  - DOMAIN-SUFFIX,codefi.network
   - DOMAIN-SUFFIX,kucoin.com
   - DOMAIN-SUFFIX,kucoin.plus
   - DOMAIN-SUFFIX,kucoin.work
