@@ -84,6 +84,7 @@ payload:
   - DOMAIN-SUFFIX,greeks.live
   - DOMAIN-SUFFIX,deribit.com
   - DOMAIN-SUFFIX,geckoterminal.com
+  - DOMAIN-SUFFIX,getpara.com
   - DOMAIN-SUFFIX,gmgn.io
   - DOMAIN-SUFFIX,gmgn.ai
   - DOMAIN-SUFFIX,pump.fun
