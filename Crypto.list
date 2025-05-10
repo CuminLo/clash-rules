@@ -20,6 +20,7 @@ payload:
   - DOMAIN-KEYWORD,optimism
   - DOMAIN-KEYWORD,zksync
   - DOMAIN-KEYWORD,coincall
+  - DOMAIN-KEYWORD,chainlist
   - DOMAIN-KEYWORD,hyperliquid
   - DOMAIN-KEYWORD,exchange
   - DOMAIN-KEYWORD,solana
@@ -108,3 +109,8 @@ payload:
   - DOMAIN-SUFFIX,noble.xyz
   - DOMAIN-SUFFIX,exby.trade
   - DOMAIN-SUFFIX,exby.io
+  - DOMAIN-SUFFIX,ftm.tools
+  - DOMAIN-SUFFIX,thirdweb.com
+  - DOMAIN-SUFFIX,storychain.ai
+  - DOMAIN-SUFFIX,chainid.network
+  - DOMAIN-SUFFIX,dogechain.dog
