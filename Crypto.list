@@ -35,8 +35,9 @@ payload:
   - DOMAIN-KEYWORD,mintscan
   - DOMAIN-KEYWORD,martianwallet
   - DOMAIN-KEYWORD,metamask
-  - DOMAIN-KEYWORD,vertexprotocol
   - DOMAIN-KEYWORD,tradingview
+  - DOMAIN-KEYWORD,vertexprotocol
+  - DOMAIN-KEYWORD,walletconnect
   - DOMAIN-SUFFIX,aptoslabs.com
   - DOMAIN-SUFFIX,apollox.finance
   - DOMAIN-SUFFIX,celer.network
@@ -55,6 +56,7 @@ payload:
   - DOMAIN-SUFFIX,mexc.me
   - DOMAIN-SUFFIX,mexc.com
   - DOMAIN-SUFFIX,mexcsensors.com
+  - DOMAIN-SUFFIX,merkl.xyz
   - DOMAIN-SUFFIX,morpho.org
   - DOMAIN-SUFFIX,gdiii.xyz
   - DOMAIN-SUFFIX,zendesk.com
@@ -76,18 +78,15 @@ payload:
   - DOMAIN-SUFFIX,token.im
   - DOMAIN-SUFFIX,venus.io
   - DOMAIN-SUFFIX,premia.finance
-  - DOMAIN-SUFFIX,pancakeswap.finance
   - DOMAIN-SUFFIX,transit.finance
   - DOMAIN-SUFFIX,matrixtechfin.com
   - DOMAIN-SUFFIX,matrixport.com
   - DOMAIN-SUFFIX,defidaonews.com
   - DOMAIN-SUFFIX,xcoinsystem.com
-  - DOMAIN-SUFFIX,walletconnect.com
   - DOMAIN-SUFFIX,bitverse.zone
   - DOMAIN-SUFFIX,onetrust.com
   - DOMAIN-SUFFIX,orbs.network
   - DOMAIN-SUFFIX,weex.com
-  - DOMAIN-SUFFIX,walletconnect.org
   - DOMAIN-SUFFIX,bitmex.com
   - DOMAIN-SUFFIX,bitmex.zendesk.com
   - DOMAIN-SUFFIX,greeks.live
@@ -126,3 +125,4 @@ payload:
   - DOMAIN-SUFFIX,dogechain.dog
   - DOMAIN-SUFFIX,nodereal.io
   - DOMAIN-SUFFIX,nariox.org
+  - DOMAIN-SUFFIX,zkevm-rpc.com
