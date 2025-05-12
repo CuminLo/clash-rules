@@ -11,17 +11,22 @@ payload:
   - DOMAIN-KEYWORD,bnbchain
   - DOMAIN-KEYWORD,bscscan
   - DOMAIN-KEYWORD,binance
+  - DOMAIN-KEYWORD,blockscan
+  - DOMAIN-KEYWORD,campnetwork
+  - DOMAIN-KEYWORD,coincall
+  - DOMAIN-KEYWORD,chainlist
   - DOMAIN-KEYWORD,deribit
   - DOMAIN-KEYWORD,dydx
   - DOMAIN-KEYWORD,ethereum
   - DOMAIN-KEYWORD,etherscan
+  - DOMAIN-KEYWORD,eth-goerli
   - DOMAIN-KEYWORD,uniswap
+  - DOMAIN-KEYWORD,pcswap
   - DOMAIN-KEYWORD,pancakeswap
   - DOMAIN-KEYWORD,polygon
   - DOMAIN-KEYWORD,optimism
+  - DOMAIN-KEYWORD,okx
   - DOMAIN-KEYWORD,zksync
-  - DOMAIN-KEYWORD,coincall
-  - DOMAIN-KEYWORD,chainlist
   - DOMAIN-KEYWORD,hyperliquid
   - DOMAIN-KEYWORD,exchange
   - DOMAIN-KEYWORD,satsuma
@@ -32,7 +37,6 @@ payload:
   - DOMAIN-KEYWORD,metamask
   - DOMAIN-KEYWORD,vertexprotocol
   - DOMAIN-KEYWORD,tradingview
-  - DOMAIN-KEYWORD,campnetwork
   - DOMAIN-SUFFIX,aptoslabs.com
   - DOMAIN-SUFFIX,apollox.finance
   - DOMAIN-SUFFIX,celer.network
@@ -80,9 +84,9 @@ payload:
   - DOMAIN-SUFFIX,xcoinsystem.com
   - DOMAIN-SUFFIX,walletconnect.com
   - DOMAIN-SUFFIX,bitverse.zone
-  - DOMAIN-SUFFIX,okx.com
   - DOMAIN-SUFFIX,onetrust.com
-  - DOMAIN-SUFFIX,www-bitmex-com.translate.goog
+  - DOMAIN-SUFFIX,orbs.network
+  - DOMAIN-SUFFIX,weex.com
   - DOMAIN-SUFFIX,walletconnect.org
   - DOMAIN-SUFFIX,bitmex.com
   - DOMAIN-SUFFIX,bitmex.zendesk.com
@@ -120,3 +124,5 @@ payload:
   - DOMAIN-SUFFIX,storychain.ai
   - DOMAIN-SUFFIX,chainid.network
   - DOMAIN-SUFFIX,dogechain.dog
+  - DOMAIN-SUFFIX,nodereal.io
+  - DOMAIN-SUFFIX,nariox.org
