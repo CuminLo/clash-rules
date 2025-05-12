@@ -1,0 +1,4 @@
+payload:
+  - PROCESS-NAME,com.tradingview.tradingviewapp
+  - PROCESS-NAME,TradingView Helper
+  - DOMAIN-KEYWORD,tradingview
