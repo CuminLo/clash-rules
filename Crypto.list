@@ -90,6 +90,7 @@ payload:
   - DOMAIN-SUFFIX,gmgn.io
   - DOMAIN-SUFFIX,gmgn.ai
   - DOMAIN-SUFFIX,pump.fun
+  - DOMAIN-SUFFIX,particle.network
   - DOMAIN-SUFFIX,solflare.com
   - DOMAIN-SUFFIX,signalplus.com
   - DOMAIN-SUFFIX,sp2x.com
