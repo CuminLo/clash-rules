@@ -20,6 +20,7 @@ payload:
   - DOMAIN-KEYWORD,ethereum
   - DOMAIN-KEYWORD,etherscan
   - DOMAIN-KEYWORD,eth-goerli
+  - DOMAIN-KEYWORD,exchange
   - DOMAIN-KEYWORD,uniswap
   - DOMAIN-KEYWORD,pcswap
   - DOMAIN-KEYWORD,pancakeswap
@@ -28,15 +29,18 @@ payload:
   - DOMAIN-KEYWORD,okx
   - DOMAIN-KEYWORD,zksync
   - DOMAIN-KEYWORD,hyperliquid
-  - DOMAIN-KEYWORD,exchange
+  - DOMAIN-KEYWORD,quiknode
   - DOMAIN-KEYWORD,satsuma
+  - DOMAIN-KEYWORD,seiscan
   - DOMAIN-KEYWORD,solana
   - DOMAIN-KEYWORD,solscan
+  - DOMAIN-KEYWORD,signalplus
   - DOMAIN-KEYWORD,mintscan
   - DOMAIN-KEYWORD,martianwallet
   - DOMAIN-KEYWORD,metamask
   - DOMAIN-KEYWORD,tradingview
   - DOMAIN-KEYWORD,vertexprotocol
+  - DOMAIN-KEYWORD,web3modal
   - DOMAIN-KEYWORD,walletconnect
   - DOMAIN-SUFFIX,aptoslabs.com
   - DOMAIN-SUFFIX,apollox.finance
@@ -98,10 +102,10 @@ payload:
   - DOMAIN-SUFFIX,pump.fun
   - DOMAIN-SUFFIX,particle.network
   - DOMAIN-SUFFIX,pendle.finance
+  - DOMAIN-SUFFIX,sei.io
   - DOMAIN-SUFFIX,solflare.com
-  - DOMAIN-SUFFIX,signalplus.com
   - DOMAIN-SUFFIX,sp2x.com
-  - DOMAIN-SUFFIX,xhashapp.com
+  - DOMAIN-SUFFIX,sofa.org
   - DOMAIN-SUFFIX,scroll.io
   - DOMAIN-SUFFIX,scroll.ghost.io
   - DOMAIN-SUFFIX,llamarpc.com
@@ -125,4 +129,5 @@ payload:
   - DOMAIN-SUFFIX,dogechain.dog
   - DOMAIN-SUFFIX,nodereal.io
   - DOMAIN-SUFFIX,nariox.org
+  - DOMAIN-SUFFIX,xhashapp.com
   - DOMAIN-SUFFIX,zkevm-rpc.com
