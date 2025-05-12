@@ -32,6 +32,7 @@ payload:
   - DOMAIN-KEYWORD,tradingview
   - DOMAIN-KEYWORD,campnetwork
   - DOMAIN-SUFFIX,aptoslabs.com
+  - DOMAIN-SUFFIX,apollox.finance
   - DOMAIN-SUFFIX,celer.network
   - DOMAIN-SUFFIX,codefi.network
   - DOMAIN-SUFFIX,kucoin.com
