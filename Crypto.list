@@ -6,6 +6,7 @@ payload:
   - DOMAIN-KEYWORD,astria
   - DOMAIN-KEYWORD,arbiscan
   - DOMAIN-KEYWORD,arbitrum
+  - DOMAIN-KEYWORD,alchemy
   - DOMAIN-KEYWORD,basescan
   - DOMAIN-KEYWORD,bnbchain
   - DOMAIN-KEYWORD,bscscan
@@ -23,6 +24,7 @@ payload:
   - DOMAIN-KEYWORD,chainlist
   - DOMAIN-KEYWORD,hyperliquid
   - DOMAIN-KEYWORD,exchange
+  - DOMAIN-KEYWORD,satsuma
   - DOMAIN-KEYWORD,solana
   - DOMAIN-KEYWORD,solscan
   - DOMAIN-KEYWORD,mintscan
@@ -49,6 +51,7 @@ payload:
   - DOMAIN-SUFFIX,mexc.me
   - DOMAIN-SUFFIX,mexc.com
   - DOMAIN-SUFFIX,mexcsensors.com
+  - DOMAIN-SUFFIX,morpho.org
   - DOMAIN-SUFFIX,gdiii.xyz
   - DOMAIN-SUFFIX,zendesk.com
   - DOMAIN-SUFFIX,localbitcoins.com
@@ -91,6 +94,7 @@ payload:
   - DOMAIN-SUFFIX,gmgn.ai
   - DOMAIN-SUFFIX,pump.fun
   - DOMAIN-SUFFIX,particle.network
+  - DOMAIN-SUFFIX,pendle.finance
   - DOMAIN-SUFFIX,solflare.com
   - DOMAIN-SUFFIX,signalplus.com
   - DOMAIN-SUFFIX,sp2x.com
