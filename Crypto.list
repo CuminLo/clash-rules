@@ -21,6 +21,7 @@ payload:
   - DOMAIN-KEYWORD,etherscan
   - DOMAIN-KEYWORD,eth-goerli
   - DOMAIN-KEYWORD,exchange
+  - DOMAIN-KEYWORD,gate
   - DOMAIN-KEYWORD,uniswap
   - DOMAIN-KEYWORD,pcswap
   - DOMAIN-KEYWORD,pancakeswap
@@ -65,7 +66,6 @@ payload:
   - DOMAIN-SUFFIX,gdiii.xyz
   - DOMAIN-SUFFIX,zendesk.com
   - DOMAIN-SUFFIX,localbitcoins.com
-  - DOMAIN-SUFFIX,gate.io
   - DOMAIN-SUFFIX,aicoin.com
   - DOMAIN-SUFFIX,gdgz.link
   - DOMAIN-SUFFIX,avedex.cc
