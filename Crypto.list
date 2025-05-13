@@ -21,6 +21,7 @@ payload:
   - DOMAIN-KEYWORD,etherscan
   - DOMAIN-KEYWORD,eth-goerli
   - DOMAIN-KEYWORD,exchange
+  - DOMAIN-KEYWORD,gateex
   - DOMAIN-KEYWORD,gateio
   - DOMAIN-KEYWORD,uniswap
   - DOMAIN-KEYWORD,pcswap
@@ -100,6 +101,7 @@ payload:
   - DOMAIN-SUFFIX,gate.io
   - DOMAIN-SUFFIX,gate.info
   - DOMAIN-SUFFIX,gatedata.org
+  - DOMAIN-SUFFIX,gateimg.com
   - DOMAIN-SUFFIX,gateimage.com
   - DOMAIN-SUFFIX,gmgn.io
   - DOMAIN-SUFFIX,gmgn.ai
