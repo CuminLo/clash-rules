@@ -21,7 +21,7 @@ payload:
   - DOMAIN-KEYWORD,etherscan
   - DOMAIN-KEYWORD,eth-goerli
   - DOMAIN-KEYWORD,exchange
-  - DOMAIN-KEYWORD,gate
+  - DOMAIN-KEYWORD,gateio
   - DOMAIN-KEYWORD,uniswap
   - DOMAIN-KEYWORD,pcswap
   - DOMAIN-KEYWORD,pancakeswap
@@ -97,6 +97,8 @@ payload:
   - DOMAIN-SUFFIX,deribit.com
   - DOMAIN-SUFFIX,geckoterminal.com
   - DOMAIN-SUFFIX,getpara.com
+  - DOMAIN-SUFFIX,gate.io
+  - DOMAIN-SUFFIX,gate.info
   - DOMAIN-SUFFIX,gmgn.io
   - DOMAIN-SUFFIX,gmgn.ai
   - DOMAIN-SUFFIX,pump.fun
