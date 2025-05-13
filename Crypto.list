@@ -100,6 +100,7 @@ payload:
   - DOMAIN-SUFFIX,gate.io
   - DOMAIN-SUFFIX,gate.info
   - DOMAIN-SUFFIX,gatedata.org
+  - DOMAIN-SUFFIX,gateimage.com
   - DOMAIN-SUFFIX,gmgn.io
   - DOMAIN-SUFFIX,gmgn.ai
   - DOMAIN-SUFFIX,pump.fun
