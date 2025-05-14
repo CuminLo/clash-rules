@@ -27,6 +27,7 @@ payload:
   - DOMAIN-KEYWORD,pcswap
   - DOMAIN-KEYWORD,pancakeswap
   - DOMAIN-KEYWORD,polygon
+  - DOMAIN-KEYWORD,infini
   - DOMAIN-KEYWORD,optimism
   - DOMAIN-KEYWORD,okx
   - DOMAIN-KEYWORD,zksync
