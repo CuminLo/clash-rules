@@ -4,6 +4,7 @@ payload:
   - DOMAIN-SUFFIX,llama.fi
   - DOMAIN-KEYWORD,defillama
   - DOMAIN-KEYWORD,astria
+  - DOMAIN-KEYWORD,asterdex
   - DOMAIN-KEYWORD,arbiscan
   - DOMAIN-KEYWORD,arbitrum
   - DOMAIN-KEYWORD,alchemy
