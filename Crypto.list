@@ -41,6 +41,7 @@ payload:
   - DOMAIN-KEYWORD,mintscan
   - DOMAIN-KEYWORD,martianwallet
   - DOMAIN-KEYWORD,metamask
+  - DOMAIN-KEYWORD,testnet
   - DOMAIN-KEYWORD,tradingview
   - DOMAIN-KEYWORD,vertexprotocol
   - DOMAIN-KEYWORD,web3modal
