@@ -51,6 +51,10 @@ payload:
   - DOMAIN-SUFFIX,apollox.finance
   - DOMAIN-SUFFIX,celer.network
   - DOMAIN-SUFFIX,codefi.network
+  - DOMAIN-SUFFIX,curve.fi
+  - DOMAIN-SUFFIX,chainid.network
+  - DOMAIN-SUFFIX,dogechain.dog
+  - DOMAIN-SUFFIX,four.meme
   - DOMAIN-SUFFIX,kucoin.com
   - DOMAIN-SUFFIX,kucoin.plus
   - DOMAIN-SUFFIX,kucoin.work
@@ -85,6 +89,7 @@ payload:
   - DOMAIN-SUFFIX,tokenpocket.pro
   - DOMAIN-SUFFIX,token.im
   - DOMAIN-SUFFIX,venus.io
+  - DOMAIN-SUFFIX,virtuals.io
   - DOMAIN-SUFFIX,premia.finance
   - DOMAIN-SUFFIX,transit.finance
   - DOMAIN-SUFFIX,matrixtechfin.com
@@ -134,8 +139,6 @@ payload:
   - DOMAIN-SUFFIX,ftm.tools
   - DOMAIN-SUFFIX,thirdweb.com
   - DOMAIN-SUFFIX,storychain.ai
-  - DOMAIN-SUFFIX,chainid.network
-  - DOMAIN-SUFFIX,dogechain.dog
   - DOMAIN-SUFFIX,nodereal.io
   - DOMAIN-SUFFIX,nariox.org
   - DOMAIN-SUFFIX,xhashapp.com
