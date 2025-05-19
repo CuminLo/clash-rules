@@ -47,6 +47,12 @@ payload:
   - DOMAIN-KEYWORD,vertexprotocol
   - DOMAIN-KEYWORD,web3modal
   - DOMAIN-KEYWORD,walletconnect
+  - DOMAIN-SUFFIX,aicoin.com
+  - DOMAIN-SUFFIX,avedex.cc
+  - DOMAIN-SUFFIX,ave.ai
+  - DOMAIN-SUFFIX,aveipcheck.xyz
+  - DOMAIN-SUFFIX,avesp.xyz
+  - DOMAIN-SUFFIX,avedex.live
   - DOMAIN-SUFFIX,aptoslabs.com
   - DOMAIN-SUFFIX,apollox.finance
   - DOMAIN-SUFFIX,celer.network
@@ -54,6 +60,8 @@ payload:
   - DOMAIN-SUFFIX,curve.fi
   - DOMAIN-SUFFIX,chainid.network
   - DOMAIN-SUFFIX,dogechain.dog
+  - DOMAIN-SUFFIX,defibit.io
+  - DOMAIN-SUFFIX,dexscreener.com
   - DOMAIN-SUFFIX,four.meme
   - DOMAIN-SUFFIX,kucoin.com
   - DOMAIN-SUFFIX,kucoin.plus
@@ -74,15 +82,8 @@ payload:
   - DOMAIN-SUFFIX,gdiii.xyz
   - DOMAIN-SUFFIX,zendesk.com
   - DOMAIN-SUFFIX,localbitcoins.com
-  - DOMAIN-SUFFIX,aicoin.com
   - DOMAIN-SUFFIX,gdgz.link
-  - DOMAIN-SUFFIX,avedex.cc
-  - DOMAIN-SUFFIX,ave.ai
-  - DOMAIN-SUFFIX,aveipcheck.xyz
-  - DOMAIN-SUFFIX,avesp.xyz
-  - DOMAIN-SUFFIX,avedex.live
-  - DOMAIN-SUFFIX,defibit.io
-  - DOMAIN-SUFFIX,dexscreener.com
+  - DOMAIN-SUFFIX,getblock.io
   - DOMAIN-SUFFIX,opencw.xyz
   - DOMAIN-SUFFIX,opencc.xyz
   - DOMAIN-SUFFIX,bitkeep.com
