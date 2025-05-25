@@ -56,6 +56,12 @@ payload:
   - DOMAIN-SUFFIX,avedex.live
   - DOMAIN-SUFFIX,aptoslabs.com
   - DOMAIN-SUFFIX,apollox.finance
+  - DOMAIN-SUFFIX,bitverse.zone
+  - DOMAIN-SUFFIX,bybit.com
+  - DOMAIN-SUFFIX,bybit-aws.com
+  - DOMAIN-SUFFIX,bybitglobal.com
+  - DOMAIN-SUFFIX,blockpi.network
+  - DOMAIN-SUFFIX,bitkeep.com
   - DOMAIN-SUFFIX,celer.network
   - DOMAIN-SUFFIX,codefi.network
   - DOMAIN-SUFFIX,curve.fi
@@ -69,9 +75,6 @@ payload:
   - DOMAIN-SUFFIX,kucoin.work
   - DOMAIN-SUFFIX,kucoin.cloud
   - DOMAIN-SUFFIX,kucoin.fit
-  - DOMAIN-SUFFIX,bybit.com
-  - DOMAIN-SUFFIX,bybit-aws.com
-  - DOMAIN-SUFFIX,bybitglobal.com
   - DOMAIN-SUFFIX,pionex.com
   - DOMAIN-SUFFIX,picolzh.com
   - DOMAIN-SUFFIX,picol.com
@@ -87,9 +90,9 @@ payload:
   - DOMAIN-SUFFIX,getblock.io
   - DOMAIN-SUFFIX,opencw.xyz
   - DOMAIN-SUFFIX,opencc.xyz
-  - DOMAIN-SUFFIX,bitkeep.com
   - DOMAIN-SUFFIX,tokenpocket.pro
   - DOMAIN-SUFFIX,token.im
+  - DOMAIN-SUFFIX,thirdweb.com
   - DOMAIN-SUFFIX,venus.io
   - DOMAIN-SUFFIX,virtuals.io
   - DOMAIN-SUFFIX,premia.finance
@@ -98,7 +101,6 @@ payload:
   - DOMAIN-SUFFIX,matrixport.com
   - DOMAIN-SUFFIX,defidaonews.com
   - DOMAIN-SUFFIX,xcoinsystem.com
-  - DOMAIN-SUFFIX,bitverse.zone
   - DOMAIN-SUFFIX,onetrust.com
   - DOMAIN-SUFFIX,orbs.network
   - DOMAIN-SUFFIX,weex.com
@@ -118,6 +120,7 @@ payload:
   - DOMAIN-SUFFIX,pump.fun
   - DOMAIN-SUFFIX,particle.network
   - DOMAIN-SUFFIX,pendle.finance
+  - DOMAIN-SUFFIX,publicnode.com
   - DOMAIN-SUFFIX,sei.io
   - DOMAIN-SUFFIX,solflare.com
   - DOMAIN-SUFFIX,sp2x.com
@@ -125,8 +128,6 @@ payload:
   - DOMAIN-SUFFIX,scroll.io
   - DOMAIN-SUFFIX,scroll.ghost.io
   - DOMAIN-SUFFIX,llamarpc.com
-  - DOMAIN-SUFFIX,blockpi.network
-  - DOMAIN-SUFFIX,publicnode.com
   - DOMAIN-SUFFIX,walletlink.org
   - DOMAIN-SUFFIX,usual.money
   - DOMAIN-SUFFIX,privy.io
@@ -139,9 +140,9 @@ payload:
   - DOMAIN-SUFFIX,exby.trade
   - DOMAIN-SUFFIX,exby.io
   - DOMAIN-SUFFIX,ftm.tools
-  - DOMAIN-SUFFIX,thirdweb.com
   - DOMAIN-SUFFIX,storychain.ai
   - DOMAIN-SUFFIX,nodereal.io
+  - DOMAIN-SUFFIX,usdx.money
   - DOMAIN-SUFFIX,nariox.org
   - DOMAIN-SUFFIX,xhashapp.com
   - DOMAIN-SUFFIX,zkevm-rpc.com
