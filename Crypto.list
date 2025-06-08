@@ -35,6 +35,7 @@ payload:
   - DOMAIN-KEYWORD,zksync
   - DOMAIN-KEYWORD,hyperliquid
   - DOMAIN-KEYWORD,quiknode
+  - DOMAIN-KEYWORD,renzoprotocol
   - DOMAIN-KEYWORD,satsuma
   - DOMAIN-KEYWORD,seiscan
   - DOMAIN-KEYWORD,solana
