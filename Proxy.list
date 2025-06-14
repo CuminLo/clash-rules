@@ -20,5 +20,6 @@ payload:
   - DOMAIN-SUFFIX,appstorrent.org
   - DOMAIN-SUFFIX,annas-archive.org
   - DOMAIN-SUFFIX,nrzr.li
+  - DOMAIN-SUFFIX,bajie.pw
   - PROCESS-NAME,Dropbox
   - PROCESS-NAME,DropboxFileProvider
