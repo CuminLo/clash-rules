@@ -64,6 +64,8 @@ payload:
   - DOMAIN-SUFFIX,blockpi.network
   - DOMAIN-SUFFIX,bitkeep.com
   - DOMAIN-SUFFIX,bnb100k.com
+  - DOMAIN-SUFFIX,bnbattest.io
+  - DOMAIN-SUFFIX,codatta.io
   - DOMAIN-SUFFIX,celer.network
   - DOMAIN-SUFFIX,codefi.network
   - DOMAIN-SUFFIX,curve.fi
@@ -149,3 +151,4 @@ payload:
   - DOMAIN-SUFFIX,nariox.org
   - DOMAIN-SUFFIX,xhashapp.com
   - DOMAIN-SUFFIX,zkevm-rpc.com
+  - DOMAIN-SUFFIX,vooi.io
