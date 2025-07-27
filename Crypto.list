@@ -73,12 +73,14 @@ payload:
   - DOMAIN-SUFFIX,dogechain.dog
   - DOMAIN-SUFFIX,defibit.io
   - DOMAIN-SUFFIX,dexscreener.com
+  - DOMAIN-SUFFIX,drpc.org
   - DOMAIN-SUFFIX,four.meme
   - DOMAIN-SUFFIX,kucoin.com
   - DOMAIN-SUFFIX,kucoin.plus
   - DOMAIN-SUFFIX,kucoin.work
   - DOMAIN-SUFFIX,kucoin.cloud
   - DOMAIN-SUFFIX,kucoin.fit
+  - DOMAIN-SUFFIX,kiloex.io
   - DOMAIN-SUFFIX,pionex.com
   - DOMAIN-SUFFIX,picolzh.com
   - DOMAIN-SUFFIX,picol.com
@@ -94,6 +96,7 @@ payload:
   - DOMAIN-SUFFIX,getblock.io
   - DOMAIN-SUFFIX,opencw.xyz
   - DOMAIN-SUFFIX,opencc.xyz
+  - DOMAIN-SUFFIX,orderly.org
   - DOMAIN-SUFFIX,tokenpocket.pro
   - DOMAIN-SUFFIX,token.im
   - DOMAIN-SUFFIX,thirdweb.com
