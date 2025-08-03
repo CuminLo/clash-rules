@@ -64,6 +64,7 @@ payload:
   - DOMAIN-SUFFIX,blockpi.network
   - DOMAIN-SUFFIX,bitkeep.com
   - DOMAIN-SUFFIX,bitlayer.org
+  - DOMAIN-SUFFIX,bitzap.ai
   - DOMAIN-SUFFIX,bnb100k.com
   - DOMAIN-SUFFIX,bnbattest.io
   - DOMAIN-SUFFIX,codatta.io
