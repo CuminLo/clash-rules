@@ -76,6 +76,7 @@ payload:
   - DOMAIN-SUFFIX,finzfin.com
   - DOMAIN-SUFFIX,0kkkkkt.com
   - DOMAIN-SUFFIX,wtzw.com
+  - DOMAIN-SUFFIX,wttr.in
   - DOMAIN-SUFFIX,weilayun.com
   - DOMAIN-SUFFIX,volces.com
   - DOMAIN-SUFFIX,vegslb.com
