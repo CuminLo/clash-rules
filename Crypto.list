@@ -130,6 +130,7 @@ payload:
   - DOMAIN-SUFFIX,particle.network
   - DOMAIN-SUFFIX,pendle.finance
   - DOMAIN-SUFFIX,publicnode.com
+  - DOMAIN-SUFFIX,revapay.ai
   - DOMAIN-SUFFIX,sei.io
   - DOMAIN-SUFFIX,solflare.com
   - DOMAIN-SUFFIX,sp2x.com
