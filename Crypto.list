@@ -8,6 +8,7 @@ payload:
   - DOMAIN-KEYWORD,arbiscan
   - DOMAIN-KEYWORD,arbitrum
   - DOMAIN-KEYWORD,alchemy
+  - DOMAIN-KEYWORD,astranova
   - DOMAIN-KEYWORD,basescan
   - DOMAIN-KEYWORD,bnbchain
   - DOMAIN-KEYWORD,bscscan
