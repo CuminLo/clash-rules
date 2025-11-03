@@ -97,6 +97,7 @@ payload:
   - DOMAIN-SUFFIX,localbitcoins.com
   - DOMAIN-SUFFIX,gdgz.link
   - DOMAIN-SUFFIX,getblock.io
+  - DOMAIN-SUFFIX,opinion.trade
   - DOMAIN-SUFFIX,opencw.xyz
   - DOMAIN-SUFFIX,opencc.xyz
   - DOMAIN-SUFFIX,orderly.org
