@@ -2,3 +2,4 @@ payload:
   - DOMAIN-SUFFIX,ttcdn-us.com 
   - DOMAIN-SUFFIX,capcutapi.com
   - DOMAIN-SUFFIX,capcutstatic.com
+  - DOMAIN-SUFFIX,oecstatic.com
