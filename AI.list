@@ -14,5 +14,6 @@ payload:
   - DOMAIN,openaiapi-site.azureedge.net
   - DOMAIN-SUFFIX,perplexity.ai
   - DOMAIN-SUFFIX,grok.com
+  - DOMAIN-SUFFIX,grokipedia.com
   - DOMAIN-SUFFIX,meta.ai
   - DOMAIN-SUFFIX,anyrouter.top
