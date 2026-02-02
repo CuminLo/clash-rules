@@ -1,6 +1,7 @@
 payload:
   - DOMAIN-SUFFIX,grok.com
   - DOMAIN-SUFFIX,grokipedia.com
+  - DOMAIN-SUFFIX,antigravity.google
   - DOMAIN-SUFFIX,antigravity-unleash.goog
   - DOMAIN-SUFFIX,daily-cloudcode-pa.sandbox.googleapis.com
   - DOMAIN-SUFFIX,generativelanguage.googleapis.com
