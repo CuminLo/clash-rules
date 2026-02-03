@@ -1,4 +1,5 @@
 payload:
+  - DOMAIN-KEYWORD,antigravity
   - DOMAIN-SUFFIX,grok.com
   - DOMAIN-SUFFIX,grokipedia.com
   - DOMAIN-SUFFIX,antigravity.google
