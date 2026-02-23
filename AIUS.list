@@ -7,3 +7,4 @@ payload:
   - DOMAIN-SUFFIX,daily-cloudcode-pa.sandbox.googleapis.com
   - DOMAIN-SUFFIX,generativelanguage.googleapis.com
   - DOMAIN-SUFFIX,gemini.google.com
+  - DOMAIN-SUFFIX,geminicli.com 
